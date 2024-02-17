@@ -1,0 +1,254 @@
+version: "3.3"
+
+services:
+  database:
+    restart: always
+    image: postgres:15.2-alpine
+    container_name: database
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=prefect
+    expose:
+      - 5432
+    volumes: 
+      - db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-p", "${PG_PORT}", "-U", "${PG_USER}"]
+      interval: 5s
+      timeout: 5s
+      retries: 3
+    networks:
+      - backend
+      - frontend
+  s3:
+    restart: always
+    image: minio/minio
+    container_name: mlflow_minio
+    volumes:
+      - ./minio_data:/data
+    ports:
+      - "${MINIO_PORT}:9000"
+      - "${MINIO_CONSOLE_PORT}:9001"
+    networks:
+      - frontend
+      - backend
+    environment:
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
+      - MINIO_ADDRESS=${MINIO_ADDRESS}
+      - MINIO_PORT=${MINIO_PORT}
+      - MINIO_STORAGE_USE_HTTPS=${MINIO_STORAGE_USE_HTTPS}
+      - MINIO_CONSOLE_ADDRESS=${MINIO_CONSOLE_ADDRESS}
+    command: server /data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+  ### Prefect Server API and UI
+  prefect_server:
+    image: prefecthq/prefect:2.11.5-python3.11
+    restart: always
+    container_name: prefect_server
+    volumes:
+      - prefect:/root/.prefect
+    entrypoint: ["/opt/prefect/entrypoint.sh", "prefect", "server", "start"]
+    environment:
+      - PREFECT_UI_URL=http://127.0.0.1:4200/api
+      - PREFECT_API_URL=http://127.0.0.1:4200/api
+      # If you want to access Prefect Server UI from anywhere other than the Docker host machine, you will need to change
+      # PREFECT_UI_URL and PREFECT_API_URL to match the external hostname/IP of the host machine. For example:
+      #- PREFECT_UI_URL=http://external-ip:4200/api
+      #- PREFECT_API_URL=http://external-ip:4200/api
+      - PREFECT_SERVER_API_HOST=0.0.0.0
+      - PREFECT_API_DATABASE_CONNECTION_URL=postgresql+asyncpg://postgres:postgres@database:5432/prefect
+      # Uncomment the following line if you want to use the 'S3 Bucket' storage block instead of the older 'S3' storage
+      # - EXTRA_PIP_PACKAGES=prefect-aws
+    ports:
+      - 4200:4200
+    depends_on:
+      - database
+    networks:
+      - backend
+
+
+  ## Prefect Agent
+  agent:
+    image: prefecthq/prefect:2.11.5-python3.11
+    restart: always   
+    entrypoint: ["/opt/prefect/entrypoint.sh", "prefect", "agent", "start", "--pool", "default-agent-pool", "--work-queue", "credit_risk_model_queue"]
+    environment:
+      - PREFECT_API_URL=http://prefect_server:4200/api
+  #       Use PREFECT_API_KEY if connecting the agent to Prefect Cloud
+  #     - PREFECT_API_KEY=YOUR_API_KEY  
+  prefect_agent:
+    restart: always
+    depends_on:
+      - prefect_server
+      
+    build:
+      context: ./prefect
+      dockerfile: Dockerfile-prefect-agent
+    image: prefect_agent1
+    container_name: prefect_agent1
+    environment:
+      MONGODB_ADDRESS: "mongodb://127.0.0.1:27017"
+      REPORTS_FOLDER: /tmp/mlreports
+      REPORT_TIME_WINDOW_MINUTES: 180
+      EVIDENTLY_TIME_WIDTH_MINS: 720
+      GOOGLE_APPLICATION_CREDENTIALS: /secrets/mlops-credit-risk-secret.json
+      MLFLOW_TRACKING_URI: "http://mlflow_server:5000"
+    volumes:
+      - /tmp/mlopsdb:/tmp/mlopsdb
+      - /tmp/mlopsartifacts:/tmp/mlopsartifacts
+      - /tmp/store:/tmp/store
+      - /tmp/mlreports:/tmp/mlreports
+      
+    networks:
+      - backend
+
+  home_credit:
+    restart: always
+    depends_on:
+      - tracking_server
+    ports:
+      - 8090:8090  
+    build:
+      context: ./model
+      dockerfile: Dockerfile
+    image: home_credit_pred
+    container_name: home_credit
+  
+    networks:
+      - frontend
+      - backend
+
+  create_buckets:
+    image: minio/mc
+    container_name: mlflow_create_buckets
+    depends_on:
+      - s3
+    networks:
+      - backend
+    entrypoint: >
+      /bin/sh -c '
+      sleep 5;
+      /usr/bin/mc config host add s3 http://s3:${MINIO_PORT} ${MINIO_ACCESS_KEY} ${MINIO_SECRET_ACCESS_KEY} --api S3v4;
+      [[ ! -z "`/usr/bin/mc ls s3 | grep challenge`" ]] || /usr/bin/mc mb s3/${MLFLOW_BUCKET_NAME};
+      /usr/bin/mc policy download s3/${MLFLOW_BUCKET_NAME};
+      exit 0;
+      '
+
+  tracking_server:
+    restart: always
+    build: ./mlflow
+    image: mlflow_server
+    container_name: mlflow_server
+    depends_on:
+      - database
+    ports:
+      - "${MLFLOW_PORT}:5000"
+    networks:
+      - frontend
+      - backend
+    environment:
+      - AWS_ACCESS_KEY_ID=${MINIO_ACCESS_KEY}
+      - AWS_SECRET_ACCESS_KEY=${MINIO_SECRET_ACCESS_KEY}
+      - MLFLOW_S3_ENDPOINT_URL=http://s3:${MINIO_PORT}
+      - MLFLOW_S3_IGNORE_TLS=true
+    command: >
+      mlflow server
+      --backend-store-uri postgresql://${PG_USER}:${PG_PASSWORD}@database:${PG_PORT}/${PG_DATABASE}
+      --host 0.0.0.0
+      --serve-artifacts
+      --artifacts-destination s3://${MLFLOW_BUCKET_NAME}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:${MLFLOW_PORT}/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+  ### Prefect CLI
+  cli:
+    image: prefecthq/prefect:2.11.5-python3.11
+    entrypoint: "bash"
+    working_dir: "/root/flows"
+    volumes:
+      - "./flows:/root/flows"
+    environment:
+      - PREFECT_API_URL=http://prefect_server:4200/api
+    #       Use PREFECT_API_KEY to use the CLI to interact with Prefect Cloud
+    #     - PREFECT_API_KEY=YOUR_API_KEY
+    networks:
+      - frontend
+      - backend
+
+  prometheus:
+    container_name: prometheus
+    image: prom/prometheus
+    depends_on:
+      - mongo
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+    ports:
+      - "9091:9090"
+    networks:
+      - backend
+    restart: always
+  grafana:
+    image: grafana/grafana
+    user: "472"
+    depends_on:
+      - prometheus
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./grafana/config/grafana_datasources.yml:/etc/grafana/provisioning/datasources/grafana_datasources.yml:ro
+      - ./grafana/config/grafana_dashboards.yml:/etc/grafana/provisioning/dashboards/grafana_dashboards.yml:ro
+      - ./grafana/dashboards:/opt/grafana/dashboards
+      - grafana_data:/var/lib/grafana
+    networks:
+      - backend
+      - frontend
+    restart: always
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - backend
+  evidently_service:
+    build:
+      context: evidently_service
+      dockerfile: Dockerfile
+    depends_on:
+      - grafana
+    container_name: evidently_service
+    volumes:
+      - ./evidently_service/datasets:/app/datasets
+      - ./evidently_service/config.yaml:/app/config.yaml
+    ports:
+      - "8877:8877"
+    networks:
+      - backend
+      - frontend    
+volumes:
+  db:
+  minio_data:
+  prefect:
+  prometheus_data: {}
+  grafana_data: {}
+  mongo_data: {}
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
+    

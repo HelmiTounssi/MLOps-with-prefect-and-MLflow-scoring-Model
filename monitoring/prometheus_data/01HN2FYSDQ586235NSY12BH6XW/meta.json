@@ -1,0 +1,17 @@
+{
+	"ulid": "01HN2FYSDQ586235NSY12BH6XW",
+	"minTime": 1706248800029,
+	"maxTime": 1706256000000,
+	"stats": {
+		"numSamples": 1195299,
+		"numSeries": 840,
+		"numChunks": 9956
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01HN2FYSDQ586235NSY12BH6XW"
+		]
+	},
+	"version": 1
+}

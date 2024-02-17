@@ -1,0 +1,60 @@
+###
+### A complete description of a Prefect Deployment for flow 'test flow'
+###
+name: Awesome MinIO deployment
+description: null
+version: 6779df15abb4c43f5147ad3feec494a1
+# The work queue that will handle this deployment's runs
+work_queue_name: awesome
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: test flow
+manifest_path: null
+storage:
+  basepath: s3://prefect-flows
+  settings:
+    key: aO8oOzwFuOlS5eyvnUPr
+    secret: ePeQ0zOAlXbDJU64rRW9vVOvBLn0pfrfnGdnI4M3
+    client_kwargs:
+      endpoint_url: http://s3:9000
+  _block_document_id: 9fabadd4-2a37-49b4-93d1-fc89d51085ed
+  _block_document_name: prefect-flows
+  _is_anonymous: false
+  block_type_slug: remote-file-system
+  _block_type_slug: remote-file-system
+path: ''
+entrypoint: flow.py:greetings
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    names:
+      title: names
+      default:
+      - arthur
+      - trillian
+      - ford
+      - marvin
+      position: 0
+  required: null
+  definitions: null
+timestamp: '2024-01-27T04:08:48.190127+00:00'
+triggers: []

@@ -1,0 +1,1662 @@
+3‹^ ½Ã‹ yCÜê¹#kógº€ZÏ$+»öÔè6artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.16
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.2.0
+mlflow_version: 2.9.0
+model_size_bytes: 18434589
+model_uuid: ab6e0e1ca3664849a6002a4defdc553d
+run_id: af4dd005c3b44be39e9dcbdf87d8019f
+signature:
+  inputs: '[{"type": "float", "name": "MIN_PAYMENT_TOTAL_RATIO_MIN_YEAR_REST"}, {"type":
+    "float", "name": "AMT_INCOME_TOTAL_MAX_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "AMT_INCOME_TOTAL_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "DAYS_PAYMENT_DIFF_MAX_MAX"}, {"type": "float", "name":
+    "AMT_INSTALMENT_MAX_FIRST_5_INSTALLMENTS"}, {"type": "float", "name": "AMT_CREDIT_SUM_FIRST_2"},
+    {"type": "float", "name": "AMT_PAYMENT_RATIO_MIN_MIN"}, {"type": "float", "name":
+    "AMT_PAYMENT_RATIO_MEAN_MAX"}, {"type": "float", "name": "WEIGHTED_STATUS_LAST_YEAR_REST_MEAN_OVERALL"},
+    {"type": "float", "name": "MIN_PAYMENT_TOTAL_RATIO_MEAN_YEAR_0"}, {"type": "float",
+    "name": "DAYS_LAST_PHONE_CHANGE"}, {"type": "float", "name": "AMT_ANNUITY_MEANCREDIT_ACTIVE_REST"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_ACTIVE_MAX"}, {"type": "float",
+    "name": "EXT_SOURCE_MEAN_MAX_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type":
+    "float", "name": "EXP_CNT_INSTALMENT_LAST_YEAR_1_MEAN"}, {"type": "float", "name":
+    "WEIGHTED_STATUS_MEAN_YEAR_REST_MEAN_OVERALL"}, {"type": "float", "name": "ANNUITY_MEAN_LAST_5"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_REST_MEAN"}, {"type": "float",
+    "name": "AMT_INTEREST_MEAN_FIRST_2"}, {"type": "float", "name": "RATE_DOWN_PAYMENT_MAX_FIRST_2"},
+    {"type": "float", "name": "INTEREST_SHARE_MAX_ALL"}, {"type": "float", "name":
+    "DAYS_LAST_DUE_1ST_VERSION_MEAN_LAST_5"}, {"type": "float", "name": "CREDIT_TYPE_Consumer
+    credit_MEAN_OVERALL"}, {"type": "float", "name": "BALANCE_LIMIT_RATIO_MAX_YEAR_0"},
+    {"type": "float", "name": "TOTAL_TERM_MEAN_REST_MAX"}, {"type": "float", "name":
+    "HOUR_APPR_PROCESS_START_MIN_LAST_5"}, {"type": "float", "name": "DAYS_PAYMENT_DIFF_MEAN_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "ENTRANCES_AVG"}, {"type": "float", "name": "BALANCE_LIMIT_RATIO_MIN_YEAR_REST"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_COMPLETED_SUM"}, {"type": "float",
+    "name": "EXT_SOURCE_MEAN_MAX_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "INSTALLMENTS_ANNUITY_AMT_INSTALMENT_MEAN_MAX_RATIO"},
+    {"type": "float", "name": "STATUS_FIRST_MEAN_OVERALL"}, {"type": "float", "name":
+    "NUM_INSTALMENT_NUMBER_MAX_MEAN"}, {"type": "float", "name": "INTEREST_DOWNPAYMENT_MAX_LAST_5"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MEAN_LAST_5"}, {"type": "float",
+    "name": "ANNUITY_MAX_FIRST_2"}, {"type": "float", "name": "AMT_REQ_CREDIT_BUREAU_QRT"},
+    {"type": "float", "name": "BUREAU_AMT_CREDIT_MAX_OVERDUE_SUM_CREDITACTIVE_CLOSED_INCOME_RATIO"},
+    {"type": "float", "name": "AMT_INCOME_TOTAL"}, {"type": "float", "name": "INTEREST_CREDIT_MEAN_FIRST_2"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MAX_CREDITACTIVE_CLOSED_REGISTRATION_DIFF"},
+    {"type": "float", "name": "EXP_MIN_PAYMENT_TOTAL_RATIO_LAST_COMPLETED"}, {"type":
+    "float", "name": "ANNUITY_INCOME_RATIO_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "CNT_PAYMENT_MAX_ALL"}, {"type": "float", "name": "PREV_AMT_ANNUITY_MEAN_LAST_5_INCOME_RATIO"},
+    {"type": "float", "name": "ANNUITY_MEAN_ALL"}, {"type": "float", "name": "NUM_INSTALMENT_NUMBER_MAX_SUM"},
+    {"type": "float", "name": "AMT_INTEREST_MIN_LAST_5"}, {"type": "float", "name":
+    "AMT_CREDIT_YIELD_GROUP_MEAN_ALL"}, {"type": "float", "name": "BUREAU_DAYS_CREDIT_MAXCREDIT_ACTIVE_REST_REGISTRATION_DIFF"},
+    {"type": "float", "name": "AMT_INTEREST_RECEIVABLE_MIN_ACTIVE"}, {"type": "float",
+    "name": "AMT_DRAWINGS_OTHER_CURRENT_SUM"}, {"type": "float", "name": "EXT_SOURCE_VAR"},
+    {"type": "float", "name": "PRODUCT_COMBINATION_MEAN_ALL"}, {"type": "float", "name":
+    "BUREAU_AMT_CREDIT_SUM_OVERDUE_MAX_CREDITACTIVE_CLOSED_INCOME_RATIO"}, {"type":
+    "float", "name": "ANNUITY_INCOME_RATIO_MAX_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "TOTAL_TERM_MEAN_YEAR_1_MEAN"}, {"type": "float", "name":
+    "AMT_CREDIT_SUM_DEBT_SUM_CREDITACTIVE_ACTIVE"}, {"type": "float", "name": "INSTALLMENTS_AMT_PAYMENT_MAX_LAST_1_YEAR_INCOME_RATIO"},
+    {"type": "float", "name": "WEIGHTED_STATUS_MEAN_YEAR_0_MEAN_OVERALL"}, {"type":
+    "float", "name": "ANNUITY_INCOME_RATIO_MAX_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "NAME_HOUSING_TYPE_1"}, {"type": "float", "name": "AMT_DECLINED_MAX_FIRST_2"},
+    {"type": "float", "name": "GOOD_DOWNPAYMET_RATIO_MEAN_FIRST_2"}, {"type": "float",
+    "name": "AMT_INCOME_TOTAL_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "AMT_INTEREST_MIN_ALL"}, {"type": "float", "name": "NAME_YIELD_GROUP_MEAN_FIRST_2"},
+    {"type": "float", "name": "ANNUITY_SUM_FIRST_2"}, {"type": "float", "name": "DAYS_PAYMENT_RATIO_MIN_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "EXP_PAYMENT_MIN_DIFF_LAST_YEAR_1"}, {"type": "float",
+    "name": "ENQ_CREDIT_RATIO"}, {"type": "float", "name": "DAYS_CREDIT_MIN_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "CC_EXP_AMT_TOTAL_RECEIVABLE_LAST_INCOME_RATIO"}, {"type":
+    "float", "name": "NAME_SELLER_INDUSTRY_LAST_LAST_5"}, {"type": "float", "name":
+    "BUREAU_AMT_CREDIT_MAX_OVERDUE_SUMCREDIT_ACTIVE_REST_INCOME_RATIO"}, {"type":
+    "float", "name": "DEF_30_CREDIT_RATIO"}, {"type": "float", "name": "APARTMENTS_SUM_AVG_MAX_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_YEAR_REST_MEAN"}, {"type": "float",
+    "name": "AMT_CREDIT_YIELD_GROUP_SUM_ALL"}, {"type": "float", "name": "SK_DPD_RATIO_MAX_MEAN"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_YEAR_1_MEAN"}, {"type": "float",
+    "name": "AMT_CREDIT_APPLICATION_RATIO_MIN_FIRST_2"}, {"type": "float", "name":
+    "APPLICATION_AMT_TO_DECISION_RATIO_MEAN_FIRST_2"}, {"type": "float", "name": "TOTAL_TERM_MEAN_SUM"},
+    {"type": "float", "name": "REGIONS_RATING_INCOME_MUL_0"}, {"type": "float", "name":
+    "BALANCE_LIMIT_RATIO_MEAN_YEAR_REST"}, {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_SUM_FIRST_2"},
+    {"type": "float", "name": "AMT_CREDIT_SUM_DEBT_MEAN_OVERALL"}, {"type": "float",
+    "name": "CNT_INSTALMENT_FUTURE_MAX_MEAN"}, {"type": "float", "name": "CONTRACT_Completed"},
+    {"type": "integer", "name": "REG_CITY_NOT_LIVE_CITY"}, {"type": "float", "name":
+    "APARTMENTS_SUM_AVG_MAX_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"}, {"type":
+    "float", "name": "AMT_ANNUITY_MAX_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "PAYMENT_MIN_DIFF_MIN_ACTIVE"}, {"type": "float", "name":
+    "INTEREST_SHARE_MAX_LAST_5"}, {"type": "float", "name": "AMT_PAYMENT_RATIO_MIN_LAST_1_YEAR"},
+    {"type": "float", "name": "EXT_SOURCE_MEAN_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_ANNUITY_MAX_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "AMT_INCOME_TOTAL_MAX_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "PREV_AMT_ANNUITY_SUM_LAST_5_INCOME_RATIO"}, {"type":
+    "float", "name": "AMT_INTEREST_RECEIVABLE_MIN_YEAR_REST"}, {"type": "float", "name":
+    "AMT_CREDIT_NFLAG_LAST_APPL_DAY_MEAN_LAST_5"}, {"type": "float", "name": "EXP_ENCODED_STATUS_LAST_YEAR_0_MEAN_OVERALL"},
+    {"type": "float", "name": "AMT_CREDIT_HOUR_PROCESS_START_SUM_FIRST_2"}, {"type":
+    "float", "name": "EXT_SOURCE_3_MEAN_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "NAME_CASH_LOAN_PURPOSE_MEAN_FIRST_2"}, {"type": "float",
+    "name": "CNT_INSTALMENT_FUTURE_MEAN_ACTIVE_SUM"}, {"type": "float", "name": "EXT_SOURCE_3_MEAN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "EXT_SOURCE_MEAN_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "NAME_GOODS_CATEGORY_MEAN_ALL"}, {"type": "float", "name":
+    "NFLAG_INSURED_ON_APPROVAL_SUM_FIRST_2"}, {"type": "float", "name": "EXP_POS_TOTAL_TERM_LAST_YEAR_0_MEAN"},
+    {"type": "float", "name": "EXT_SOURCE_MEAN_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "EXT_SOURCE_MEAN_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "PREV_AMT_GOODS_PRICE_MAX_LAST_5_INCOME_RATIO"}, {"type":
+    "float", "name": "SK_DPD_RATIO_MEAN_MEAN"}, {"type": "float", "name": "TOTAL_TERM_MEAN_YEAR_0_MAX"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_ACTIVE_MEAN"}, {"type": "float",
+    "name": "CNT_PROLONGED_MAX_OVERDUE_MUL_MEAN_CREDITACTIVE_ACTIVE"}, {"type": "float",
+    "name": "APPLICATION_AMT_TO_DECISION_RATIO_MIN_LAST_5"}, {"type": "float", "name":
+    "CNT_INSTALMENT_FUTURE_MEAN_REST_SUM"}, {"type": "float", "name": "SELLERPLACE_AREA_MIN_LAST_5"},
+    {"type": "float", "name": "CNT_DRAWING_SUM_MAX_YEAR_REST"}, {"type": "float",
+    "name": "WALLSMATERIAL_MODE_0"}, {"type": "float", "name": "AMT_APPLICATION_MEAN_FIRST_2"},
+    {"type": "float", "name": "COMMONAREA_MEDI"}, {"type": "float", "name": "DAYS_CREDIT_MEANCREDIT_ACTIVE_REST"},
+    {"type": "float", "name": "EXP_AMT_INTEREST_RECEIVABLE_LAST_COMPLETED"}, {"type":
+    "float", "name": "NAME_CASH_LOAN_PURPOSE_MEAN_ALL"}, {"type": "float", "name":
+    "EXP_BALANCE_LIMIT_RATIO_LAST_YEAR_1"}, {"type": "float", "name": "AMT_INTEREST_RECEIVABLE_MEAN"},
+    {"type": "float", "name": "AMT_PAYMENT_DIFF_MAX_MEAN"}, {"type": "float", "name":
+    "CC_EXP_AMT_RECIVABLE_LAST_INCOME_RATIO"}, {"type": "float", "name": "AMT_INSTALMENT_MEAN_SUM"},
+    {"type": "integer", "name": "REG_REGION_NOT_WORK_REGION"}, {"type": "float", "name":
+    "BUREAU_DAYS_CREDIT_MAX_CREDITACTIVE_CLOSED_EMPLOYED_DIFF"}, {"type": "float",
+    "name": "SK_DPD_DEF_SUM_YEAR_1"}, {"type": "float", "name": "TOTAL_TERM_MAX_YEAR_REST_MEAN"},
+    {"type": "float", "name": "AMT_PAYMENT_SUM_MEAN"}, {"type": "float", "name": "ANNUITY_INCOME_RATIO_MAX_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "DAYS_FIRST_DUE_MEAN_ALL"}, {"type": "float", "name":
+    "CNT_INSTALMENT_FUTURE_MIN_YEAR_0_MEAN"}, {"type": "float", "name": "CURRENT_DEBT_TO_CREDIT_RATIO_MEAN_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "AMT_CREDIT_YIELD_GROUP_MIN_FIRST_2"}, {"type": "float",
+    "name": "AMT_CREDIT_SUM_OVERDUE_MAX_CREDITACTIVE_ACTIVE"}, {"type": "float", "name":
+    "ANNUITY_INCOME_RATIO_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type": "float",
+    "name": "EXP_WEIGHTED_STATUS_LAST_YEAR_REST_MEAN_OVERALL"}, {"type": "float",
+    "name": "BUREAU_DAYS_CREDIT_MIN_CREDITACTIVE_ACTIVE_REGISTRATION_DIFF"}, {"type":
+    "float", "name": "EXP_AMT_INTEREST_RECEIVABLE_LAST_ACTIVE"}, {"type": "float",
+    "name": "AMT_PAYMENT_RATIO_MAX_MAX"}, {"type": "float", "name": "MIN_PAYMENT_RATIO_MIN_ACTIVE"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MEAN_CREDITACTIVE_ACTIVE_EMPLOYED_DIFF"},
+    {"type": "float", "name": "INTEREST_DOWNPAYMENT_MEAN_FIRST_2"}, {"type": "float",
+    "name": "CNT_DRAWINGS_ATM_CURRENT_MAX"}, {"type": "float", "name": "DAYS_PAYMENT_DIFF_MIN_MEAN"},
+    {"type": "float", "name": "AGE_EMPLOYED_DIFF_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "GOOD_DOWNPAYMET_RATIO_MAX_FIRST_2"}, {"type": "float",
+    "name": "AMT_PAYMENT_RATIO_MEAN_MIN"}, {"type": "float", "name": "EXT_SOURCE_MEAN_MAX_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "EXT_SOURCE_MEAN_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "CNT_INSTALMENT_MAX_YEAR_1_MEAN"}, {"type": "float",
+    "name": "EXT_SOURCE_1_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type": "float",
+    "name": "AMT_CREDIT_NFLAG_LAST_APPL_DAY_MAX_LAST_5"}, {"type": "float", "name":
+    "CNT_INSTALMENT_FUTURE_MAX_ACTIVE_MEAN"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_YEAR_1_MEAN"},
+    {"type": "float", "name": "OCCUPATION_TYPE_1"}, {"type": "float", "name": "AMT_DOWN_PAYMENT_MAX_LAST_5"},
+    {"type": "float", "name": "WEIGHTED_STATUS_FIRST_YEAR_REST_MEAN_OVERALL"}, {"type":
+    "float", "name": "COMMONAREA_AVG"}, {"type": "float", "name": "FLOORSMIN_MEDI"},
+    {"type": "float", "name": "INTEREST_RATE_MAX_LAST_5"}, {"type": "float", "name":
+    "HOUR_APPR_PROCESS_START_MIN_FIRST_2"}, {"type": "float", "name": "TOTAL_TERM_LAST_MEAN"},
+    {"type": "float", "name": "TOTAL_TERM_MEAN_YEAR_0_MEAN"}, {"type": "float", "name":
+    "DAYS_DECISION_MEAN_FIRST_2"}, {"type": "float", "name": "SELLERPLACE_AREA_MEAN_ALL"},
+    {"type": "float", "name": "EMPLOYED_TO_AGE_RATIO"}, {"type": "float", "name":
+    "DAYS_PAYMENT_RATIO_MEAN_MEAN"}, {"type": "float", "name": "SK_DPD_RATIO_MAX_YEAR_0_MEAN"},
+    {"type": "float", "name": "TOTAL_TERM_MEAN_MAX"}, {"type": "float", "name": "AMT_INSTALMENT_SUM_SUM"},
+    {"type": "float", "name": "BALANCE_LIMIT_RATIO_MAX"}, {"type": "float", "name":
+    "YEARS_BUILD_AVG"}, {"type": "float", "name": "AMT_DECLINED_MEAN_FIRST_2"}, {"type":
+    "float", "name": "AMT_PAYMENT_TOTAL_CURRENT_MAX"}, {"type": "float", "name": "EXP_AMT_RECEIVABLE_PRINCIPAL_LAST"},
+    {"type": "float", "name": "CHANNEL_TYPE_MEAN_ALL"}, {"type": "float", "name":
+    "CNT_INSTALMENT_MIN_YEAR_0_MEAN"}, {"type": "float", "name": "AMT_INST_MIN_REGULARITY_MAX"},
+    {"type": "float", "name": "AMT_DRAWINGS_CURRENT_SUM"}, {"type": "float", "name":
+    "AMT_CREDIT_HOUR_PROCESS_START_SUM_LAST_5"}, {"type": "float", "name": "CNT_PAYMENT_MEAN_FIRST_2"},
+    {"type": "float", "name": "CREDIT_EXT_RATIO"}, {"type": "float", "name": "BALANCE_LIMIT_RATIO_MEAN"},
+    {"type": "float", "name": "AMT_CREDIT_SUM_OVERDUE_SUM_CREDITACTIVE_ACTIVE"}, {"type":
+    "float", "name": "INSTALLMENTS_AMT_PAYMENT_MEAN_MAX_INCOME_RATIO"}, {"type": "float",
+    "name": "PREV_AMT_GOODS_PRICE_SUM_ALL_INCOME_RATIO"}, {"type": "float", "name":
+    "DAYS_DECISION_MIN_LAST_5"}, {"type": "float", "name": "SK_DPD_RATIO_MEAN_SUM"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MEANCREDIT_ACTIVE_REST_REGISTRATION_DIFF"},
+    {"type": "float", "name": "CREDIT_TYPE_Microloan_MEAN_OVERALL"}, {"type": "integer",
+    "name": "FLAG_DOCUMENT_8"}, {"type": "float", "name": "AMT_ANNUITY_MAX_LAST_5"},
+    {"type": "float", "name": "PREV_AMT_GOODS_PRICE_MEAN_ALL_INCOME_RATIO"}, {"type":
+    "float", "name": "DAYS_CREDIT_MEAN_CREDITACTIVE_CLOSED"}, {"type": "float", "name":
+    "DAYS_CREDIT_MIN_CREDITACTIVE_ACTIVE"}, {"type": "float", "name": "AMT_GOODS_PRICE_MEAN_LAST_5"},
+    {"type": "float", "name": "PREV_AMT_GOODS_PRICE_MAX_ALL_INCOME_RATIO"}, {"type":
+    "float", "name": "SK_DPD_MAX_YEAR_0_MEAN"}, {"type": "float", "name": "WEEKDAY_APPR_PROCESS_START_MIN_FIRST_2"},
+    {"type": "float", "name": "EXT_SOURCE_1_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "CNT_DRAWING_SUM_SUM_YEAR_REST"}, {"type": "float",
+    "name": "AMT_CREDIT_MEAN_ALL"}, {"type": "float", "name": "SK_DPD_DEF_SUM_YEAR_1_MEAN"},
+    {"type": "float", "name": "GOODS_INCOME_RATIO"}, {"type": "float", "name": "AMT_CREDIT_MAX_OVERDUE_MEAN_OVERALL"},
+    {"type": "float", "name": "ANNUITY_INCOME_RATIO_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_INCOME_TOTAL_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "INTEREST_DOWNPAYMENT_SUM_LAST_5"}, {"type": "float",
+    "name": "CNT_INSTALMENT_MATURE_CUM_MAX"}, {"type": "float", "name": "EXP_AMT_DRAWING_SUM_LAST_ACTIVE"},
+    {"type": "float", "name": "CNT_PAYMENT_SUM_LAST_5"}, {"type": "float", "name":
+    "HOUR_APPR_PROCESS_START_MEAN_FIRST_2"}, {"type": "float", "name": "CNT_DRAWING_SUM_MAX_YEAR_0"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MAX_MAX"}, {"type": "float", "name":
+    "INCOME_ANNUITY_DIFF"}, {"type": "float", "name": "FLOORSMIN_MODE"}, {"type":
+    "float", "name": "EMERGENCYSTATE_MODE_0"}, {"type": "float", "name": "CREDIT_DAY_OVERDUE_MEAN_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "DAYS_FIRST_DRAWING_MEAN_FIRST_2"}, {"type": "float",
+    "name": "DAYS_FIRST_LAST_DUE_DIFF_MEAN_LAST_5"}, {"type": "float", "name": "EXP_CNT_INSTALMENT_LAST_MEAN"},
+    {"type": "float", "name": "NAME_CONTRACT_TYPE_LAST_LAST_5"}, {"type": "float",
+    "name": "CREDIT_DOWNPAYMENT_RATIO_MEAN_LAST_5"}, {"type": "float", "name": "DAYS_LAST_DUE_MEAN_FIRST_2"},
+    {"type": "float", "name": "AMT_PAYMENT_RATIO_MIN_FIRST_5_INSTALLMENTS"}, {"type":
+    "float", "name": "AMT_INCOME_TOTAL_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_MEAN_ALL"}, {"type": "float",
+    "name": "CODE_REJECT_REASON_MEAN_ALL"}, {"type": "float", "name": "NAME_TYPE_SUITE_MEAN_FIRST_2"},
+    {"type": "float", "name": "EXPECTED_INTEREST_RATE"}, {"type": "float", "name":
+    "DAYS_FIRST_LAST_DUE_DIFF_MEAN_ALL"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_SUM"},
+    {"type": "float", "name": "PAYMENT_MIN_DIFF_MEAN_YEAR_0"}, {"type": "float", "name":
+    "EXT_SOURCE_MEAN_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"}, {"type":
+    "float", "name": "CC_AMT_RECEIVABLE_PRINCIPAL_MAX_INCOME_RATIO"}, {"type": "float",
+    "name": "AMT_APPLICATION_TO_SELLERPLACE_AREA_MAX_LAST_5"}, {"type": "float", "name":
+    "AMT_INTEREST_RECEIVABLE_MEAN_ACTIVE"}, {"type": "float", "name": "INTEREST_CREDIT_PRIVILEGED_SUM_LAST_5"},
+    {"type": "float", "name": "BUREAU_AMT_CREDIT_SUM_OVERDUE_SUM_CREDITACTIVE_ACTIVE_INCOME_RATIO"},
+    {"type": "float", "name": "AMT_PAYMENT_DIFF_MEAN_MIN"}, {"type": "float", "name":
+    "WEIGHTED_STATUS_FIRST_MEAN_OVERALL"}, {"type": "float", "name": "MONTHS_BALANCE_MAX_MEAN_OVERALL"},
+    {"type": "float", "name": "DAYS_CREDIT_MEAN_OVERALL"}, {"type": "float", "name":
+    "PRODUCT_COMBINATION_LAST_FIRST_2"}, {"type": "float", "name": "EXP_ENCODED_STATUS_LAST_MEAN_OVERALL"},
+    {"type": "float", "name": "AMT_INCOME_TOTAL_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "BALANCE_LIMIT_RATIO_MAX_YEAR_REST"}, {"type": "float",
+    "name": "AMT_ANNUITY_CREDIT_RATIO_MEAN_CREDITACTIVE_ACTIVE"}, {"type": "float",
+    "name": "AMT_CREDIT_HOUR_PROCESS_START_MEAN_ALL"}, {"type": "float", "name": "APPLICATION_AMT_TO_DECISION_RATIO_MEAN_LAST_5"},
+    {"type": "float", "name": "SK_DPD_DEF_MAX_YEAR_1"}, {"type": "float", "name":
+    "EXP_PAYMENT_MIN_DIFF_LAST_YEAR_REST"}, {"type": "float", "name": "INTEREST_RATE_MIN_FIRST_2"},
+    {"type": "float", "name": "EXT_SOURCE_1_MAX_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "STATUS_FIRST_YEAR_REST_MEAN_OVERALL"}, {"type": "float",
+    "name": "EXP_MIN_PAYMENT_RATIO_LAST_ACTIVE"}, {"type": "float", "name": "SK_DPD_DEF_SUM_YEAR_REST_MEAN"},
+    {"type": "float", "name": "EXP_POS_TOTAL_TERM_LAST_ACTIVE_MEAN"}, {"type": "float",
+    "name": "EXT_SOURCE_2_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type": "float",
+    "name": "CC_AMT_RECIVABLE_MEAN_INCOME_RATIO"}, {"type": "float", "name": "STATUS_FIRST_YEAR_0_MEAN_OVERALL"},
+    {"type": "float", "name": "EXP_AMT_INTEREST_RECEIVABLE_LAST_YEAR_REST"}, {"type":
+    "float", "name": "BUREAU_AMT_ANNUITY_MEAN_OVERALL_INCOME_RATIO"}, {"type": "float",
+    "name": "AMT_PAYMENT_SUM_MAX"}, {"type": "float", "name": "WEIGHTED_STATUS_SUM_MEAN_OVERALL"},
+    {"type": "float", "name": "SK_DPD_MAX_YEAR_REST_MEAN"}, {"type": "float", "name":
+    "INSTALLMENTS_AMT_PAYMENT_SUM_FIRST_5_INSTALLMENTS_INCOME_RATIO"}, {"type": "float",
+    "name": "AMT_CREDIT_GOODS_DIFF_SUM_ALL"}, {"type": "float", "name": "EXT_SOURCE_3_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "CAR_EMPLOYED_DIFF"}, {"type": "float", "name": "SELLERPLACE_AREA_MEAN_LAST_5"},
+    {"type": "float", "name": "AMT_INCOME_TOTAL_MAX_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_PAYMENT_MEAN_FIRST_5_INSTALLMENTS"}, {"type": "float",
+    "name": "CNT_DRAWING_SUM_MAX_YEAR_1"}, {"type": "float", "name": "EXP_CNT_INSTALMENT_LAST_ACTIVE_MEAN"},
+    {"type": "float", "name": "ANNUITY_GOODS_SUM_FIRST_2"}, {"type": "float", "name":
+    "MIN_PAYMENT_TOTAL_RATIO_MIN_YEAR_1"}, {"type": "float", "name": "ANNUITY_INCOME_RATIO_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "MIN_PAYMENT_RATIO_MEAN_YEAR_REST"}, {"type": "float",
+    "name": "AMT_APPLICATION_MAX_FIRST_2"}, {"type": "float", "name": "AMT_INTEREST_RECEIVABLE_MEAN_YEAR_1"},
+    {"type": "float", "name": "APARTMENTS_SUM_AVG_MAX_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "DAYS_FIRST_DUE_MEAN_LAST_5"}, {"type": "float", "name":
+    "AGE_EMPLOYED_DIFF_MIN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"}, {"type":
+    "float", "name": "EXT_SOURCE_3_MAX_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "EXP_CNT_INSTALMENT_FUTURE_LAST_YEAR_1_MEAN"}, {"type":
+    "float", "name": "WEEKDAY_APPR_PROCESS_START_MEAN_ALL"}, {"type": "float", "name":
+    "AMT_DOWN_PAYMENT_SUM_LAST_5"}, {"type": "float", "name": "CNT_PROLONGED_MAX_OVERDUE_MUL_MEAN_OVERALL"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_ACTIVE_SUM"}, {"type": "float",
+    "name": "INSTALLMENTS_AMT_PAYMENT_SUM_LAST_1_YEAR_INCOME_RATIO"}, {"type": "float",
+    "name": "AMT_INSTALMENT_SUM_MEAN"}, {"type": "float", "name": "DAYS_TERMINATION_MEAN_LAST_5"},
+    {"type": "float", "name": "EXP_WEIGHTED_STATUS_LAST_YEAR_0_MEAN_OVERALL"}, {"type":
+    "float", "name": "AMT_INTEREST_SUM_LAST_5"}, {"type": "float", "name": "PAYMENT_MIN_DIFF_MEAN_YEAR_REST"},
+    {"type": "float", "name": "AMT_ANNUITY_CREDIT_RATIO_MAX_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "CNT_INSTALMENT_MATURE_CUM_SUM"}, {"type": "float",
+    "name": "EXPECTED_CNT_PAYMENT"}, {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_MIN_LAST_5"},
+    {"type": "float", "name": "AMT_CREDIT_YIELD_GROUP_SUM_LAST_5"}, {"type": "float",
+    "name": "CNT_INSTALMENT_MEAN_YEAR_0_SUM"}, {"type": "float", "name": "APARTMENTS_SUM_AVG_MEAN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "PREV_AMT_ANNUITY_MAX_LAST_5_INCOME_RATIO"}, {"type":
+    "float", "name": "HOUR_PROCESS_CREDIT_MUL"}, {"type": "float", "name": "AMT_DECLINED_SUM_ALL"},
+    {"type": "float", "name": "AMT_PAYMENT_RATIO_MEAN_MEAN"}, {"type": "float", "name":
+    "INTEREST_RATE_MAX_ALL"}, {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MIN_FIRST_2"},
+    {"type": "float", "name": "EXP_WEIGHTED_STATUS_LAST_YEAR_1_MEAN_OVERALL"}, {"type":
+    "float", "name": "WEEKDAY_APPR_PROCESS_START_MEAN_LAST_5"}, {"type": "float",
+    "name": "EXP_BALANCE_LIMIT_RATIO_LAST_YEAR_REST"}, {"type": "float", "name": "CNT_INSTALMENT_MIN_ACTIVE_MEAN"},
+    {"type": "float", "name": "BALANCE_LIMIT_RATIO_MEAN_YEAR_1"}, {"type": "float",
+    "name": "APARTMENTS_SUM_MEDI_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "ANNUITY_MEAN_FIRST_2"}, {"type": "float", "name": "SK_DPD_DEF_MAX_YEAR_1_MEAN"},
+    {"type": "float", "name": "SK_DPD_SUM_YEAR_1_MEAN"}, {"type": "float", "name":
+    "HOUR_APPR_PROCESS_START_MAX_ALL"}, {"type": "float", "name": "AMT_APPLICATION_TO_SELLERPLACE_AREA_MAX_FIRST_2"},
+    {"type": "float", "name": "TOTAL_TERM_MEAN_YEAR_0_SUM"}, {"type": "float", "name":
+    "AMT_APPLICATION_SUM_LAST_5"}, {"type": "float", "name": "SK_DPD_MAX_YEAR_1_MEAN"},
+    {"type": "float", "name": "APARTMENTS_SUM_AVG_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MIN_MIN"}, {"type": "float", "name":
+    "SK_DPD_SUM_MEAN"}, {"type": "float", "name": "SK_DPD_DEF_MAX_MEAN"}, {"type":
+    "float", "name": "AMT_PAYMENT_MAX_FIRST_5_INSTALLMENTS"}, {"type": "float", "name":
+    "SELLERPLACE_AREA_MAX_FIRST_2"}, {"type": "float", "name": "NAME_CONTRACT_STATUS_MEAN_ALL"},
+    {"type": "float", "name": "MIN_PAYMENT_TOTAL_RATIO_MIN"}, {"type": "float", "name":
+    "AMT_DOWN_PAYMENT_MEAN_LAST_5"}, {"type": "float", "name": "SK_DPD_DEF_SUM_YEAR_REST"},
+    {"type": "float", "name": "CONTRACT_ACTIVE_MEAN"}, {"type": "float", "name": "AMT_PAYMENT_SUM_LAST_1_YEAR"},
+    {"type": "integer", "name": "SUM_FLAGS_DOCUMENTS"}, {"type": "float", "name":
+    "AMT_ANNUITY_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"}, {"type":
+    "float", "name": "CAR_AGE_DIFF"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_YEAR_REST_MEAN"},
+    {"type": "float", "name": "AMT_ANNUITY_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "BUREAU_AMT_CREDIT_MAX_OVERDUE_MEAN_OVERALL_INCOME_RATIO"},
+    {"type": "float", "name": "CREDIT_TYPE_Credit card_MEAN_OVERALL"}, {"type": "float",
+    "name": "AMT_PAYMENT_DIFF_MAX_LAST_1_YEAR"}, {"type": "float", "name": "AMT_REQ_CREDIT_BUREAU_MON"},
+    {"type": "float", "name": "CHILDREN_INCOME_RATIO"}, {"type": "float", "name":
+    "AMT_ANNUITY_CREDIT_RATIO_MIN_CREDITACTIVE_ACTIVE"}, {"type": "float", "name":
+    "SELLERPLACE_AREA_MIN_ALL"}, {"type": "float", "name": "EXT_SOURCE_MEAN_MAX_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "AMT_GOODS_PRICE_MAX_ALL"}, {"type": "float", "name":
+    "EXP_SK_DPD_RATIO_LAST_YEAR_1"}, {"type": "float", "name": "AMT_CREDIT_APPLICATION_RATIO_MEAN_LAST_5"},
+    {"type": "float", "name": "AMT_ANNUITY_SUM_FIRST_2"}, {"type": "float", "name":
+    "EXP_AMT_PAYMENT_DIFF_LAST_LAST_1_YEAR"}, {"type": "float", "name": "INSTALLMENTS_AMT_PAYMENT_MEAN_LAST_1_YEAR_INCOME_RATIO"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_ACTIVE_MEAN"}, {"type":
+    "float", "name": "LIVINGAREA_MODE"}, {"type": "float", "name": "CREDIT_ACTIVE_Closed_MEAN_OVERALL"},
+    {"type": "float", "name": "INTEREST_DOWNPAYMENT_SUM_FIRST_2"}, {"type": "float",
+    "name": "DAYS_FIRST_DRAWING_MEAN_ALL"}, {"type": "float", "name": "AMT_CREDIT_NFLAG_LAST_APPL_DAY_MAX_ALL"},
+    {"type": "float", "name": "PAYMENT_MIN_DIFF_MIN_YEAR_REST"}, {"type": "float",
+    "name": "TOTAL_TERM_MEAN_ACTIVE_MAX"}, {"type": "float", "name": "CREDIT_GOODS_DIFF"},
+    {"type": "float", "name": "DAYS_FIRST_LAST_DUE_DIFF_MAX_FIRST_2"}, {"type": "float",
+    "name": "STATUS_MEAN_MEAN_CREDITACTIVE_ACTIVE"}, {"type": "float", "name": "AMT_INSTALMENT_MEAN_LAST_1_YEAR"},
+    {"type": "float", "name": "TOTAL_TERM_MEAN_YEAR_REST_SUM"}, {"type": "float",
+    "name": "CODE_REJECT_REASON_LAST_LAST_5"}, {"type": "float", "name": "EXT_SOURCE_2_MAX_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "CURRENT_CREDIT_DEBT_DIFF_MEAN_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "EXT_SOURCE_3_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "ORGANIZATION_TYPE_1"}, {"type": "float", "name": "AMT_PAYMENT_RATIO_MAX_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_YEAR_1_MAX"}, {"type": "float",
+    "name": "LIVINGAPARTMENTS_AVG"}, {"type": "float", "name": "EXP_CNT_INSTALMENT_LAST_YEAR_0_MEAN"},
+    {"type": "float", "name": "RATE_DOWN_PAYMENT_MAX_LAST_5"}, {"type": "float", "name":
+    "ANNUITY_GOODS_MAX_FIRST_2"}, {"type": "float", "name": "SK_DPD_DEF_MAX_YEAR_REST_MEAN"},
+    {"type": "float", "name": "INTEREST_CREDIT_PRIVILEGED_SUM_ALL"}, {"type": "float",
+    "name": "CNT_DRAWINGS_CURRENT_SUM"}, {"type": "float", "name": "NAME_EDUCATION_TYPE_0"},
+    {"type": "float", "name": "EXP_BALANCE_LIMIT_RATIO_LAST"}, {"type": "float", "name":
+    "APARTMENTS_AVG"}, {"type": "float", "name": "AMT_RECEIVABLE_PRINCIPAL_MAX"},
+    {"type": "float", "name": "SK_DPD_DEF_SUM_ACTIVE_MEAN"}, {"type": "float", "name":
+    "CNT_INSTALMENT_FUTURE_MIN_YEAR_1_MEAN"}, {"type": "integer", "name": "DAYS_ID_PUBLISH"},
+    {"type": "float", "name": "DAYS_CREDIT_MAX_CREDITACTIVE_CLOSED"}, {"type": "float",
+    "name": "AMT_INCOME_TOTAL_MEAN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "ORGANIZATION_TYPE_0"}, {"type": "float", "name": "BUREAU_DAYS_CREDIT_MEAN_CREDITACTIVE_CLOSED_REGISTRATION_DIFF"},
+    {"type": "float", "name": "REGION_RATING_MUL_1"}, {"type": "float", "name": "EXT_SOURCE_2_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "AMT_APPLICATION_MEAN_ALL"}, {"type": "float", "name":
+    "EXT_SOURCE_2"}, {"type": "float", "name": "AMT_PAYMENT_MAX_LAST_1_YEAR"}, {"type":
+    "float", "name": "MIN_PAYMENT_TOTAL_RATIO_MEAN_YEAR_REST"}, {"type": "float",
+    "name": "TARGET_NEIGHBORS_500_MEAN"}, {"type": "float", "name": "STATUS_LAST_YEAR_0_MEAN_OVERALL"},
+    {"type": "float", "name": "OBS_DEF_60_MUL"}, {"type": "float", "name": "FLOORSMIN_AVG"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MAX_FIRST_5_INSTALLMENTS"}, {"type":
+    "float", "name": "YEARS_BEGINEXPLUATATION_MEDI"}, {"type": "float", "name": "EXP_MIN_PAYMENT_RATIO_LAST_COMPLETED"},
+    {"type": "float", "name": "NONLIVINGAREA_AVG"}, {"type": "integer", "name": "FLAG_REGIONS"},
+    {"type": "float", "name": "CNT_DRAWING_SUM_MAX_ACTIVE"}, {"type": "float", "name":
+    "AGE_EMPLOYED_DIFF_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "NAME_TYPE_SUITE_MEAN_ALL"}, {"type": "float", "name":
+    "AMT_ANNUITY_MEAN_CREDITACTIVE_CLOSED"}, {"type": "float", "name": "SELLERPLACE_AREA_MAX_ALL"},
+    {"type": "float", "name": "AMT_CREDIT_YIELD_GROUP_MEAN_FIRST_2"}, {"type": "float",
+    "name": "CNT_DRAWING_SUM_SUM_YEAR_0"}, {"type": "float", "name": "PREV_AMT_ANNUITY_MAX_FIRST_2_INCOME_RATIO"},
+    {"type": "float", "name": "EXT_SOURCE_2_MEAN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "INTEREST_DOWNPAYMENT_MEAN_ALL"}, {"type": "float",
+    "name": "DAYS_FIRST_LAST_DUE_DIFF_MAX_ALL"}, {"type": "float", "name": "EXPECTED_INTEREST"},
+    {"type": "float", "name": "SK_DPD_RATIO_MEAN_YEAR_0_SUM"}, {"type": "float", "name":
+    "INTEREST_SHARE_MIN_ALL"}, {"type": "float", "name": "NAME_FAMILY_STATUS_1"},
+    {"type": "float", "name": "APARTMENTS_SUM_MODE"}, {"type": "float", "name": "AMT_PAYMENT_MAX_MEAN"},
+    {"type": "float", "name": "CNT_DRAWING_SUM_SUM_YEAR_1"}, {"type": "float", "name":
+    "INTEREST_SHARE_MEAN_FIRST_2"}, {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_MEAN_LAST_5"},
+    {"type": "float", "name": "EXP_CNT_INSTALMENT_FUTURE_LAST_MEAN"}, {"type": "float",
+    "name": "DAYS_LAST_DUE_MEAN_ALL"}, {"type": "float", "name": "DAYS_PAYMENT_RATIO_MIN_LAST_1_YEAR"},
+    {"type": "float", "name": "AMT_INTEREST_MEAN_LAST_5"}, {"type": "float", "name":
+    "NAME_CLIENT_TYPE_MEAN_ALL"}, {"type": "float", "name": "APPLICATION_AMT_TO_DECISION_RATIO_MIN_ALL"},
+    {"type": "float", "name": "APARTMENTS_SUM_MEDI_MEAN_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "EXP_POS_TOTAL_TERM_MEAN_MAX"}, {"type": "float", "name":
+    "AMT_RECEIVABLE_PRINCIPAL_MEAN"}, {"type": "float", "name": "EXP_POS_TOTAL_TERM_MEAN_SUM"},
+    {"type": "float", "name": "EXT_SOURCE_1_MIN_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "AMT_CREDIT_SUM_MAX_CREDITACTIVE_ACTIVE"}, {"type":
+    "float", "name": "AMT_ANNUITY_CREDIT_RATIO_MEAN_OVERALL"}, {"type": "float", "name":
+    "APARTMENTS_SUM_AVG_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type": "float",
+    "name": "AMT_APPLICATION_TO_SELLERPLACE_AREA_MEAN_LAST_5"}, {"type": "float",
+    "name": "MONTHS_BALANCE_MAX"}, {"type": "float", "name": "DAYS_DECISION_MAX_LAST_5"},
+    {"type": "float", "name": "NAME_CONTRACT_STATUS_MAX_LAST_5"}, {"type": "float",
+    "name": "EXP_BALANCE_LIMIT_RATIO_LAST_COMPLETED"}, {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MAX_LAST_5"},
+    {"type": "float", "name": "INTEREST_RATE_MEAN_ALL"}, {"type": "float", "name":
+    "ANNUITY_INCOME_RATIO_MAX_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "INSTALLMENTS_AMT_PAYMENT_SUM_MAX_INCOME_RATIO"}, {"type":
+    "float", "name": "AMT_ANNUITY_SUM_LAST_5"}, {"type": "float", "name": "AMT_ENQ_SUM"},
+    {"type": "float", "name": "EXP_AMT_RECIVABLE_LAST"}, {"type": "float", "name":
+    "AMT_CREDIT_SUM_LIMIT_SUM_CREDITACTIVE_CLOSED"}, {"type": "float", "name": "MISSING_VALUES_TOTAL_PREV_SUM_LAST_5"},
+    {"type": "float", "name": "EXT_SOURCE_1_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "WEIGHTED_STATUS_MEAN_MEAN_CREDITACTIVE_ACTIVE"}, {"type":
+    "float", "name": "CREDIT_DOWNPAYMENT_RATIO_MEAN_ALL"}, {"type": "float", "name":
+    "PREV_AMT_ANNUITY_MEAN_FIRST_2_INCOME_RATIO"}, {"type": "float", "name": "DAYS_PAYMENT_DIFF_MAX_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "AGE_EMPLOYED_DIFF_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MEAN_OVERALL_EMPLOYED_DIFF"}, {"type":
+    "float", "name": "DEF_30_CNT_SOCIAL_CIRCLE"}, {"type": "float", "name": "AMT_PAYMENT_RATIO_MEAN_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "CONTRACT_SIGNED_MEAN"}, {"type": "float", "name": "EXT_SOURCE_3_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_PAYMENT_RATIO_MAX_MEAN"}, {"type": "float", "name":
+    "EXP_AMT_PAYMENT_RATIO_LAST_LAST_1_YEAR"}, {"type": "float", "name": "NAME_GOODS_CATEGORY_MEAN_LAST_5"},
+    {"type": "float", "name": "WEEKDAY_APPR_PROCESS_START_0"}, {"type": "float", "name":
+    "AMT_DOWN_PAYMENT_MAX_ALL"}, {"type": "float", "name": "DAYS_FIRST_DUE_MAX_LAST_5"},
+    {"type": "float", "name": "ANNUITY_MAX_LAST_5"}, {"type": "float", "name": "AMT_PAYMENT_RATIO_MAX_LAST_1_YEAR"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MIN_CREDITACTIVE_CLOSED_EMPLOYED_DIFF"},
+    {"type": "float", "name": "INTEREST_RATE_MEAN_FIRST_2"}, {"type": "float", "name":
+    "TOTAL_TERM_MAX_YEAR_0_MEAN"}, {"type": "float", "name": "AMT_ANNUITY_MAX_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "AMT_ANNUITY_SUM_ALL"}, {"type": "float", "name": "DAYS_DECISION_MAX_ALL"},
+    {"type": "float", "name": "GOOD_DOWNPAYMET_RATIO_MEAN_ALL"}, {"type": "float",
+    "name": "SELLERPLACE_AREA_MEAN_FIRST_2"}, {"type": "float", "name": "FLAG_LAST_APPL_PER_CONTRACT_SUM_ALL"},
+    {"type": "float", "name": "BUREAU_AMT_CREDIT_SUM_OVERDUE_MAX_CREDITACTIVE_ACTIVE_INCOME_RATIO"},
+    {"type": "float", "name": "APARTMENTS_MEDI"}, {"type": "float", "name": "DEF_60_CNT_SOCIAL_CIRCLE"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MAX_ALL"}, {"type": "float",
+    "name": "CNT_INSTALMENT_MEAN_COMPLETED_MAX"}, {"type": "float", "name": "AMT_ANNUITY_MAX_FIRST_2"},
+    {"type": "float", "name": "NAME_CASH_LOAN_PURPOSE_LAST_LAST_5"}, {"type": "float",
+    "name": "AMT_APPLICATION_SUM_ALL"}, {"type": "float", "name": "INTEREST_CREDIT_SUM_ALL"},
+    {"type": "float", "name": "EXT_SOURCE_3_MAX_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "EXP_CNT_DRAWING_SUM_LAST_YEAR_1"}, {"type": "float",
+    "name": "AMT_ANNUITY_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_PAYMENT_RATIO_MIN_MEAN"}, {"type": "float", "name":
+    "AMT_ANNUITY_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"}, {"type":
+    "float", "name": "EXP_CNT_INSTALMENT_LAST_COMPLETED_MEAN"}, {"type": "float",
+    "name": "EXP_DAYS_PAYMENT_RATIO_LAST_LAST_1_YEAR"}, {"type": "float", "name":
+    "CHANNEL_TYPE_MEAN_FIRST_2"}, {"type": "float", "name": "NAME_GOODS_CATEGORY_MEAN_FIRST_2"},
+    {"type": "float", "name": "AMT_PAYMENT_MEAN_LAST_1_YEAR"}, {"type": "float", "name":
+    "AMT_DECLINED_MAX_ALL"}, {"type": "float", "name": "EXT_SOURCE_1_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "STATUS_MAX_YEAR_REST_MEAN_OVERALL"}, {"type": "float",
+    "name": "CNT_PAYMENT_MAX_LAST_5"}, {"type": "float", "name": "CNT_INSTALMENT_MIN_YEAR_1_MEAN"},
+    {"type": "float", "name": "TOTAL_TERM_MAX_YEAR_1_MEAN"}, {"type": "float", "name":
+    "MISSING_VALUES_TOTAL_PREV_SUM_ALL"}, {"type": "float", "name": "EXT_SOURCE_3_MAX_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "WEIGHTED_STATUS_MEAN_MEAN_OVERALL"}, {"type": "float",
+    "name": "BALANCE_LIMIT_RATIO_MAX_YEAR_1"}, {"type": "float", "name": "WEEKDAY_APPR_PROCESS_START_MAX_ALL"},
+    {"type": "float", "name": "AMT_CREDIT_MAX_OVERDUE_MAX_CREDITACTIVE_ACTIVE"}, {"type":
+    "float", "name": "AMT_INTEREST_MIN_FIRST_2"}, {"type": "float", "name": "PREV_AMT_GOODS_PRICE_SUM_FIRST_2_INCOME_RATIO"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MIN_YEAR_REST_MEAN"}, {"type":
+    "float", "name": "DAYS_PAYMENT_DIFF_MEAN_LAST_1_YEAR"}, {"type": "float", "name":
+    "NUM_INSTALMENT_VERSION_SUM_LAST_1_YEAR"}, {"type": "float", "name": "EXP_CNT_DRAWING_SUM_LAST_YEAR_REST"},
+    {"type": "float", "name": "CREDIT_ANNUITY_RATIO"}, {"type": "float", "name": "AMT_PAYMENT_CURRENT_MIN"},
+    {"type": "float", "name": "AMT_GOODS_PRICE_MEAN_FIRST_2"}, {"type": "float", "name":
+    "EXT_SOURCE_MIN"}, {"type": "float", "name": "AMT_ANNUITY_CREDIT_RATIO_MAX_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "SK_DPD_DEF_SUM_MEAN"}, {"type": "float", "name": "AMT_INSTALMENT_SUM_MAX"},
+    {"type": "float", "name": "APARTMENTS_SUM_AVG_MIN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "WEEKDAY_APPR_PROCESS_START_MAX_FIRST_2"}, {"type":
+    "float", "name": "DAYS_FIRST_DRAWING_MEAN_LAST_5"}, {"type": "float", "name":
+    "APARTMENTS_SUM_AVG_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MIN_CREDITACTIVE_ACTIVE_EMPLOYED_DIFF"},
+    {"type": "float", "name": "SK_DPD_RATIO_MEAN_YEAR_1_MEAN"}, {"type": "float",
+    "name": "CNT_PAYMENT_MEAN_ALL"}, {"type": "float", "name": "EXP_PAYMENT_MIN_DIFF_LAST_COMPLETED"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_ACTIVE_MAX"}, {"type": "float",
+    "name": "SK_DPD_DEF_MAX_YEAR_0_MEAN"}, {"type": "float", "name": "EXP_DAYS_PAYMENT_DIFF_LAST_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_COMPLETED_MEAN"}, {"type": "float",
+    "name": "APPLICATION_AMT_TO_DECISION_RATIO_MEAN_ALL"}, {"type": "float", "name":
+    "EXP_MIN_PAYMENT_RATIO_LAST"}, {"type": "float", "name": "AMT_INTEREST_SUM_ALL"},
+    {"type": "float", "name": "EXP_SK_DPD_RATIO_LAST"}, {"type": "float", "name":
+    "CNT_FAM_MEMBERS"}, {"type": "float", "name": "EXT_SOURCE_2_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "integer", "name": "MISSING_VALS_TOTAL_APP"}, {"type": "float", "name":
+    "MIN_PAYMENT_TOTAL_RATIO_MIN_YEAR_0"}, {"type": "float", "name": "HOUR_APPR_PROCESS_START_MEAN_ALL"},
+    {"type": "float", "name": "AMT_PAYMENT_TOTAL_CURRENT_MEAN"}, {"type": "float",
+    "name": "AMT_INTEREST_RECEIVABLE_MIN_REST"}, {"type": "float", "name": "YEARS_BEGINEXPLUATATION_AVG"},
+    {"type": "float", "name": "EXP_AMT_INTEREST_RECEIVABLE_LAST"}, {"type": "float",
+    "name": "DAYS_DETAILS_CHANGE_MUL"}, {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MAX_FIRST_2"},
+    {"type": "float", "name": "NAME_PRODUCT_TYPE_MEAN_LAST_5"}, {"type": "float",
+    "name": "NAME_YIELD_GROUP_LAST_FIRST_2"}, {"type": "float", "name": "INTEREST_SHARE_MEAN_ALL"},
+    {"type": "float", "name": "APARTMENTS_SUM_MEDI_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "RATE_DOWN_PAYMENT_MEAN_LAST_5"}, {"type": "float",
+    "name": "EXT_SOURCE_3_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type": "float",
+    "name": "EXT_SOURCE_1_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "WEIGHTED_EXT_SOURCE"}, {"type": "float", "name": "ANNUITY_GOODS_MAX_ALL"},
+    {"type": "float", "name": "BUREAU_AMT_CREDIT_MAX_OVERDUE_MAXCREDIT_ACTIVE_REST_INCOME_RATIO"},
+    {"type": "float", "name": "STATUS_LAST_YEAR_1_MEAN_OVERALL"}, {"type": "float",
+    "name": "NAME_TYPE_SUITE_LAST_FIRST_2"}, {"type": "float", "name": "SELLERPLACE_AREA_MAX_LAST_5"},
+    {"type": "float", "name": "LIVINGAREA_AVG"}, {"type": "float", "name": "BALANCE_LIMIT_RATIO_MEAN_YEAR_0"},
+    {"type": "float", "name": "AMT_APPLICATION_TO_SELLERPLACE_AREA_MAX_ALL"}, {"type":
+    "float", "name": "NAME_SELLER_INDUSTRY_MEAN_ALL"}, {"type": "float", "name": "AMT_ANNUITY_MAX_ALL"},
+    {"type": "float", "name": "NUM_INSTALMENT_VERSION_MEAN_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "AMT_INSTALMENT_SUM_LAST_1_YEAR"}, {"type": "float",
+    "name": "CURRENCY_currency 3_MEAN_OVERALL"}, {"type": "float", "name": "EXP_MIN_PAYMENT_TOTAL_RATIO_LAST_YEAR_1"},
+    {"type": "float", "name": "HOUR_APPR_PROCESS_START_MAX_LAST_5"}, {"type": "float",
+    "name": "AMT_INSTALMENT_MAX_LAST_1_YEAR"}, {"type": "float", "name": "PRODUCT_COMBINATION_LAST_LAST_5"},
+    {"type": "float", "name": "MIN_PAYMENT_RATIO_MIN_YEAR_REST"}, {"type": "float",
+    "name": "ANNUITY_GOODS_SUM_LAST_5"}, {"type": "float", "name": "WEIGHTED_STATUS_MEAN_MEANCREDIT_ACTIVE_REST"},
+    {"type": "float", "name": "APARTMENTS_SUM_AVG"}, {"type": "float", "name": "EXT_SOURCE_MEAN_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "AMT_DECLINED_SUM_FIRST_2"}, {"type": "float", "name":
+    "TOTAL_TERM_MEAN_YEAR_1_MAX"}, {"type": "float", "name": "CNT_INSTALMENT_MIN_MEAN"},
+    {"type": "float", "name": "EXP_AMT_DRAWING_SUM_LAST_YEAR_REST"}, {"type": "float",
+    "name": "EXP_DAYS_PAYMENT_DIFF_LAST_MEAN"}, {"type": "float", "name": "BASEMENTAREA_MEDI"},
+    {"type": "float", "name": "INSTALLMENTS_AMT_PAYMENT_MEAN_FIRST_5_INSTALLMENTS_INCOME_RATIO"},
+    {"type": "float", "name": "AMT_CREDIT_LIMIT_ACTUAL_MEAN"}, {"type": "float", "name":
+    "STATUS_MAX_YEAR_0_MEAN_OVERALL"}, {"type": "float", "name": "AMT_CREDIT_SUM_LAST_5"},
+    {"type": "float", "name": "MONTHS_BALANCE_MAX_MEAN"}, {"type": "float", "name":
+    "DAYS_PAYMENT_DIFF_MIN_LAST_1_YEAR"}, {"type": "float", "name": "SK_DPD_DEF_SUM_YEAR_0_MEAN"},
+    {"type": "float", "name": "CNT_DRAWING_SUM_SUM_COMPLETED"}, {"type": "float",
+    "name": "AMT_INTEREST_MAX_FIRST_2"}, {"type": "float", "name": "FLOORSMAX_MEDI"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MAX_YEAR_0_MEAN"}, {"type": "float",
+    "name": "NAME_PORTFOLIO_MEAN_FIRST_2"}, {"type": "float", "name": "APARTMENTS_SUM_MEDI_MAX_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MIN_ACTIVE_MEAN"}, {"type": "float",
+    "name": "NAME_YIELD_GROUP_MEAN_LAST_5"}, {"type": "float", "name": "CODE_REJECT_REASON_LAST_FIRST_2"},
+    {"type": "float", "name": "CURRENT_CREDIT_DEBT_DIFF_MEAN_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "AMT_CREDIT_MAX_ALL"}, {"type": "integer", "name": "FLAG_WORK_PHONE"},
+    {"type": "float", "name": "CC_AMT_RECEIVABLE_PRINCIPAL_SUM_INCOME_RATIO"}, {"type":
+    "float", "name": "FLAG_LAST_APPL_PER_CONTRACT_MEAN_ALL"}, {"type": "float", "name":
+    "STATUS_MEAN_MAXCREDIT_ACTIVE_REST"}, {"type": "float", "name": "CONTRACT_RETURNED
+    TO THE STORE_MEAN"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_YEAR_1_SUM"},
+    {"type": "float", "name": "STATUS_MEAN_MEAN_OVERALL"}, {"type": "float", "name":
+    "DAYS_FIRST_LAST_DUE_DIFF_MAX_LAST_5"}, {"type": "integer", "name": "FLAG_DOCUMENT_3"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MEAN_FIRST_5_INSTALLMENTS"}, {"type":
+    "float", "name": "NUM_INSTALMENT_VERSION_MEAN_LAST_1_YEAR"}, {"type": "float",
+    "name": "AMT_CREDIT_SUM_SUM_CREDITACTIVE_CLOSED"}, {"type": "float", "name": "AMT_CREDIT_APPLICATION_RATIO_MEAN_FIRST_2"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_YEAR_0_MAX"}, {"type": "float",
+    "name": "CHANNEL_TYPE_MEAN_LAST_5"}, {"type": "float", "name": "AMT_CREDIT_YIELD_GROUP_MIN_ALL"},
+    {"type": "float", "name": "AMT_CREDIT_APPLICATION_RATIO_MEAN_ALL"}, {"type": "float",
+    "name": "INTEREST_RATE_MIN_ALL"}, {"type": "float", "name": "EXT_SOURCE_1_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_PAYMENT_DIFF_MAX_FIRST_5_INSTALLMENTS"}, {"type":
+    "float", "name": "DEF_30_60_SUM"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_YEAR_1_MAX"},
+    {"type": "float", "name": "WEEKDAY_APPR_PROCESS_START_MAX_LAST_5"}, {"type": "float",
+    "name": "SK_DPD_RATIO_MEAN_ACTIVE_SUM"}, {"type": "float", "name": "TOTALAREA_MODE"},
+    {"type": "float", "name": "CODE_REJECT_REASON_MEAN_LAST_5"}, {"type": "float",
+    "name": "NAME_TYPE_SUITE_1"}, {"type": "float", "name": "AMT_INTEREST_MAX_LAST_5"},
+    {"type": "float", "name": "AMT_PAYMENT_DIFF_MIN_MEAN"}, {"type": "float", "name":
+    "DAYS_LAST_DUE_1ST_VERSION_MEAN_FIRST_2"}, {"type": "float", "name": "EXT_SOURCE_2_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "ELEVATORS_AVG"}, {"type": "float", "name": "FLAG_OVERDUE_RECENT_MEAN_OVERALL"},
+    {"type": "float", "name": "CURRENT_CREDIT_DEBT_DIFF_MINCREDIT_ACTIVE_REST"}, {"type":
+    "float", "name": "INSTALLMENTS_AMT_PAYMENT_MEAN_MEAN_INCOME_RATIO"}, {"type":
+    "float", "name": "INTEREST_SHARE_MIN_LAST_5"}, {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_MIN_ALL"},
+    {"type": "float", "name": "NAME_PRODUCT_TYPE_LAST_LAST_5"}, {"type": "float",
+    "name": "AMT_GOODS_PRICE_MAX_LAST_5"}, {"type": "float", "name": "MIN_PAYMENT_TOTAL_RATIO_MEAN"},
+    {"type": "float", "name": "BALANCE_LIMIT_RATIO_MEAN_REST"}, {"type": "float",
+    "name": "EXP_POS_TOTAL_TERM_LAST_COMPLETED_MEAN"}, {"type": "float", "name": "WEIGHTED_STATUS_MEAN_MEAN_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "INTEREST_DOWNPAYMENT_SUM_ALL"}, {"type": "float", "name":
+    "EXP_ENCODED_STATUS_LAST_YEAR_REST_MEAN_OVERALL"}, {"type": "float", "name": "AMT_CREDIT_MAX_OVERDUE_SUMCREDIT_ACTIVE_REST"},
+    {"type": "float", "name": "YEARS_BUILD_MODE"}, {"type": "float", "name": "EXP_CNT_INSTALMENT_FUTURE_LAST_YEAR_REST_MEAN"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MEAN_FIRST_2"}, {"type": "float",
+    "name": "NAME_SELLER_INDUSTRY_MEAN_LAST_5"}, {"type": "float", "name": "AMT_GOODS_PRICE_MEAN_ALL"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MEAN_CREDITACTIVE_CLOSED_EMPLOYED_DIFF"},
+    {"type": "float", "name": "BUREAU_AMT_CREDIT_MAX_OVERDUE_MAX_CREDITACTIVE_ACTIVE_INCOME_RATIO"},
+    {"type": "float", "name": "APARTMENTS_SUM_AVG_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "CURRENT_DEBT_TO_CREDIT_RATIO_MIN_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "NONLIVINGAPARTMENTS_AVG"}, {"type": "float", "name":
+    "REGION_POPULATION_RELATIVE"}, {"type": "float", "name": "CNT_INSTALMENT_MEAN_SUM"},
+    {"type": "float", "name": "NAME_CONTRACT_STATUS_MEAN_LAST_5"}, {"type": "float",
+    "name": "MIN_PAYMENT_RATIO_MEAN_ACTIVE"}, {"type": "float", "name": "EXP_CNT_INSTALMENT_FUTURE_LAST_COMPLETED_MEAN"},
+    {"type": "float", "name": "EXT_SOURCE_1_MIN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "DAYS_DECISION_MIN_FIRST_2"}, {"type": "float", "name":
+    "AMT_ANNUITY_MEAN_LAST_5"}, {"type": "float", "name": "AMT_PAYMENT_SUM_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "EXP_AMT_PAYMENT_DIFF_LAST_MEAN"}, {"type": "float",
+    "name": "STATUS_MAX_MEAN_OVERALL"}, {"type": "float", "name": "PAYMENT_MIN_DIFF_MEAN_YEAR_1"},
+    {"type": "float", "name": "DAYS_LAST_DUE_MEAN_LAST_5"}, {"type": "float", "name":
+    "AMT_BALANCE_MEAN"}, {"type": "float", "name": "INSTALLMENTS_AMT_PAYMENT_MAX_MEAN_INCOME_RATIO"},
+    {"type": "float", "name": "LIVINGAPARTMENTS_MODE"}, {"type": "float", "name":
+    "DAYS_PAYMENT_DIFF_MEAN_MAX"}, {"type": "float", "name": "AMT_CREDIT_SUM_ALL"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_MAX"}, {"type": "float", "name":
+    "AMT_ANNUITY_MAX_CREDITACTIVE_ACTIVE"}, {"type": "float", "name": "MISSING_VALS_TOTAL_CC_SUM"},
+    {"type": "float", "name": "APARTMENTS_SUM_AVG_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "DAYS_PAYMENT_DIFF_MIN_FIRST_5_INSTALLMENTS"}, {"type":
+    "float", "name": "DAYS_FIRST_DUE_MAX_FIRST_2"}, {"type": "float", "name": "INSTALLMENTS_AMT_PAYMENT_SUM_MEAN_INCOME_RATIO"},
+    {"type": "float", "name": "CAR_AGE_RATIO"}, {"type": "float", "name": "AMT_DECLINED_MEAN_ALL"},
+    {"type": "float", "name": "AMT_INCOME_TOTAL_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MAX_MEAN"}, {"type": "float", "name":
+    "EXT_SOURCE_2_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type": "float", "name":
+    "CNT_INSTALMENT_FUTURE_MEAN_YEAR_REST_SUM"}, {"type": "float", "name": "AMT_ANNUITY_MEAN_OVERALL"},
+    {"type": "float", "name": "STATUS_MAX_YEAR_1_MEAN_OVERALL"}, {"type": "float",
+    "name": "AMT_ANNUITY_MEAN_FIRST_2"}, {"type": "float", "name": "YEARS_BEGINEXPLUATATION_MODE"},
+    {"type": "float", "name": "DAYS_PAYMENT_DIFF_MAX_MEAN"}, {"type": "float", "name":
+    "AMT_GOODS_PRICE_MAX_FIRST_2"}, {"type": "float", "name": "DAYS_FIRST_LAST_DUE_DIFF_MEAN_FIRST_2"},
+    {"type": "float", "name": "AMT_ANNUITY_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "GOOD_DOWNPAYMET_RATIO_MAX_LAST_5"}, {"type": "float",
+    "name": "EXP_PAYMENT_MIN_DIFF_LAST_ACTIVE"}, {"type": "float", "name": "NONLIVINGAPARTMENTS_MODE"},
+    {"type": "float", "name": "INTEREST_DOWNPAYMENT_MEAN_LAST_5"}, {"type": "float",
+    "name": "AMT_CREDIT_SUM_MEAN_OVERALL"}, {"type": "float", "name": "ANNUITY_INCOME_RATIO_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_ANNUITY_CREDIT_RATIO_MEAN_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "AMT_CREDIT_MAX_OVERDUE_SUM_CREDITACTIVE_CLOSED"}, {"type":
+    "float", "name": "INCOME_APARTMENT_MODE_MUL"}, {"type": "float", "name": "AMT_DRAWINGS_ATM_CURRENT_MAX"},
+    {"type": "float", "name": "ANNUITY_INCOME_RATIO_MAX_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "SUM_OBS_DEF_ALL"}, {"type": "float", "name": "ANNUITY_INCOME_RATIO_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "CREDIT_TYPE_Mortgage_MEAN_OVERALL"}, {"type": "float",
+    "name": "CC_EXP_AMT_RECEIVABLE_PRINCIPAL_LAST_INCOME_RATIO"}, {"type": "float",
+    "name": "LANDAREA_AVG"}, {"type": "float", "name": "AMT_CREDIT_HOUR_PROCESS_START_SUM_ALL"},
+    {"type": "float", "name": "AMT_CREDIT_SUM_OVERDUE_MEAN_OVERALL"}, {"type": "float",
+    "name": "CURRENT_DEBT_TO_CREDIT_RATIO_MEAN_OVERALL"}, {"type": "float", "name":
+    "AMT_CREDIT_MAX_FIRST_2"}, {"type": "float", "name": "NAME_YIELD_GROUP_MEAN_ALL"},
+    {"type": "float", "name": "DAYS_REGISTRATION"}, {"type": "float", "name": "NONLIVINGAPARTMENTS_MEDI"},
+    {"type": "float", "name": "AMT_ANNUITY_MAX_CREDITACTIVE_CLOSED"}, {"type": "float",
+    "name": "AMT_CREDIT_GOODS_DIFF_MIN_FIRST_2"}, {"type": "float", "name": "MISSING_VALS_TOTAL_INSTAL_SUM_SUM"},
+    {"type": "float", "name": "ANNUITY_SUM_LAST_5"}, {"type": "float", "name": "CNT_DRAWINGS_ATM_CURRENT_SUM"},
+    {"type": "float", "name": "AMT_DOWN_PAYMENT_MEAN_ALL"}, {"type": "float", "name":
+    "MISSING_VALUES_TOTAL_PREV_SUM_FIRST_2"}, {"type": "float", "name": "PAYMENT_MIN_DIFF_MEAN"},
+    {"type": "float", "name": "MIN_PAYMENT_RATIO_MEAN_YEAR_1"}, {"type": "float",
+    "name": "AMT_CREDIT_SUM_LIMIT_SUM_CREDITACTIVE_ACTIVE"}, {"type": "float", "name":
+    "INSTALLMENTS_AMT_PAYMENT_MEAN_SUM_INCOME_RATIO"}, {"type": "float", "name": "SK_DPD_SUM_YEAR_0_MEAN"},
+    {"type": "float", "name": "CC_AMT_TOTAL_RECEIVABLE_MAX_INCOME_RATIO"}, {"type":
+    "float", "name": "INTEREST_RATE_MAX_FIRST_2"}, {"type": "float", "name": "EXT_SOURCE_MEAN_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_ANNUITY"}, {"type": "float", "name": "AMT_PAYMENT_DIFF_MIN_LAST_1_YEAR"},
+    {"type": "float", "name": "WEIGHTED_STATUS_MAX_YEAR_1_MEAN_OVERALL"}, {"type":
+    "float", "name": "AMT_CREDIT_YIELD_GROUP_SUM_FIRST_2"}, {"type": "float", "name":
+    "EXT_SOURCE_3_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type": "float", "name":
+    "MIN_PAYMENT_TOTAL_RATIO_MEAN_YEAR_1"}, {"type": "float", "name": "DAYS_PAYMENT_DIFF_MEAN_MIN"},
+    {"type": "float", "name": "EXT_SOURCE_1_MAX_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "CURRENT_CREDIT_DEBT_DIFF_MEAN_OVERALL"}, {"type": "float",
+    "name": "EXT_SOURCE_2_MAX_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "EXP_ENCODED_STATUS_LAST_YEAR_1_MEAN_OVERALL"}, {"type":
+    "float", "name": "AMT_DECLINED_MEAN_LAST_5"}, {"type": "float", "name": "EXP_MIN_PAYMENT_TOTAL_RATIO_LAST_ACTIVE"},
+    {"type": "float", "name": "CREDIT_DOWNPAYMENT_RATIO_MEAN_FIRST_2"}, {"type": "float",
+    "name": "CNT_DRAWINGS_POS_CURRENT_SUM"}, {"type": "float", "name": "AMT_PAYMENT_MEAN_SUM"},
+    {"type": "float", "name": "AMT_DRAWINGS_POS_CURRENT_MAX"}, {"type": "float", "name":
+    "LIVINGAREA_MEDI"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_MEAN"},
+    {"type": "float", "name": "EXT_SOURCE_2_MAX_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "INTEREST_SHARE_MIN_FIRST_2"}, {"type": "float", "name":
+    "PAYMENT_MIN_DIFF_MEAN_ACTIVE"}, {"type": "float", "name": "CREDIT_ACTIVE_Sold_MEAN_OVERALL"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_MEAN"}, {"type": "float", "name":
+    "SK_DPD_DEF_MAX"}, {"type": "float", "name": "STATUS_MEAN_MAX_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MAX_LAST_1_YEAR"}, {"type": "float",
+    "name": "AMT_DECLINED_SUM_LAST_5"}, {"type": "float", "name": "AMT_PAYMENT_DIFF_MIN_MIN"},
+    {"type": "float", "name": "ANNUITY_INCOME_RATIO_MEAN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "NAME_CONTRACT_TYPE_MEAN_ALL"}, {"type": "float", "name":
+    "CREDIT_GOODS_RATIO"}, {"type": "float", "name": "INTEREST_CREDIT_PRIVILEGED_MEAN_ALL"},
+    {"type": "float", "name": "CAR_EMPLOYED_RATIO"}, {"type": "float", "name": "ANNUITY_GOODS_MEAN_ALL"},
+    {"type": "float", "name": "AMT_CREDIT_HOUR_PROCESS_START_MEAN_FIRST_2"}, {"type":
+    "float", "name": "AMT_PAYMENT_SUM_SUM"}, {"type": "float", "name": "INSTALLMENTS_AMT_PAYMENT_SUM_SUM_INCOME_RATIO"},
+    {"type": "float", "name": "EXT_SOURCE_3_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "EXT_SOURCE_3_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "CONTRACT_Active"}, {"type": "integer", "name": "FLAG_DOCUMENT_18"},
+    {"type": "float", "name": "CNT_DRAWING_SUM_MAX_REST"}, {"type": "float", "name":
+    "AMT_CREDIT_NFLAG_LAST_APPL_DAY_MEAN_FIRST_2"}, {"type": "float", "name": "AMT_APPLICATION_MEAN_LAST_5"},
+    {"type": "float", "name": "ANNUITY_INCOME_RATIO"}, {"type": "float", "name": "AMT_INCOME_TOTAL_MAX_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "AMT_DRAWINGS_CURRENT_MAX"}, {"type": "float", "name":
+    "EXT_SOURCE_2_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"}, {"type":
+    "float", "name": "SK_DPD_SUM_YEAR_REST"}, {"type": "float", "name": "ANNUITY_INCOME_RATIO_MIN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "AMT_INST_MIN_REGULARITY_MEAN"}, {"type": "float", "name":
+    "AMT_ANNUITY_SUM_CREDITACTIVE_ACTIVE"}, {"type": "float", "name": "AMT_CREDIT_MAX_OVERDUE_SUM_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "WEEKDAY_APPR_PROCESS_START_MEAN_FIRST_2"}, {"type":
+    "float", "name": "BALANCE_LIMIT_RATIO_MEAN_ACTIVE"}, {"type": "float", "name":
+    "EXP_DAYS_PAYMENT_RATIO_LAST_FIRST_5_INSTALLMENTS"}, {"type": "float", "name":
+    "APARTMENTS_SUM_MEDI"}, {"type": "float", "name": "AMT_INTEREST_RECEIVABLE_MIN"},
+    {"type": "float", "name": "EXP_AMT_DRAWING_SUM_LAST_COMPLETED"}, {"type": "float",
+    "name": "AMT_CREDIT_MAX_OVERDUE_MAX_CREDITACTIVE_CLOSED"}, {"type": "float", "name":
+    "NAME_HOUSING_TYPE_0"}, {"type": "float", "name": "AMT_CREDIT"}, {"type": "float",
+    "name": "APARTMENTS_SUM_AVG_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "DAYS_TERMINATION_MEAN_ALL"}, {"type": "float", "name":
+    "AMT_PAYMENT_DIFF_MEAN_FIRST_5_INSTALLMENTS"}, {"type": "float", "name": "BUREAU_DAYS_CREDIT_LAST_CREDITACTIVE_ACTIVE_EMPLOYED_DIFF"},
+    {"type": "float", "name": "DAYS_CREDIT_MINCREDIT_ACTIVE_REST"}, {"type": "float",
+    "name": "EXP_CNT_INSTALMENT_LAST_YEAR_REST_MEAN"}, {"type": "float", "name": "DAYS_BIRTH"},
+    {"type": "float", "name": "AMT_CREDIT_SUM_SUM_CREDITACTIVE_ACTIVE"}, {"type":
+    "float", "name": "CNT_DRAWING_SUM_SUM"}, {"type": "float", "name": "PAYMENT_MIN_DIFF_MIN"},
+    {"type": "float", "name": "AGE_EMPLOYED_DIFF_MEAN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "SK_DPD_RATIO_MAX_ACTIVE_MEAN"}, {"type": "float", "name":
+    "EXT_SOURCE_MUL"}, {"type": "float", "name": "CREDIT_DOWNPAYMENT_RATIO_MAX_ALL"},
+    {"type": "float", "name": "MIN_PAYMENT_TOTAL_RATIO_MEAN_ACTIVE"}, {"type": "float",
+    "name": "AMT_PAYMENT_DIFF_MEAN_MAX"}, {"type": "float", "name": "AGE_EMPLOYED_DIFF_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_SUM_LAST_5"}, {"type": "float",
+    "name": "AMT_PAYMENT_MEAN_MAX"}, {"type": "float", "name": "ENTRANCES_MODE"},
+    {"type": "float", "name": "EXP_CNT_INSTALMENT_FUTURE_LAST_ACTIVE_MEAN"}, {"type":
+    "float", "name": "AMT_CREDIT_LIMIT_ACTUAL_SUM"}, {"type": "float", "name": "AMT_GOODS_PRICE"},
+    {"type": "float", "name": "DAYS_CREDIT_LAST_CREDITACTIVE_ACTIVE"}, {"type": "float",
+    "name": "EXP_AMT_DRAWING_SUM_LAST_REST"}, {"type": "float", "name": "DAYS_CREDIT_MEAN_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "NAME_CONTRACT_STATUS_LAST_LAST_5"}, {"type": "float",
+    "name": "EXP_AMT_DRAWING_SUM_LAST_YEAR_1"}, {"type": "float", "name": "BUREAU_AMT_CREDIT_MAX_OVERDUE_MAX_CREDITACTIVE_CLOSED_INCOME_RATIO"},
+    {"type": "float", "name": "APARTMENTS_SUM_MEDI_MAX_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "TOTAL_TERM_MEAN_YEAR_1_SUM"}, {"type": "float", "name":
+    "TOTAL_TERM_MEAN_ACTIVE_SUM"}, {"type": "float", "name": "AGE_EMPLOYED_DIFF_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "EXP_DAYS_PAYMENT_RATIO_LAST_MEAN"}, {"type": "float",
+    "name": "PREV_AMT_GOODS_PRICE_MEAN_FIRST_2_INCOME_RATIO"}, {"type": "float", "name":
+    "SK_DPD_MAX_MEAN"}, {"type": "float", "name": "EXP_POS_TOTAL_TERM_MEAN_MEAN"},
+    {"type": "float", "name": "EXT_SOURCE_2_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_YEAR_0_SUM"}, {"type": "float",
+    "name": "CREDIT_TYPE_Car loan_MEAN_OVERALL"}, {"type": "float", "name": "BASEMENTAREA_AVG"},
+    {"type": "float", "name": "MIN_PAYMENT_RATIO_MIN"}, {"type": "float", "name":
+    "CNT_INSTALMENT_FUTURE_MIN_REST_MEAN"}, {"type": "float", "name": "INCOME_APARTMENT_AVG_MUL"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MEAN_MIN"}, {"type": "float", "name":
+    "CREDIT_DOWNPAYMENT_RATIO_MAX_LAST_5"}, {"type": "float", "name": "EXT_SOURCE_1_MAX_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_PAYMENT_DIFF_MEAN_LAST_1_YEAR"}, {"type": "float",
+    "name": "GOOD_DOWNPAYMET_RATIO_MAX_ALL"}, {"type": "float", "name": "TOTAL_TERM_MEAN_ACTIVE_MEAN"},
+    {"type": "float", "name": "AGE_EMPLOYED_DIFF_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "EXT_SOURCE_2_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "EXP_AMT_BALANCE_LAST"}, {"type": "float", "name": "EXP_BALANCE_LIMIT_RATIO_LAST_ACTIVE"},
+    {"type": "float", "name": "CURRENT_CREDIT_DEBT_DIFF_MIN_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_MAX_FIRST_2"}, {"type": "float",
+    "name": "CNT_INSTALMENT_MEAN_YEAR_1_SUM"}, {"type": "float", "name": "SELLERPLACE_AREA_MIN_FIRST_2"},
+    {"type": "float", "name": "PREV_AMT_ANNUITY_SUM_ALL_INCOME_RATIO"}, {"type": "float",
+    "name": "INTEREST_DOWNPAYMENT_MAX_FIRST_2"}, {"type": "float", "name": "TOTAL_TERM_MEAN_COMPLETED_SUM"},
+    {"type": "float", "name": "PRODUCT_COMBINATION_MEAN_LAST_5"}, {"type": "float",
+    "name": "AMT_ANNUITY_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type": "float",
+    "name": "CNT_INSTALMENT_MEAN_YEAR_REST_MAX"}, {"type": "float", "name": "STATUS_MEAN_MAX_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "APARTMENTS_SUM_MEDI_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "PREV_AMT_GOODS_PRICE_MAX_FIRST_2_INCOME_RATIO"}, {"type":
+    "float", "name": "NAME_YIELD_GROUP_LAST_LAST_5"}, {"type": "float", "name": "CONTRACT_APPROVED_MEAN"},
+    {"type": "float", "name": "WEIGHTED_STATUS_MAX_YEAR_REST_MEAN_OVERALL"}, {"type":
+    "float", "name": "AMT_ANNUITY_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "NAME_PRODUCT_TYPE_MEAN_ALL"}, {"type": "float", "name":
+    "EXP_MIN_PAYMENT_RATIO_LAST_YEAR_REST"}, {"type": "float", "name": "DAYS_TERMINATION_MEAN_FIRST_2"},
+    {"type": "float", "name": "AMT_ANNUITY_SUM_CREDITACTIVE_CLOSED"}, {"type": "float",
+    "name": "NAME_CLIENT_TYPE_LAST_FIRST_2"}, {"type": "float", "name": "BALANCE_LIMIT_RATIO_MAX_ACTIVE"},
+    {"type": "float", "name": "LANDAREA_MODE"}, {"type": "float", "name": "EXT_SOURCE_MEAN"},
+    {"type": "float", "name": "DAYS_LAST_DUE_1ST_VERSION_MEAN_ALL"}, {"type": "float",
+    "name": "EXPECTED_INTEREST_SHARE"}, {"type": "float", "name": "EXT_SOURCE_MEAN_MIN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "MIN_PAYMENT_RATIO_MEAN_YEAR_0"}, {"type": "float",
+    "name": "AMT_INTEREST_MAX_ALL"}, {"type": "float", "name": "AMT_CREDIT_APPLICATION_RATIO_MIN_ALL"},
+    {"type": "float", "name": "CNT_NON_CHILDREN"}, {"type": "float", "name": "CNT_INSTALMENT_MEAN_YEAR_0_MAX"},
+    {"type": "float", "name": "AMT_DRAWINGS_POS_CURRENT_SUM"}, {"type": "float", "name":
+    "OBS_30_60_SUM"}, {"type": "float", "name": "EXP_AMT_PAYMENT_DIFF_LAST_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "DAYS_FIRST_DRAWING_MAX_ALL"}, {"type": "float", "name":
+    "TOTAL_TERM_MEAN_YEAR_REST_MAX"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_YEAR_0_MEAN"},
+    {"type": "float", "name": "CNT_INSTALMENT_MAX_YEAR_REST_MEAN"}, {"type": "float",
+    "name": "AMT_PAYMENT_CURRENT_MAX"}, {"type": "float", "name": "DAYS_TERMINATION_MAX_LAST_5"},
+    {"type": "float", "name": "NAME_PAYMENT_TYPE_MEAN_ALL"}, {"type": "float", "name":
+    "NAME_SELLER_INDUSTRY_MEAN_FIRST_2"}, {"type": "float", "name": "BUREAU_DAYS_CREDIT_MAX_CREDITACTIVE_ACTIVE_REGISTRATION_DIFF"},
+    {"type": "float", "name": "DAYS_PAYMENT_DIFF_MIN_MIN"}, {"type": "float", "name":
+    "AMT_CREDIT_YIELD_GROUP_MEAN_LAST_5"}, {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MEAN_ALL"},
+    {"type": "float", "name": "NUM_INSTALMENT_VERSION_MEAN_MEAN"}, {"type": "float",
+    "name": "BALANCE_LIMIT_RATIO_MIN_ACTIVE"}, {"type": "float", "name": "DAYS_DETAILS_CHANGE_SUM"},
+    {"type": "float", "name": "AMT_CREDIT_MEAN_FIRST_2"}, {"type": "float", "name":
+    "STATUS_MEAN_YEAR_1_MEAN_OVERALL"}, {"type": "float", "name": "ANNUITY_INCOME_RATIO_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "CREDIT_TYPE_Loan for working capital replenishment_MEAN_OVERALL"},
+    {"type": "float", "name": "APARTMENTS_SUM_MEDI_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "APARTMENTS_SUM_MEDI_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "CNT_PAYMENT_SUM_FIRST_2"}, {"type": "float", "name":
+    "OBS_60_CREDIT_RATIO"}, {"type": "float", "name": "YEARS_BUILD_MEDI"}, {"type":
+    "float", "name": "AMT_APPLICATION_TO_SELLERPLACE_AREA_MEAN_ALL"}, {"type": "float",
+    "name": "PER_CAPITA_INCOME"}, {"type": "float", "name": "DAYS_TERMINATION_MAX_FIRST_2"},
+    {"type": "float", "name": "AMT_REQ_CREDIT_BUREAU_YEAR"}, {"type": "float", "name":
+    "DAYS_CREDIT_LASTCREDIT_ACTIVE_REST"}, {"type": "float", "name": "WEEKDAY_APPR_PROCESS_START_MIN_ALL"},
+    {"type": "float", "name": "INTEREST_CREDIT_MEAN_ALL"}, {"type": "float", "name":
+    "AMT_PAYMENT_DIFF_MAX_MAX"}, {"type": "float", "name": "PREV_AMT_GOODS_PRICE_SUM_LAST_5_INCOME_RATIO"},
+    {"type": "float", "name": "NFLAG_LAST_APPL_IN_DAY_SUM_ALL"}, {"type": "float",
+    "name": "EXP_PAYMENT_MIN_DIFF_LAST"}, {"type": "float", "name": "AMT_ANNUITY_MIN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MEAN_MAX"}, {"type": "float", "name":
+    "SK_DPD_DEF_MAX_ACTIVE_MEAN"}, {"type": "float", "name": "CURRENT_DEBT_TO_CREDIT_RATIO_MEAN_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "AMT_DRAWINGS_ATM_CURRENT_SUM"}, {"type": "float", "name":
+    "NONLIVINGAREA_MODE"}, {"type": "float", "name": "NAME_PAYMENT_TYPE_MEAN_LAST_5"},
+    {"type": "float", "name": "EXP_DAYS_PAYMENT_DIFF_LAST_LAST_1_YEAR"}, {"type":
+    "float", "name": "PAYMENT_MIN_DIFF_MIN_YEAR_0"}, {"type": "float", "name": "APARTMENTS_SUM_AVG_MAX_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "FLOORSMAX_MODE"}, {"type": "float", "name": "BUREAU_DAYS_CREDIT_LAST_CREDITACTIVE_CLOSED_EMPLOYED_DIFF"},
+    {"type": "float", "name": "AMT_ANNUITY_CREDIT_RATIO_MIN_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "EXT_SOURCE_1_MAX_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "APPLICATION_AMT_TO_DECISION_RATIO_MIN_FIRST_2"}, {"type":
+    "float", "name": "WEIGHTED_STATUS_MAX_YEAR_0_MEAN_OVERALL"}, {"type": "float",
+    "name": "AGE_EMPLOYED_DIFF_MIN_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_MEAN_FIRST_2"}, {"type": "float",
+    "name": "PRODUCT_COMBINATION_MEAN_FIRST_2"}, {"type": "float", "name": "WEIGHTED_STATUS_MEAN_YEAR_1_MEAN_OVERALL"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_LAST_CREDITACTIVE_CLOSED_REGISTRATION_DIFF"},
+    {"type": "float", "name": "EXT_SOURCE_3_MIN_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MIN_LAST_5"}, {"type": "float",
+    "name": "ANNUITY_INCOME_RATIO_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type":
+    "float", "name": "RATE_DOWN_PAYMENT_MAX_ALL"}, {"type": "float", "name": "AMT_DOWN_PAYMENT_SUM_ALL"},
+    {"type": "float", "name": "NAME_GOODS_CATEGORY_LAST_LAST_5"}, {"type": "float",
+    "name": "CNT_INSTALMENT_MAX_MEAN"}, {"type": "float", "name": "DAYS_DECISION_MAX_FIRST_2"},
+    {"type": "float", "name": "NAME_PORTFOLIO_MEAN_ALL"}, {"type": "float", "name":
+    "HOUR_APPR_PROCESS_START_MEAN_LAST_5"}, {"type": "float", "name": "CHANNEL_TYPE_LAST_FIRST_2"},
+    {"type": "float", "name": "NUM_INSTALMENT_VERSION_SUM_MEAN"}, {"type": "float",
+    "name": "EXT_SOURCE_1_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_APPLICATION_SUM_FIRST_2"}, {"type": "float", "name":
+    "NAME_CASH_LOAN_PURPOSE_MEAN_LAST_5"}, {"type": "float", "name": "AMT_INTEREST_SUM_FIRST_2"},
+    {"type": "float", "name": "RATE_DOWN_PAYMENT_MEAN_ALL"}, {"type": "float", "name":
+    "AMT_APPLICATION_TO_SELLERPLACE_AREA_MEAN_FIRST_2"}, {"type": "float", "name":
+    "DAYS_DECISION_MEAN_LAST_5"}, {"type": "float", "name": "BASEMENTAREA_MODE"},
+    {"type": "float", "name": "AMT_ANNUITY_CREDIT_RATIO_MEANCREDIT_ACTIVE_REST"},
+    {"type": "float", "name": "RATE_DOWN_PAYMENT_MEAN_FIRST_2"}, {"type": "float",
+    "name": "AMT_ANNUITY_MAX_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "EXT_SOURCE_3_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_BALANCE_SUM"}, {"type": "float", "name": "WEIGHTED_STATUS_FIRST_YEAR_1_MEAN_OVERALL"},
+    {"type": "float", "name": "AGE_EMPLOYED_DIFF_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "NUM_INSTALMENT_VERSION_SUM_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "EXP_AMT_PAYMENT_RATIO_LAST_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MIN_ALL"}, {"type": "float",
+    "name": "AMT_PAYMENT_MEAN_MEAN"}, {"type": "float", "name": "CNT_INSTALMENT_MEAN_REST_MEAN"},
+    {"type": "float", "name": "AMT_PAYMENT_CURRENT_MEAN"}, {"type": "float", "name":
+    "NAME_CLIENT_TYPE_MEAN_LAST_5"}, {"type": "float", "name": "ANNUITY_GOODS_MEAN_FIRST_2"},
+    {"type": "float", "name": "INTEREST_SHARE_MAX_FIRST_2"}, {"type": "float", "name":
+    "INTEREST_RATE_MIN_LAST_5"}, {"type": "float", "name": "MIN_PAYMENT_RATIO_MIN_YEAR_0"},
+    {"type": "float", "name": "DAYS_EMPLOYED"}, {"type": "float", "name": "INTEREST_RATE_MEAN_LAST_5"},
+    {"type": "float", "name": "AGE_EMPLOYED_DIFF_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "PREV_AMT_GOODS_PRICE_MEAN_LAST_5_INCOME_RATIO"}, {"type":
+    "float", "name": "CNT_PAYMENT_MEAN_LAST_5"}, {"type": "float", "name": "AMT_DOWN_PAYMENT_MEAN_FIRST_2"},
+    {"type": "float", "name": "INCOME_APARTMENT_MEDI_MUL"}, {"type": "float", "name":
+    "AMT_BALANCE_MAX"}, {"type": "float", "name": "MONTHS_BALANCE_MEAN_MEAN_OVERALL"},
+    {"type": "integer", "name": "HOUR_APPR_PROCESS_START"}, {"type": "float", "name":
+    "EXT_SOURCE_MAX"}, {"type": "float", "name": "AMT_ANNUITY_MEAN_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "TOTAL_TERM_MEAN_MEAN"}, {"type": "float", "name": "EXP_AMT_PAYMENT_RATIO_LAST_MEAN"},
+    {"type": "float", "name": "AMT_CREDIT_SUM_DEBT_SUM_CREDITACTIVE_CLOSED"}, {"type":
+    "float", "name": "AMT_CREDIT_SUM_MAX_CREDITACTIVE_CLOSED"}, {"type": "float",
+    "name": "AMT_INSTALMENT_MEAN_MAX"}, {"type": "float", "name": "AMT_INTEREST_RECEIVABLE_MEAN_YEAR_0"},
+    {"type": "float", "name": "CURRENT_CREDIT_DEBT_DIFF_MEANCREDIT_ACTIVE_REST"},
+    {"type": "float", "name": "AMT_DRAWING_SUM_MAX"}, {"type": "float", "name": "EXP_MIN_PAYMENT_RATIO_LAST_YEAR_1"},
+    {"type": "float", "name": "AMT_CREDIT_MEAN_LAST_5"}, {"type": "float", "name":
+    "EXT_SOURCE_1"}, {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_MAX_ALL"}, {"type":
+    "float", "name": "INTEREST_DOWNPAYMENT_MAX_ALL"}, {"type": "float", "name": "AMT_DECLINED_MAX_LAST_5"},
+    {"type": "float", "name": "NFLAG_INSURED_ON_APPROVAL_SUM_LAST_5"}, {"type": "float",
+    "name": "AMT_CREDIT_SUM_LIMIT_MAX_CREDITACTIVE_CLOSED"}, {"type": "float", "name":
+    "BALANCE_LIMIT_RATIO_MIN_YEAR_0"}, {"type": "integer", "name": "FLAG_EMAIL"},
+    {"type": "float", "name": "AGE_EMPLOYED_DIFF"}, {"type": "float", "name": "CNT_INSTALMENT_MIN_YEAR_REST_MEAN"},
+    {"type": "float", "name": "EXT_SOURCE_3"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MIN_MEAN"},
+    {"type": "float", "name": "AMT_ANNUITY_MAX_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "STATUS_MEAN_MEAN_CREDITACTIVE_CLOSED"}, {"type": "float",
+    "name": "DAYS_FIRST_DUE_MEAN_FIRST_2"}, {"type": "float", "name": "INTEREST_CREDIT_MEAN_LAST_5"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MAX_YEAR_1_MEAN"}, {"type": "float",
+    "name": "CNT_DRAWINGS_CURRENT_MAX"}, {"type": "float", "name": "CONTRACT_COMPLETED_MEAN"},
+    {"type": "float", "name": "EXP_PAYMENT_MIN_DIFF_LAST_REST"}, {"type": "float",
+    "name": "PAYMENT_MIN_DIFF_MIN_YEAR_1"}, {"type": "float", "name": "EXP_SK_DPD_RATIO_LAST_COMPLETED"},
+    {"type": "float", "name": "NAME_SELLER_INDUSTRY_LAST_FIRST_2"}, {"type": "float",
+    "name": "CHANNEL_TYPE_LAST_LAST_5"}, {"type": "float", "name": "AMT_DOWN_PAYMENT_SUM_FIRST_2"},
+    {"type": "float", "name": "DAYS_FIRST_DUE_MAX_ALL"}, {"type": "float", "name":
+    "OBS_30_CREDIT_RATIO"}, {"type": "float", "name": "AMT_INSTALMENT_MAX_MEAN"},
+    {"type": "float", "name": "AMT_ANNUITY_MEAN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "CURRENT_DEBT_TO_CREDIT_RATIO_MIN_CREDITACTIVE_CLOSED"},
+    {"type": "integer", "name": "LIVE_REGION_NOT_WORK_REGION"}, {"type": "float",
+    "name": "BUREAU_AMT_CREDIT_MAX_OVERDUE_SUM_CREDITACTIVE_ACTIVE_INCOME_RATIO"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_YEAR_REST_MAX"}, {"type":
+    "float", "name": "EXP_CNT_DRAWING_SUM_LAST"}, {"type": "float", "name": "BUREAU_AMT_CREDIT_SUM_OVERDUE_MEAN_OVERALL_INCOME_RATIO"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MIN_MEAN"}, {"type": "float", "name":
+    "OCCUPATION_TYPE_0"}, {"type": "float", "name": "DAYS_FIRST_DRAWING_MAX_LAST_5"},
+    {"type": "float", "name": "AMT_PAYMENT_DIFF_MEAN_MEAN"}, {"type": "float", "name":
+    "AMT_RECEIVABLE_PRINCIPAL_SUM"}, {"type": "float", "name": "CNT_INSTALMENT_MEAN_YEAR_REST_SUM"},
+    {"type": "float", "name": "EXP_MIN_PAYMENT_TOTAL_RATIO_LAST"}, {"type": "float",
+    "name": "CNT_DRAWINGS_POS_CURRENT_MAX"}, {"type": "float", "name": "TOTAL_TERM_MEAN_YEAR_REST_MEAN"},
+    {"type": "float", "name": "DAYS_CREDIT_MAX_CREDITACTIVE_ACTIVE"}, {"type": "float",
+    "name": "AMT_INSTALMENT_MEAN_MEAN"}, {"type": "float", "name": "LANDAREA_MEDI"},
+    {"type": "float", "name": "SK_DPD_RATIO_MEAN_YEAR_REST_SUM"}, {"type": "float",
+    "name": "REGIONS_RATING_INCOME_MUL_1"}, {"type": "float", "name": "AMT_CREDIT_SUM_LIMIT_MAX_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "MIN_PAYMENT_RATIO_MEAN"}, {"type": "float", "name":
+    "BUREAU_DAYS_CREDIT_MEAN_CREDITACTIVE_ACTIVE_REGISTRATION_DIFF"}, {"type": "float",
+    "name": "AMT_CREDIT_MAX_OVERDUE_MAXCREDIT_ACTIVE_REST"}, {"type": "float", "name":
+    "BUREAU_DAYS_CREDIT_LAST_CREDITACTIVE_ACTIVE_REGISTRATION_DIFF"}, {"type": "float",
+    "name": "FLAG_OVERDUE_RECENT_SUM_CREDITACTIVE_ACTIVE"}, {"type": "float", "name":
+    "AMT_PAYMENT_DIFF_MIN_FIRST_5_INSTALLMENTS"}, {"type": "float", "name": "DAYS_CREDIT_LAST_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "COMMONAREA_MODE"}, {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_MAX_LAST_5"},
+    {"type": "float", "name": "AMT_DOWN_PAYMENT_MAX_FIRST_2"}, {"type": "float", "name":
+    "CNT_PAYMENT_SUM_ALL"}, {"type": "float", "name": "AMT_CREDIT_SUM_LIMIT_MEAN_OVERALL"},
+    {"type": "float", "name": "OBS_DEF_30_MUL"}, {"type": "float", "name": "AGE_EMPLOYED_DIFF_MEAN_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "STATUS_LAST_YEAR_REST_MEAN_OVERALL"}, {"type": "float",
+    "name": "CREDIT_DURATION_MEAN_OVERALL"}, {"type": "float", "name": "EXT_SOURCE_1_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "CREDIT_INCOME_RATIO"}, {"type": "float", "name": "INTEREST_SHARE_MEAN_LAST_5"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MAX_CREDITACTIVE_ACTIVE_EMPLOYED_DIFF"},
+    {"type": "float", "name": "EXT_SOURCE_3_MAX_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MEAN_LAST_1_YEAR"}, {"type": "float",
+    "name": "APARTMENTS_MODE"}, {"type": "float", "name": "PREV_AMT_ANNUITY_MAX_ALL_INCOME_RATIO"},
+    {"type": "float", "name": "STATUS_MEAN_YEAR_REST_MEAN_OVERALL"}, {"type": "float",
+    "name": "AMT_INCOME_TOTAL_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "WEIGHTED_STATUS_MEAN_MAX_CREDITACTIVE_ACTIVE"}, {"type":
+    "float", "name": "AMT_INTEREST_MEAN_ALL"}, {"type": "float", "name": "NAME_TYPE_SUITE_MEAN_LAST_5"},
+    {"type": "float", "name": "HOUR_APPR_PROCESS_START_MAX_FIRST_2"}, {"type": "float",
+    "name": "EXP_AMT_INTEREST_RECEIVABLE_LAST_YEAR_1"}, {"type": "float", "name":
+    "CREDIT_ACTIVE_Active_MEAN_OVERALL"}, {"type": "float", "name": "BUREAU_DAYS_CREDIT_MEANCREDIT_ACTIVE_REST_EMPLOYED_DIFF"},
+    {"type": "float", "name": "DEF_60_CREDIT_RATIO"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_MAX"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MEAN_OVERALL_REGISTRATION_DIFF"},
+    {"type": "float", "name": "PREV_AMT_ANNUITY_SUM_FIRST_2_INCOME_RATIO"}, {"type":
+    "float", "name": "DAYS_PAYMENT_DIFF_MEAN_MEAN"}, {"type": "float", "name": "INSTALLMENTS_AMT_PAYMENT_MAX_FIRST_5_INSTALLMENTS_INCOME_RATIO"},
+    {"type": "float", "name": "WEIGHTED_STATUS_FIRST_YEAR_0_MEAN_OVERALL"}, {"type":
+    "float", "name": "WEEKDAY_APPR_PROCESS_START_1"}, {"type": "float", "name": "CREDIT_DAY_OVERDUE_MAX_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "AMT_INTEREST_RECEIVABLE_MEAN_YEAR_REST"}, {"type":
+    "float", "name": "SK_DPD_RATIO_MEAN_YEAR_1_MAX"}, {"type": "float", "name": "ANNUITY_GOODS_SUM_ALL"},
+    {"type": "float", "name": "DAYS_DECISION_MIN_ALL"}, {"type": "float", "name":
+    "CNT_INSTALMENT_MEAN_YEAR_0_MEAN"}, {"type": "float", "name": "BUREAU_DAYS_CREDIT_MIN_CREDITACTIVE_CLOSED_REGISTRATION_DIFF"},
+    {"type": "float", "name": "HOUR_APPR_PROCESS_START_MIN_ALL"}, {"type": "float",
+    "name": "OWN_CAR_AGE"}, {"type": "float", "name": "GOOD_DOWNPAYMET_RATIO_MEAN_LAST_5"},
+    {"type": "float", "name": "AMT_CREDIT_SUM_SUMCREDIT_ACTIVE_REST"}, {"type": "float",
+    "name": "EXP_AMT_DRAWING_SUM_LAST"}, {"type": "float", "name": "APARTMENTS_SUM_MEDI_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "AMT_INCOME_TOTAL_MAX_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_DRAWINGS_OTHER_CURRENT_MAX"}, {"type": "float",
+    "name": "EXP_POS_TOTAL_TERM_LAST_YEAR_1_MEAN"}, {"type": "float", "name": "INCOME_EXT_RATIO"},
+    {"type": "float", "name": "NUM_INSTALMENT_NUMBER_MAX_MAX"}, {"type": "float",
+    "name": "AMT_ANNUITY_MEAN_ALL"}, {"type": "float", "name": "ANNUITY_GOODS_MEAN_LAST_5"},
+    {"type": "float", "name": "INSTALLMENTS_ANNUITY_AMT_INSTALMENT_SUM_MAX_RATIO"},
+    {"type": "float", "name": "AMT_INSTALMENT_MEAN_FIRST_5_INSTALLMENTS"}, {"type":
+    "float", "name": "DAYS_TERMINATION_MAX_ALL"}, {"type": "float", "name": "APARTMENTS_SUM_AVG_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "EXP_AMT_CREDIT_LIMIT_ACTUAL_LAST"}, {"type": "float",
+    "name": "DAYS_PAYMENT_DIFF_MAX_LAST_1_YEAR"}, {"type": "float", "name": "AMT_ANNUITY_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "ANNUITY_GOODS_MAX_LAST_5"}, {"type": "float", "name":
+    "AMT_PAYMENT_RATIO_MEAN_LAST_1_YEAR"}, {"type": "float", "name": "EXP_CNT_INSTALMENT_FUTURE_LAST_YEAR_0_MEAN"},
+    {"type": "float", "name": "APARTMENTS_SUM_AVG_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "WEIGHTED_STATUS_MEAN_MAX_CREDITACTIVE_CLOSED"}, {"type":
+    "float", "name": "CURRENT_CREDIT_DEBT_DIFF_MIN_CREDITACTIVE_CLOSED"}, {"type":
+    "float", "name": "DAYS_DECISION_MEAN_ALL"}, {"type": "float", "name": "EXT_SOURCE_MEAN_MAX_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "RATE_INTEREST_PRIMARY_MEAN_LAST_5"}, {"type": "float",
+    "name": "BUREAU_DAYS_CREDIT_MINCREDIT_ACTIVE_REST_REGISTRATION_DIFF"}, {"type":
+    "float", "name": "APARTMENTS_SUM_AVG_MAX_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "SK_DPD_SUM"}]'
+  outputs: '[{"type": "float", "name": "MIN_PAYMENT_TOTAL_RATIO_MIN_YEAR_REST"}, {"type":
+    "float", "name": "AMT_INCOME_TOTAL_MAX_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "AMT_INCOME_TOTAL_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "DAYS_PAYMENT_DIFF_MAX_MAX"}, {"type": "float", "name":
+    "AMT_INSTALMENT_MAX_FIRST_5_INSTALLMENTS"}, {"type": "float", "name": "AMT_CREDIT_SUM_FIRST_2"},
+    {"type": "float", "name": "AMT_PAYMENT_RATIO_MIN_MIN"}, {"type": "float", "name":
+    "AMT_PAYMENT_RATIO_MEAN_MAX"}, {"type": "float", "name": "WEIGHTED_STATUS_LAST_YEAR_REST_MEAN_OVERALL"},
+    {"type": "float", "name": "MIN_PAYMENT_TOTAL_RATIO_MEAN_YEAR_0"}, {"type": "float",
+    "name": "DAYS_LAST_PHONE_CHANGE"}, {"type": "float", "name": "AMT_ANNUITY_MEANCREDIT_ACTIVE_REST"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_ACTIVE_MAX"}, {"type": "float",
+    "name": "EXT_SOURCE_MEAN_MAX_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type":
+    "float", "name": "EXP_CNT_INSTALMENT_LAST_YEAR_1_MEAN"}, {"type": "float", "name":
+    "WEIGHTED_STATUS_MEAN_YEAR_REST_MEAN_OVERALL"}, {"type": "float", "name": "ANNUITY_MEAN_LAST_5"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_REST_MEAN"}, {"type": "float",
+    "name": "AMT_INTEREST_MEAN_FIRST_2"}, {"type": "float", "name": "RATE_DOWN_PAYMENT_MAX_FIRST_2"},
+    {"type": "float", "name": "INTEREST_SHARE_MAX_ALL"}, {"type": "float", "name":
+    "DAYS_LAST_DUE_1ST_VERSION_MEAN_LAST_5"}, {"type": "float", "name": "CREDIT_TYPE_Consumer
+    credit_MEAN_OVERALL"}, {"type": "float", "name": "BALANCE_LIMIT_RATIO_MAX_YEAR_0"},
+    {"type": "float", "name": "TOTAL_TERM_MEAN_REST_MAX"}, {"type": "float", "name":
+    "HOUR_APPR_PROCESS_START_MIN_LAST_5"}, {"type": "float", "name": "DAYS_PAYMENT_DIFF_MEAN_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "ENTRANCES_AVG"}, {"type": "float", "name": "BALANCE_LIMIT_RATIO_MIN_YEAR_REST"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_COMPLETED_SUM"}, {"type": "float",
+    "name": "EXT_SOURCE_MEAN_MAX_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "INSTALLMENTS_ANNUITY_AMT_INSTALMENT_MEAN_MAX_RATIO"},
+    {"type": "float", "name": "STATUS_FIRST_MEAN_OVERALL"}, {"type": "float", "name":
+    "NUM_INSTALMENT_NUMBER_MAX_MEAN"}, {"type": "float", "name": "INTEREST_DOWNPAYMENT_MAX_LAST_5"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MEAN_LAST_5"}, {"type": "float",
+    "name": "ANNUITY_MAX_FIRST_2"}, {"type": "float", "name": "AMT_REQ_CREDIT_BUREAU_QRT"},
+    {"type": "float", "name": "BUREAU_AMT_CREDIT_MAX_OVERDUE_SUM_CREDITACTIVE_CLOSED_INCOME_RATIO"},
+    {"type": "float", "name": "AMT_INCOME_TOTAL"}, {"type": "float", "name": "INTEREST_CREDIT_MEAN_FIRST_2"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MAX_CREDITACTIVE_CLOSED_REGISTRATION_DIFF"},
+    {"type": "float", "name": "EXP_MIN_PAYMENT_TOTAL_RATIO_LAST_COMPLETED"}, {"type":
+    "float", "name": "ANNUITY_INCOME_RATIO_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "CNT_PAYMENT_MAX_ALL"}, {"type": "float", "name": "PREV_AMT_ANNUITY_MEAN_LAST_5_INCOME_RATIO"},
+    {"type": "float", "name": "ANNUITY_MEAN_ALL"}, {"type": "float", "name": "NUM_INSTALMENT_NUMBER_MAX_SUM"},
+    {"type": "float", "name": "AMT_INTEREST_MIN_LAST_5"}, {"type": "float", "name":
+    "AMT_CREDIT_YIELD_GROUP_MEAN_ALL"}, {"type": "float", "name": "BUREAU_DAYS_CREDIT_MAXCREDIT_ACTIVE_REST_REGISTRATION_DIFF"},
+    {"type": "float", "name": "AMT_INTEREST_RECEIVABLE_MIN_ACTIVE"}, {"type": "float",
+    "name": "AMT_DRAWINGS_OTHER_CURRENT_SUM"}, {"type": "float", "name": "EXT_SOURCE_VAR"},
+    {"type": "float", "name": "PRODUCT_COMBINATION_MEAN_ALL"}, {"type": "float", "name":
+    "BUREAU_AMT_CREDIT_SUM_OVERDUE_MAX_CREDITACTIVE_CLOSED_INCOME_RATIO"}, {"type":
+    "float", "name": "ANNUITY_INCOME_RATIO_MAX_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "TOTAL_TERM_MEAN_YEAR_1_MEAN"}, {"type": "float", "name":
+    "AMT_CREDIT_SUM_DEBT_SUM_CREDITACTIVE_ACTIVE"}, {"type": "float", "name": "INSTALLMENTS_AMT_PAYMENT_MAX_LAST_1_YEAR_INCOME_RATIO"},
+    {"type": "float", "name": "WEIGHTED_STATUS_MEAN_YEAR_0_MEAN_OVERALL"}, {"type":
+    "float", "name": "ANNUITY_INCOME_RATIO_MAX_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "NAME_HOUSING_TYPE_1"}, {"type": "float", "name": "AMT_DECLINED_MAX_FIRST_2"},
+    {"type": "float", "name": "GOOD_DOWNPAYMET_RATIO_MEAN_FIRST_2"}, {"type": "float",
+    "name": "AMT_INCOME_TOTAL_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "AMT_INTEREST_MIN_ALL"}, {"type": "float", "name": "NAME_YIELD_GROUP_MEAN_FIRST_2"},
+    {"type": "float", "name": "ANNUITY_SUM_FIRST_2"}, {"type": "float", "name": "DAYS_PAYMENT_RATIO_MIN_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "EXP_PAYMENT_MIN_DIFF_LAST_YEAR_1"}, {"type": "float",
+    "name": "ENQ_CREDIT_RATIO"}, {"type": "float", "name": "DAYS_CREDIT_MIN_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "CC_EXP_AMT_TOTAL_RECEIVABLE_LAST_INCOME_RATIO"}, {"type":
+    "float", "name": "NAME_SELLER_INDUSTRY_LAST_LAST_5"}, {"type": "float", "name":
+    "BUREAU_AMT_CREDIT_MAX_OVERDUE_SUMCREDIT_ACTIVE_REST_INCOME_RATIO"}, {"type":
+    "float", "name": "DEF_30_CREDIT_RATIO"}, {"type": "float", "name": "APARTMENTS_SUM_AVG_MAX_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_YEAR_REST_MEAN"}, {"type": "float",
+    "name": "AMT_CREDIT_YIELD_GROUP_SUM_ALL"}, {"type": "float", "name": "SK_DPD_RATIO_MAX_MEAN"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_YEAR_1_MEAN"}, {"type": "float",
+    "name": "AMT_CREDIT_APPLICATION_RATIO_MIN_FIRST_2"}, {"type": "float", "name":
+    "APPLICATION_AMT_TO_DECISION_RATIO_MEAN_FIRST_2"}, {"type": "float", "name": "TOTAL_TERM_MEAN_SUM"},
+    {"type": "float", "name": "REGIONS_RATING_INCOME_MUL_0"}, {"type": "float", "name":
+    "BALANCE_LIMIT_RATIO_MEAN_YEAR_REST"}, {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_SUM_FIRST_2"},
+    {"type": "float", "name": "AMT_CREDIT_SUM_DEBT_MEAN_OVERALL"}, {"type": "float",
+    "name": "CNT_INSTALMENT_FUTURE_MAX_MEAN"}, {"type": "float", "name": "CONTRACT_Completed"},
+    {"type": "integer", "name": "REG_CITY_NOT_LIVE_CITY"}, {"type": "float", "name":
+    "APARTMENTS_SUM_AVG_MAX_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"}, {"type":
+    "float", "name": "AMT_ANNUITY_MAX_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "PAYMENT_MIN_DIFF_MIN_ACTIVE"}, {"type": "float", "name":
+    "INTEREST_SHARE_MAX_LAST_5"}, {"type": "float", "name": "AMT_PAYMENT_RATIO_MIN_LAST_1_YEAR"},
+    {"type": "float", "name": "EXT_SOURCE_MEAN_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_ANNUITY_MAX_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "AMT_INCOME_TOTAL_MAX_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "PREV_AMT_ANNUITY_SUM_LAST_5_INCOME_RATIO"}, {"type":
+    "float", "name": "AMT_INTEREST_RECEIVABLE_MIN_YEAR_REST"}, {"type": "float", "name":
+    "AMT_CREDIT_NFLAG_LAST_APPL_DAY_MEAN_LAST_5"}, {"type": "float", "name": "EXP_ENCODED_STATUS_LAST_YEAR_0_MEAN_OVERALL"},
+    {"type": "float", "name": "AMT_CREDIT_HOUR_PROCESS_START_SUM_FIRST_2"}, {"type":
+    "float", "name": "EXT_SOURCE_3_MEAN_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "NAME_CASH_LOAN_PURPOSE_MEAN_FIRST_2"}, {"type": "float",
+    "name": "CNT_INSTALMENT_FUTURE_MEAN_ACTIVE_SUM"}, {"type": "float", "name": "EXT_SOURCE_3_MEAN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "EXT_SOURCE_MEAN_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "NAME_GOODS_CATEGORY_MEAN_ALL"}, {"type": "float", "name":
+    "NFLAG_INSURED_ON_APPROVAL_SUM_FIRST_2"}, {"type": "float", "name": "EXP_POS_TOTAL_TERM_LAST_YEAR_0_MEAN"},
+    {"type": "float", "name": "EXT_SOURCE_MEAN_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "EXT_SOURCE_MEAN_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "PREV_AMT_GOODS_PRICE_MAX_LAST_5_INCOME_RATIO"}, {"type":
+    "float", "name": "SK_DPD_RATIO_MEAN_MEAN"}, {"type": "float", "name": "TOTAL_TERM_MEAN_YEAR_0_MAX"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_ACTIVE_MEAN"}, {"type": "float",
+    "name": "CNT_PROLONGED_MAX_OVERDUE_MUL_MEAN_CREDITACTIVE_ACTIVE"}, {"type": "float",
+    "name": "APPLICATION_AMT_TO_DECISION_RATIO_MIN_LAST_5"}, {"type": "float", "name":
+    "CNT_INSTALMENT_FUTURE_MEAN_REST_SUM"}, {"type": "float", "name": "SELLERPLACE_AREA_MIN_LAST_5"},
+    {"type": "float", "name": "CNT_DRAWING_SUM_MAX_YEAR_REST"}, {"type": "float",
+    "name": "WALLSMATERIAL_MODE_0"}, {"type": "float", "name": "AMT_APPLICATION_MEAN_FIRST_2"},
+    {"type": "float", "name": "COMMONAREA_MEDI"}, {"type": "float", "name": "DAYS_CREDIT_MEANCREDIT_ACTIVE_REST"},
+    {"type": "float", "name": "EXP_AMT_INTEREST_RECEIVABLE_LAST_COMPLETED"}, {"type":
+    "float", "name": "NAME_CASH_LOAN_PURPOSE_MEAN_ALL"}, {"type": "float", "name":
+    "EXP_BALANCE_LIMIT_RATIO_LAST_YEAR_1"}, {"type": "float", "name": "AMT_INTEREST_RECEIVABLE_MEAN"},
+    {"type": "float", "name": "AMT_PAYMENT_DIFF_MAX_MEAN"}, {"type": "float", "name":
+    "CC_EXP_AMT_RECIVABLE_LAST_INCOME_RATIO"}, {"type": "float", "name": "AMT_INSTALMENT_MEAN_SUM"},
+    {"type": "integer", "name": "REG_REGION_NOT_WORK_REGION"}, {"type": "float", "name":
+    "BUREAU_DAYS_CREDIT_MAX_CREDITACTIVE_CLOSED_EMPLOYED_DIFF"}, {"type": "float",
+    "name": "SK_DPD_DEF_SUM_YEAR_1"}, {"type": "float", "name": "TOTAL_TERM_MAX_YEAR_REST_MEAN"},
+    {"type": "float", "name": "AMT_PAYMENT_SUM_MEAN"}, {"type": "float", "name": "ANNUITY_INCOME_RATIO_MAX_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "DAYS_FIRST_DUE_MEAN_ALL"}, {"type": "float", "name":
+    "CNT_INSTALMENT_FUTURE_MIN_YEAR_0_MEAN"}, {"type": "float", "name": "CURRENT_DEBT_TO_CREDIT_RATIO_MEAN_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "AMT_CREDIT_YIELD_GROUP_MIN_FIRST_2"}, {"type": "float",
+    "name": "AMT_CREDIT_SUM_OVERDUE_MAX_CREDITACTIVE_ACTIVE"}, {"type": "float", "name":
+    "ANNUITY_INCOME_RATIO_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type": "float",
+    "name": "EXP_WEIGHTED_STATUS_LAST_YEAR_REST_MEAN_OVERALL"}, {"type": "float",
+    "name": "BUREAU_DAYS_CREDIT_MIN_CREDITACTIVE_ACTIVE_REGISTRATION_DIFF"}, {"type":
+    "float", "name": "EXP_AMT_INTEREST_RECEIVABLE_LAST_ACTIVE"}, {"type": "float",
+    "name": "AMT_PAYMENT_RATIO_MAX_MAX"}, {"type": "float", "name": "MIN_PAYMENT_RATIO_MIN_ACTIVE"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MEAN_CREDITACTIVE_ACTIVE_EMPLOYED_DIFF"},
+    {"type": "float", "name": "INTEREST_DOWNPAYMENT_MEAN_FIRST_2"}, {"type": "float",
+    "name": "CNT_DRAWINGS_ATM_CURRENT_MAX"}, {"type": "float", "name": "DAYS_PAYMENT_DIFF_MIN_MEAN"},
+    {"type": "float", "name": "AGE_EMPLOYED_DIFF_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "GOOD_DOWNPAYMET_RATIO_MAX_FIRST_2"}, {"type": "float",
+    "name": "AMT_PAYMENT_RATIO_MEAN_MIN"}, {"type": "float", "name": "EXT_SOURCE_MEAN_MAX_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "EXT_SOURCE_MEAN_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "CNT_INSTALMENT_MAX_YEAR_1_MEAN"}, {"type": "float",
+    "name": "EXT_SOURCE_1_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type": "float",
+    "name": "AMT_CREDIT_NFLAG_LAST_APPL_DAY_MAX_LAST_5"}, {"type": "float", "name":
+    "CNT_INSTALMENT_FUTURE_MAX_ACTIVE_MEAN"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_YEAR_1_MEAN"},
+    {"type": "float", "name": "OCCUPATION_TYPE_1"}, {"type": "float", "name": "AMT_DOWN_PAYMENT_MAX_LAST_5"},
+    {"type": "float", "name": "WEIGHTED_STATUS_FIRST_YEAR_REST_MEAN_OVERALL"}, {"type":
+    "float", "name": "COMMONAREA_AVG"}, {"type": "float", "name": "FLOORSMIN_MEDI"},
+    {"type": "float", "name": "INTEREST_RATE_MAX_LAST_5"}, {"type": "float", "name":
+    "HOUR_APPR_PROCESS_START_MIN_FIRST_2"}, {"type": "float", "name": "TOTAL_TERM_LAST_MEAN"},
+    {"type": "float", "name": "TOTAL_TERM_MEAN_YEAR_0_MEAN"}, {"type": "float", "name":
+    "DAYS_DECISION_MEAN_FIRST_2"}, {"type": "float", "name": "SELLERPLACE_AREA_MEAN_ALL"},
+    {"type": "float", "name": "EMPLOYED_TO_AGE_RATIO"}, {"type": "float", "name":
+    "DAYS_PAYMENT_RATIO_MEAN_MEAN"}, {"type": "float", "name": "SK_DPD_RATIO_MAX_YEAR_0_MEAN"},
+    {"type": "float", "name": "TOTAL_TERM_MEAN_MAX"}, {"type": "float", "name": "AMT_INSTALMENT_SUM_SUM"},
+    {"type": "float", "name": "BALANCE_LIMIT_RATIO_MAX"}, {"type": "float", "name":
+    "YEARS_BUILD_AVG"}, {"type": "float", "name": "AMT_DECLINED_MEAN_FIRST_2"}, {"type":
+    "float", "name": "AMT_PAYMENT_TOTAL_CURRENT_MAX"}, {"type": "float", "name": "EXP_AMT_RECEIVABLE_PRINCIPAL_LAST"},
+    {"type": "float", "name": "CHANNEL_TYPE_MEAN_ALL"}, {"type": "float", "name":
+    "CNT_INSTALMENT_MIN_YEAR_0_MEAN"}, {"type": "float", "name": "AMT_INST_MIN_REGULARITY_MAX"},
+    {"type": "float", "name": "AMT_DRAWINGS_CURRENT_SUM"}, {"type": "float", "name":
+    "AMT_CREDIT_HOUR_PROCESS_START_SUM_LAST_5"}, {"type": "float", "name": "CNT_PAYMENT_MEAN_FIRST_2"},
+    {"type": "float", "name": "CREDIT_EXT_RATIO"}, {"type": "float", "name": "BALANCE_LIMIT_RATIO_MEAN"},
+    {"type": "float", "name": "AMT_CREDIT_SUM_OVERDUE_SUM_CREDITACTIVE_ACTIVE"}, {"type":
+    "float", "name": "INSTALLMENTS_AMT_PAYMENT_MEAN_MAX_INCOME_RATIO"}, {"type": "float",
+    "name": "PREV_AMT_GOODS_PRICE_SUM_ALL_INCOME_RATIO"}, {"type": "float", "name":
+    "DAYS_DECISION_MIN_LAST_5"}, {"type": "float", "name": "SK_DPD_RATIO_MEAN_SUM"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MEANCREDIT_ACTIVE_REST_REGISTRATION_DIFF"},
+    {"type": "float", "name": "CREDIT_TYPE_Microloan_MEAN_OVERALL"}, {"type": "integer",
+    "name": "FLAG_DOCUMENT_8"}, {"type": "float", "name": "AMT_ANNUITY_MAX_LAST_5"},
+    {"type": "float", "name": "PREV_AMT_GOODS_PRICE_MEAN_ALL_INCOME_RATIO"}, {"type":
+    "float", "name": "DAYS_CREDIT_MEAN_CREDITACTIVE_CLOSED"}, {"type": "float", "name":
+    "DAYS_CREDIT_MIN_CREDITACTIVE_ACTIVE"}, {"type": "float", "name": "AMT_GOODS_PRICE_MEAN_LAST_5"},
+    {"type": "float", "name": "PREV_AMT_GOODS_PRICE_MAX_ALL_INCOME_RATIO"}, {"type":
+    "float", "name": "SK_DPD_MAX_YEAR_0_MEAN"}, {"type": "float", "name": "WEEKDAY_APPR_PROCESS_START_MIN_FIRST_2"},
+    {"type": "float", "name": "EXT_SOURCE_1_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "CNT_DRAWING_SUM_SUM_YEAR_REST"}, {"type": "float",
+    "name": "AMT_CREDIT_MEAN_ALL"}, {"type": "float", "name": "SK_DPD_DEF_SUM_YEAR_1_MEAN"},
+    {"type": "float", "name": "GOODS_INCOME_RATIO"}, {"type": "float", "name": "AMT_CREDIT_MAX_OVERDUE_MEAN_OVERALL"},
+    {"type": "float", "name": "ANNUITY_INCOME_RATIO_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_INCOME_TOTAL_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "INTEREST_DOWNPAYMENT_SUM_LAST_5"}, {"type": "float",
+    "name": "CNT_INSTALMENT_MATURE_CUM_MAX"}, {"type": "float", "name": "EXP_AMT_DRAWING_SUM_LAST_ACTIVE"},
+    {"type": "float", "name": "CNT_PAYMENT_SUM_LAST_5"}, {"type": "float", "name":
+    "HOUR_APPR_PROCESS_START_MEAN_FIRST_2"}, {"type": "float", "name": "CNT_DRAWING_SUM_MAX_YEAR_0"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MAX_MAX"}, {"type": "float", "name":
+    "INCOME_ANNUITY_DIFF"}, {"type": "float", "name": "FLOORSMIN_MODE"}, {"type":
+    "float", "name": "EMERGENCYSTATE_MODE_0"}, {"type": "float", "name": "CREDIT_DAY_OVERDUE_MEAN_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "DAYS_FIRST_DRAWING_MEAN_FIRST_2"}, {"type": "float",
+    "name": "DAYS_FIRST_LAST_DUE_DIFF_MEAN_LAST_5"}, {"type": "float", "name": "EXP_CNT_INSTALMENT_LAST_MEAN"},
+    {"type": "float", "name": "NAME_CONTRACT_TYPE_LAST_LAST_5"}, {"type": "float",
+    "name": "CREDIT_DOWNPAYMENT_RATIO_MEAN_LAST_5"}, {"type": "float", "name": "DAYS_LAST_DUE_MEAN_FIRST_2"},
+    {"type": "float", "name": "AMT_PAYMENT_RATIO_MIN_FIRST_5_INSTALLMENTS"}, {"type":
+    "float", "name": "AMT_INCOME_TOTAL_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_MEAN_ALL"}, {"type": "float",
+    "name": "CODE_REJECT_REASON_MEAN_ALL"}, {"type": "float", "name": "NAME_TYPE_SUITE_MEAN_FIRST_2"},
+    {"type": "float", "name": "EXPECTED_INTEREST_RATE"}, {"type": "float", "name":
+    "DAYS_FIRST_LAST_DUE_DIFF_MEAN_ALL"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_SUM"},
+    {"type": "float", "name": "PAYMENT_MIN_DIFF_MEAN_YEAR_0"}, {"type": "float", "name":
+    "EXT_SOURCE_MEAN_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"}, {"type":
+    "float", "name": "CC_AMT_RECEIVABLE_PRINCIPAL_MAX_INCOME_RATIO"}, {"type": "float",
+    "name": "AMT_APPLICATION_TO_SELLERPLACE_AREA_MAX_LAST_5"}, {"type": "float", "name":
+    "AMT_INTEREST_RECEIVABLE_MEAN_ACTIVE"}, {"type": "float", "name": "INTEREST_CREDIT_PRIVILEGED_SUM_LAST_5"},
+    {"type": "float", "name": "BUREAU_AMT_CREDIT_SUM_OVERDUE_SUM_CREDITACTIVE_ACTIVE_INCOME_RATIO"},
+    {"type": "float", "name": "AMT_PAYMENT_DIFF_MEAN_MIN"}, {"type": "float", "name":
+    "WEIGHTED_STATUS_FIRST_MEAN_OVERALL"}, {"type": "float", "name": "MONTHS_BALANCE_MAX_MEAN_OVERALL"},
+    {"type": "float", "name": "DAYS_CREDIT_MEAN_OVERALL"}, {"type": "float", "name":
+    "PRODUCT_COMBINATION_LAST_FIRST_2"}, {"type": "float", "name": "EXP_ENCODED_STATUS_LAST_MEAN_OVERALL"},
+    {"type": "float", "name": "AMT_INCOME_TOTAL_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "BALANCE_LIMIT_RATIO_MAX_YEAR_REST"}, {"type": "float",
+    "name": "AMT_ANNUITY_CREDIT_RATIO_MEAN_CREDITACTIVE_ACTIVE"}, {"type": "float",
+    "name": "AMT_CREDIT_HOUR_PROCESS_START_MEAN_ALL"}, {"type": "float", "name": "APPLICATION_AMT_TO_DECISION_RATIO_MEAN_LAST_5"},
+    {"type": "float", "name": "SK_DPD_DEF_MAX_YEAR_1"}, {"type": "float", "name":
+    "EXP_PAYMENT_MIN_DIFF_LAST_YEAR_REST"}, {"type": "float", "name": "INTEREST_RATE_MIN_FIRST_2"},
+    {"type": "float", "name": "EXT_SOURCE_1_MAX_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "STATUS_FIRST_YEAR_REST_MEAN_OVERALL"}, {"type": "float",
+    "name": "EXP_MIN_PAYMENT_RATIO_LAST_ACTIVE"}, {"type": "float", "name": "SK_DPD_DEF_SUM_YEAR_REST_MEAN"},
+    {"type": "float", "name": "EXP_POS_TOTAL_TERM_LAST_ACTIVE_MEAN"}, {"type": "float",
+    "name": "EXT_SOURCE_2_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type": "float",
+    "name": "CC_AMT_RECIVABLE_MEAN_INCOME_RATIO"}, {"type": "float", "name": "STATUS_FIRST_YEAR_0_MEAN_OVERALL"},
+    {"type": "float", "name": "EXP_AMT_INTEREST_RECEIVABLE_LAST_YEAR_REST"}, {"type":
+    "float", "name": "BUREAU_AMT_ANNUITY_MEAN_OVERALL_INCOME_RATIO"}, {"type": "float",
+    "name": "AMT_PAYMENT_SUM_MAX"}, {"type": "float", "name": "WEIGHTED_STATUS_SUM_MEAN_OVERALL"},
+    {"type": "float", "name": "SK_DPD_MAX_YEAR_REST_MEAN"}, {"type": "float", "name":
+    "INSTALLMENTS_AMT_PAYMENT_SUM_FIRST_5_INSTALLMENTS_INCOME_RATIO"}, {"type": "float",
+    "name": "AMT_CREDIT_GOODS_DIFF_SUM_ALL"}, {"type": "float", "name": "EXT_SOURCE_3_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "CAR_EMPLOYED_DIFF"}, {"type": "float", "name": "SELLERPLACE_AREA_MEAN_LAST_5"},
+    {"type": "float", "name": "AMT_INCOME_TOTAL_MAX_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_PAYMENT_MEAN_FIRST_5_INSTALLMENTS"}, {"type": "float",
+    "name": "CNT_DRAWING_SUM_MAX_YEAR_1"}, {"type": "float", "name": "EXP_CNT_INSTALMENT_LAST_ACTIVE_MEAN"},
+    {"type": "float", "name": "ANNUITY_GOODS_SUM_FIRST_2"}, {"type": "float", "name":
+    "MIN_PAYMENT_TOTAL_RATIO_MIN_YEAR_1"}, {"type": "float", "name": "ANNUITY_INCOME_RATIO_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "MIN_PAYMENT_RATIO_MEAN_YEAR_REST"}, {"type": "float",
+    "name": "AMT_APPLICATION_MAX_FIRST_2"}, {"type": "float", "name": "AMT_INTEREST_RECEIVABLE_MEAN_YEAR_1"},
+    {"type": "float", "name": "APARTMENTS_SUM_AVG_MAX_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "DAYS_FIRST_DUE_MEAN_LAST_5"}, {"type": "float", "name":
+    "AGE_EMPLOYED_DIFF_MIN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"}, {"type":
+    "float", "name": "EXT_SOURCE_3_MAX_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "EXP_CNT_INSTALMENT_FUTURE_LAST_YEAR_1_MEAN"}, {"type":
+    "float", "name": "WEEKDAY_APPR_PROCESS_START_MEAN_ALL"}, {"type": "float", "name":
+    "AMT_DOWN_PAYMENT_SUM_LAST_5"}, {"type": "float", "name": "CNT_PROLONGED_MAX_OVERDUE_MUL_MEAN_OVERALL"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_ACTIVE_SUM"}, {"type": "float",
+    "name": "INSTALLMENTS_AMT_PAYMENT_SUM_LAST_1_YEAR_INCOME_RATIO"}, {"type": "float",
+    "name": "AMT_INSTALMENT_SUM_MEAN"}, {"type": "float", "name": "DAYS_TERMINATION_MEAN_LAST_5"},
+    {"type": "float", "name": "EXP_WEIGHTED_STATUS_LAST_YEAR_0_MEAN_OVERALL"}, {"type":
+    "float", "name": "AMT_INTEREST_SUM_LAST_5"}, {"type": "float", "name": "PAYMENT_MIN_DIFF_MEAN_YEAR_REST"},
+    {"type": "float", "name": "AMT_ANNUITY_CREDIT_RATIO_MAX_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "CNT_INSTALMENT_MATURE_CUM_SUM"}, {"type": "float",
+    "name": "EXPECTED_CNT_PAYMENT"}, {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_MIN_LAST_5"},
+    {"type": "float", "name": "AMT_CREDIT_YIELD_GROUP_SUM_LAST_5"}, {"type": "float",
+    "name": "CNT_INSTALMENT_MEAN_YEAR_0_SUM"}, {"type": "float", "name": "APARTMENTS_SUM_AVG_MEAN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "PREV_AMT_ANNUITY_MAX_LAST_5_INCOME_RATIO"}, {"type":
+    "float", "name": "HOUR_PROCESS_CREDIT_MUL"}, {"type": "float", "name": "AMT_DECLINED_SUM_ALL"},
+    {"type": "float", "name": "AMT_PAYMENT_RATIO_MEAN_MEAN"}, {"type": "float", "name":
+    "INTEREST_RATE_MAX_ALL"}, {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MIN_FIRST_2"},
+    {"type": "float", "name": "EXP_WEIGHTED_STATUS_LAST_YEAR_1_MEAN_OVERALL"}, {"type":
+    "float", "name": "WEEKDAY_APPR_PROCESS_START_MEAN_LAST_5"}, {"type": "float",
+    "name": "EXP_BALANCE_LIMIT_RATIO_LAST_YEAR_REST"}, {"type": "float", "name": "CNT_INSTALMENT_MIN_ACTIVE_MEAN"},
+    {"type": "float", "name": "BALANCE_LIMIT_RATIO_MEAN_YEAR_1"}, {"type": "float",
+    "name": "APARTMENTS_SUM_MEDI_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "ANNUITY_MEAN_FIRST_2"}, {"type": "float", "name": "SK_DPD_DEF_MAX_YEAR_1_MEAN"},
+    {"type": "float", "name": "SK_DPD_SUM_YEAR_1_MEAN"}, {"type": "float", "name":
+    "HOUR_APPR_PROCESS_START_MAX_ALL"}, {"type": "float", "name": "AMT_APPLICATION_TO_SELLERPLACE_AREA_MAX_FIRST_2"},
+    {"type": "float", "name": "TOTAL_TERM_MEAN_YEAR_0_SUM"}, {"type": "float", "name":
+    "AMT_APPLICATION_SUM_LAST_5"}, {"type": "float", "name": "SK_DPD_MAX_YEAR_1_MEAN"},
+    {"type": "float", "name": "APARTMENTS_SUM_AVG_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MIN_MIN"}, {"type": "float", "name":
+    "SK_DPD_SUM_MEAN"}, {"type": "float", "name": "SK_DPD_DEF_MAX_MEAN"}, {"type":
+    "float", "name": "AMT_PAYMENT_MAX_FIRST_5_INSTALLMENTS"}, {"type": "float", "name":
+    "SELLERPLACE_AREA_MAX_FIRST_2"}, {"type": "float", "name": "NAME_CONTRACT_STATUS_MEAN_ALL"},
+    {"type": "float", "name": "MIN_PAYMENT_TOTAL_RATIO_MIN"}, {"type": "float", "name":
+    "AMT_DOWN_PAYMENT_MEAN_LAST_5"}, {"type": "float", "name": "SK_DPD_DEF_SUM_YEAR_REST"},
+    {"type": "float", "name": "CONTRACT_ACTIVE_MEAN"}, {"type": "float", "name": "AMT_PAYMENT_SUM_LAST_1_YEAR"},
+    {"type": "integer", "name": "SUM_FLAGS_DOCUMENTS"}, {"type": "float", "name":
+    "AMT_ANNUITY_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"}, {"type":
+    "float", "name": "CAR_AGE_DIFF"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_YEAR_REST_MEAN"},
+    {"type": "float", "name": "AMT_ANNUITY_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "BUREAU_AMT_CREDIT_MAX_OVERDUE_MEAN_OVERALL_INCOME_RATIO"},
+    {"type": "float", "name": "CREDIT_TYPE_Credit card_MEAN_OVERALL"}, {"type": "float",
+    "name": "AMT_PAYMENT_DIFF_MAX_LAST_1_YEAR"}, {"type": "float", "name": "AMT_REQ_CREDIT_BUREAU_MON"},
+    {"type": "float", "name": "CHILDREN_INCOME_RATIO"}, {"type": "float", "name":
+    "AMT_ANNUITY_CREDIT_RATIO_MIN_CREDITACTIVE_ACTIVE"}, {"type": "float", "name":
+    "SELLERPLACE_AREA_MIN_ALL"}, {"type": "float", "name": "EXT_SOURCE_MEAN_MAX_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "AMT_GOODS_PRICE_MAX_ALL"}, {"type": "float", "name":
+    "EXP_SK_DPD_RATIO_LAST_YEAR_1"}, {"type": "float", "name": "AMT_CREDIT_APPLICATION_RATIO_MEAN_LAST_5"},
+    {"type": "float", "name": "AMT_ANNUITY_SUM_FIRST_2"}, {"type": "float", "name":
+    "EXP_AMT_PAYMENT_DIFF_LAST_LAST_1_YEAR"}, {"type": "float", "name": "INSTALLMENTS_AMT_PAYMENT_MEAN_LAST_1_YEAR_INCOME_RATIO"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_ACTIVE_MEAN"}, {"type":
+    "float", "name": "LIVINGAREA_MODE"}, {"type": "float", "name": "CREDIT_ACTIVE_Closed_MEAN_OVERALL"},
+    {"type": "float", "name": "INTEREST_DOWNPAYMENT_SUM_FIRST_2"}, {"type": "float",
+    "name": "DAYS_FIRST_DRAWING_MEAN_ALL"}, {"type": "float", "name": "AMT_CREDIT_NFLAG_LAST_APPL_DAY_MAX_ALL"},
+    {"type": "float", "name": "PAYMENT_MIN_DIFF_MIN_YEAR_REST"}, {"type": "float",
+    "name": "TOTAL_TERM_MEAN_ACTIVE_MAX"}, {"type": "float", "name": "CREDIT_GOODS_DIFF"},
+    {"type": "float", "name": "DAYS_FIRST_LAST_DUE_DIFF_MAX_FIRST_2"}, {"type": "float",
+    "name": "STATUS_MEAN_MEAN_CREDITACTIVE_ACTIVE"}, {"type": "float", "name": "AMT_INSTALMENT_MEAN_LAST_1_YEAR"},
+    {"type": "float", "name": "TOTAL_TERM_MEAN_YEAR_REST_SUM"}, {"type": "float",
+    "name": "CODE_REJECT_REASON_LAST_LAST_5"}, {"type": "float", "name": "EXT_SOURCE_2_MAX_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "CURRENT_CREDIT_DEBT_DIFF_MEAN_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "EXT_SOURCE_3_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "ORGANIZATION_TYPE_1"}, {"type": "float", "name": "AMT_PAYMENT_RATIO_MAX_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_YEAR_1_MAX"}, {"type": "float",
+    "name": "LIVINGAPARTMENTS_AVG"}, {"type": "float", "name": "EXP_CNT_INSTALMENT_LAST_YEAR_0_MEAN"},
+    {"type": "float", "name": "RATE_DOWN_PAYMENT_MAX_LAST_5"}, {"type": "float", "name":
+    "ANNUITY_GOODS_MAX_FIRST_2"}, {"type": "float", "name": "SK_DPD_DEF_MAX_YEAR_REST_MEAN"},
+    {"type": "float", "name": "INTEREST_CREDIT_PRIVILEGED_SUM_ALL"}, {"type": "float",
+    "name": "CNT_DRAWINGS_CURRENT_SUM"}, {"type": "float", "name": "NAME_EDUCATION_TYPE_0"},
+    {"type": "float", "name": "EXP_BALANCE_LIMIT_RATIO_LAST"}, {"type": "float", "name":
+    "APARTMENTS_AVG"}, {"type": "float", "name": "AMT_RECEIVABLE_PRINCIPAL_MAX"},
+    {"type": "float", "name": "SK_DPD_DEF_SUM_ACTIVE_MEAN"}, {"type": "float", "name":
+    "CNT_INSTALMENT_FUTURE_MIN_YEAR_1_MEAN"}, {"type": "integer", "name": "DAYS_ID_PUBLISH"},
+    {"type": "float", "name": "DAYS_CREDIT_MAX_CREDITACTIVE_CLOSED"}, {"type": "float",
+    "name": "AMT_INCOME_TOTAL_MEAN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "ORGANIZATION_TYPE_0"}, {"type": "float", "name": "BUREAU_DAYS_CREDIT_MEAN_CREDITACTIVE_CLOSED_REGISTRATION_DIFF"},
+    {"type": "float", "name": "REGION_RATING_MUL_1"}, {"type": "float", "name": "EXT_SOURCE_2_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "AMT_APPLICATION_MEAN_ALL"}, {"type": "float", "name":
+    "EXT_SOURCE_2"}, {"type": "float", "name": "AMT_PAYMENT_MAX_LAST_1_YEAR"}, {"type":
+    "float", "name": "MIN_PAYMENT_TOTAL_RATIO_MEAN_YEAR_REST"}, {"type": "float",
+    "name": "TARGET_NEIGHBORS_500_MEAN"}, {"type": "float", "name": "STATUS_LAST_YEAR_0_MEAN_OVERALL"},
+    {"type": "float", "name": "OBS_DEF_60_MUL"}, {"type": "float", "name": "FLOORSMIN_AVG"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MAX_FIRST_5_INSTALLMENTS"}, {"type":
+    "float", "name": "YEARS_BEGINEXPLUATATION_MEDI"}, {"type": "float", "name": "EXP_MIN_PAYMENT_RATIO_LAST_COMPLETED"},
+    {"type": "float", "name": "NONLIVINGAREA_AVG"}, {"type": "integer", "name": "FLAG_REGIONS"},
+    {"type": "float", "name": "CNT_DRAWING_SUM_MAX_ACTIVE"}, {"type": "float", "name":
+    "AGE_EMPLOYED_DIFF_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "NAME_TYPE_SUITE_MEAN_ALL"}, {"type": "float", "name":
+    "AMT_ANNUITY_MEAN_CREDITACTIVE_CLOSED"}, {"type": "float", "name": "SELLERPLACE_AREA_MAX_ALL"},
+    {"type": "float", "name": "AMT_CREDIT_YIELD_GROUP_MEAN_FIRST_2"}, {"type": "float",
+    "name": "CNT_DRAWING_SUM_SUM_YEAR_0"}, {"type": "float", "name": "PREV_AMT_ANNUITY_MAX_FIRST_2_INCOME_RATIO"},
+    {"type": "float", "name": "EXT_SOURCE_2_MEAN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "INTEREST_DOWNPAYMENT_MEAN_ALL"}, {"type": "float",
+    "name": "DAYS_FIRST_LAST_DUE_DIFF_MAX_ALL"}, {"type": "float", "name": "EXPECTED_INTEREST"},
+    {"type": "float", "name": "SK_DPD_RATIO_MEAN_YEAR_0_SUM"}, {"type": "float", "name":
+    "INTEREST_SHARE_MIN_ALL"}, {"type": "float", "name": "NAME_FAMILY_STATUS_1"},
+    {"type": "float", "name": "APARTMENTS_SUM_MODE"}, {"type": "float", "name": "AMT_PAYMENT_MAX_MEAN"},
+    {"type": "float", "name": "CNT_DRAWING_SUM_SUM_YEAR_1"}, {"type": "float", "name":
+    "INTEREST_SHARE_MEAN_FIRST_2"}, {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_MEAN_LAST_5"},
+    {"type": "float", "name": "EXP_CNT_INSTALMENT_FUTURE_LAST_MEAN"}, {"type": "float",
+    "name": "DAYS_LAST_DUE_MEAN_ALL"}, {"type": "float", "name": "DAYS_PAYMENT_RATIO_MIN_LAST_1_YEAR"},
+    {"type": "float", "name": "AMT_INTEREST_MEAN_LAST_5"}, {"type": "float", "name":
+    "NAME_CLIENT_TYPE_MEAN_ALL"}, {"type": "float", "name": "APPLICATION_AMT_TO_DECISION_RATIO_MIN_ALL"},
+    {"type": "float", "name": "APARTMENTS_SUM_MEDI_MEAN_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "EXP_POS_TOTAL_TERM_MEAN_MAX"}, {"type": "float", "name":
+    "AMT_RECEIVABLE_PRINCIPAL_MEAN"}, {"type": "float", "name": "EXP_POS_TOTAL_TERM_MEAN_SUM"},
+    {"type": "float", "name": "EXT_SOURCE_1_MIN_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "AMT_CREDIT_SUM_MAX_CREDITACTIVE_ACTIVE"}, {"type":
+    "float", "name": "AMT_ANNUITY_CREDIT_RATIO_MEAN_OVERALL"}, {"type": "float", "name":
+    "APARTMENTS_SUM_AVG_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type": "float",
+    "name": "AMT_APPLICATION_TO_SELLERPLACE_AREA_MEAN_LAST_5"}, {"type": "float",
+    "name": "MONTHS_BALANCE_MAX"}, {"type": "float", "name": "DAYS_DECISION_MAX_LAST_5"},
+    {"type": "float", "name": "NAME_CONTRACT_STATUS_MAX_LAST_5"}, {"type": "float",
+    "name": "EXP_BALANCE_LIMIT_RATIO_LAST_COMPLETED"}, {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MAX_LAST_5"},
+    {"type": "float", "name": "INTEREST_RATE_MEAN_ALL"}, {"type": "float", "name":
+    "ANNUITY_INCOME_RATIO_MAX_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "INSTALLMENTS_AMT_PAYMENT_SUM_MAX_INCOME_RATIO"}, {"type":
+    "float", "name": "AMT_ANNUITY_SUM_LAST_5"}, {"type": "float", "name": "AMT_ENQ_SUM"},
+    {"type": "float", "name": "EXP_AMT_RECIVABLE_LAST"}, {"type": "float", "name":
+    "AMT_CREDIT_SUM_LIMIT_SUM_CREDITACTIVE_CLOSED"}, {"type": "float", "name": "MISSING_VALUES_TOTAL_PREV_SUM_LAST_5"},
+    {"type": "float", "name": "EXT_SOURCE_1_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "WEIGHTED_STATUS_MEAN_MEAN_CREDITACTIVE_ACTIVE"}, {"type":
+    "float", "name": "CREDIT_DOWNPAYMENT_RATIO_MEAN_ALL"}, {"type": "float", "name":
+    "PREV_AMT_ANNUITY_MEAN_FIRST_2_INCOME_RATIO"}, {"type": "float", "name": "DAYS_PAYMENT_DIFF_MAX_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "AGE_EMPLOYED_DIFF_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MEAN_OVERALL_EMPLOYED_DIFF"}, {"type":
+    "float", "name": "DEF_30_CNT_SOCIAL_CIRCLE"}, {"type": "float", "name": "AMT_PAYMENT_RATIO_MEAN_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "CONTRACT_SIGNED_MEAN"}, {"type": "float", "name": "EXT_SOURCE_3_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_PAYMENT_RATIO_MAX_MEAN"}, {"type": "float", "name":
+    "EXP_AMT_PAYMENT_RATIO_LAST_LAST_1_YEAR"}, {"type": "float", "name": "NAME_GOODS_CATEGORY_MEAN_LAST_5"},
+    {"type": "float", "name": "WEEKDAY_APPR_PROCESS_START_0"}, {"type": "float", "name":
+    "AMT_DOWN_PAYMENT_MAX_ALL"}, {"type": "float", "name": "DAYS_FIRST_DUE_MAX_LAST_5"},
+    {"type": "float", "name": "ANNUITY_MAX_LAST_5"}, {"type": "float", "name": "AMT_PAYMENT_RATIO_MAX_LAST_1_YEAR"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MIN_CREDITACTIVE_CLOSED_EMPLOYED_DIFF"},
+    {"type": "float", "name": "INTEREST_RATE_MEAN_FIRST_2"}, {"type": "float", "name":
+    "TOTAL_TERM_MAX_YEAR_0_MEAN"}, {"type": "float", "name": "AMT_ANNUITY_MAX_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "AMT_ANNUITY_SUM_ALL"}, {"type": "float", "name": "DAYS_DECISION_MAX_ALL"},
+    {"type": "float", "name": "GOOD_DOWNPAYMET_RATIO_MEAN_ALL"}, {"type": "float",
+    "name": "SELLERPLACE_AREA_MEAN_FIRST_2"}, {"type": "float", "name": "FLAG_LAST_APPL_PER_CONTRACT_SUM_ALL"},
+    {"type": "float", "name": "BUREAU_AMT_CREDIT_SUM_OVERDUE_MAX_CREDITACTIVE_ACTIVE_INCOME_RATIO"},
+    {"type": "float", "name": "APARTMENTS_MEDI"}, {"type": "float", "name": "DEF_60_CNT_SOCIAL_CIRCLE"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MAX_ALL"}, {"type": "float",
+    "name": "CNT_INSTALMENT_MEAN_COMPLETED_MAX"}, {"type": "float", "name": "AMT_ANNUITY_MAX_FIRST_2"},
+    {"type": "float", "name": "NAME_CASH_LOAN_PURPOSE_LAST_LAST_5"}, {"type": "float",
+    "name": "AMT_APPLICATION_SUM_ALL"}, {"type": "float", "name": "INTEREST_CREDIT_SUM_ALL"},
+    {"type": "float", "name": "EXT_SOURCE_3_MAX_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "EXP_CNT_DRAWING_SUM_LAST_YEAR_1"}, {"type": "float",
+    "name": "AMT_ANNUITY_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_PAYMENT_RATIO_MIN_MEAN"}, {"type": "float", "name":
+    "AMT_ANNUITY_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"}, {"type":
+    "float", "name": "EXP_CNT_INSTALMENT_LAST_COMPLETED_MEAN"}, {"type": "float",
+    "name": "EXP_DAYS_PAYMENT_RATIO_LAST_LAST_1_YEAR"}, {"type": "float", "name":
+    "CHANNEL_TYPE_MEAN_FIRST_2"}, {"type": "float", "name": "NAME_GOODS_CATEGORY_MEAN_FIRST_2"},
+    {"type": "float", "name": "AMT_PAYMENT_MEAN_LAST_1_YEAR"}, {"type": "float", "name":
+    "AMT_DECLINED_MAX_ALL"}, {"type": "float", "name": "EXT_SOURCE_1_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "STATUS_MAX_YEAR_REST_MEAN_OVERALL"}, {"type": "float",
+    "name": "CNT_PAYMENT_MAX_LAST_5"}, {"type": "float", "name": "CNT_INSTALMENT_MIN_YEAR_1_MEAN"},
+    {"type": "float", "name": "TOTAL_TERM_MAX_YEAR_1_MEAN"}, {"type": "float", "name":
+    "MISSING_VALUES_TOTAL_PREV_SUM_ALL"}, {"type": "float", "name": "EXT_SOURCE_3_MAX_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "WEIGHTED_STATUS_MEAN_MEAN_OVERALL"}, {"type": "float",
+    "name": "BALANCE_LIMIT_RATIO_MAX_YEAR_1"}, {"type": "float", "name": "WEEKDAY_APPR_PROCESS_START_MAX_ALL"},
+    {"type": "float", "name": "AMT_CREDIT_MAX_OVERDUE_MAX_CREDITACTIVE_ACTIVE"}, {"type":
+    "float", "name": "AMT_INTEREST_MIN_FIRST_2"}, {"type": "float", "name": "PREV_AMT_GOODS_PRICE_SUM_FIRST_2_INCOME_RATIO"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MIN_YEAR_REST_MEAN"}, {"type":
+    "float", "name": "DAYS_PAYMENT_DIFF_MEAN_LAST_1_YEAR"}, {"type": "float", "name":
+    "NUM_INSTALMENT_VERSION_SUM_LAST_1_YEAR"}, {"type": "float", "name": "EXP_CNT_DRAWING_SUM_LAST_YEAR_REST"},
+    {"type": "float", "name": "CREDIT_ANNUITY_RATIO"}, {"type": "float", "name": "AMT_PAYMENT_CURRENT_MIN"},
+    {"type": "float", "name": "AMT_GOODS_PRICE_MEAN_FIRST_2"}, {"type": "float", "name":
+    "EXT_SOURCE_MIN"}, {"type": "float", "name": "AMT_ANNUITY_CREDIT_RATIO_MAX_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "SK_DPD_DEF_SUM_MEAN"}, {"type": "float", "name": "AMT_INSTALMENT_SUM_MAX"},
+    {"type": "float", "name": "APARTMENTS_SUM_AVG_MIN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "WEEKDAY_APPR_PROCESS_START_MAX_FIRST_2"}, {"type":
+    "float", "name": "DAYS_FIRST_DRAWING_MEAN_LAST_5"}, {"type": "float", "name":
+    "APARTMENTS_SUM_AVG_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MIN_CREDITACTIVE_ACTIVE_EMPLOYED_DIFF"},
+    {"type": "float", "name": "SK_DPD_RATIO_MEAN_YEAR_1_MEAN"}, {"type": "float",
+    "name": "CNT_PAYMENT_MEAN_ALL"}, {"type": "float", "name": "EXP_PAYMENT_MIN_DIFF_LAST_COMPLETED"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_ACTIVE_MAX"}, {"type": "float",
+    "name": "SK_DPD_DEF_MAX_YEAR_0_MEAN"}, {"type": "float", "name": "EXP_DAYS_PAYMENT_DIFF_LAST_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_COMPLETED_MEAN"}, {"type": "float",
+    "name": "APPLICATION_AMT_TO_DECISION_RATIO_MEAN_ALL"}, {"type": "float", "name":
+    "EXP_MIN_PAYMENT_RATIO_LAST"}, {"type": "float", "name": "AMT_INTEREST_SUM_ALL"},
+    {"type": "float", "name": "EXP_SK_DPD_RATIO_LAST"}, {"type": "float", "name":
+    "CNT_FAM_MEMBERS"}, {"type": "float", "name": "EXT_SOURCE_2_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "integer", "name": "MISSING_VALS_TOTAL_APP"}, {"type": "float", "name":
+    "MIN_PAYMENT_TOTAL_RATIO_MIN_YEAR_0"}, {"type": "float", "name": "HOUR_APPR_PROCESS_START_MEAN_ALL"},
+    {"type": "float", "name": "AMT_PAYMENT_TOTAL_CURRENT_MEAN"}, {"type": "float",
+    "name": "AMT_INTEREST_RECEIVABLE_MIN_REST"}, {"type": "float", "name": "YEARS_BEGINEXPLUATATION_AVG"},
+    {"type": "float", "name": "EXP_AMT_INTEREST_RECEIVABLE_LAST"}, {"type": "float",
+    "name": "DAYS_DETAILS_CHANGE_MUL"}, {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MAX_FIRST_2"},
+    {"type": "float", "name": "NAME_PRODUCT_TYPE_MEAN_LAST_5"}, {"type": "float",
+    "name": "NAME_YIELD_GROUP_LAST_FIRST_2"}, {"type": "float", "name": "INTEREST_SHARE_MEAN_ALL"},
+    {"type": "float", "name": "APARTMENTS_SUM_MEDI_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "RATE_DOWN_PAYMENT_MEAN_LAST_5"}, {"type": "float",
+    "name": "EXT_SOURCE_3_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type": "float",
+    "name": "EXT_SOURCE_1_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "WEIGHTED_EXT_SOURCE"}, {"type": "float", "name": "ANNUITY_GOODS_MAX_ALL"},
+    {"type": "float", "name": "BUREAU_AMT_CREDIT_MAX_OVERDUE_MAXCREDIT_ACTIVE_REST_INCOME_RATIO"},
+    {"type": "float", "name": "STATUS_LAST_YEAR_1_MEAN_OVERALL"}, {"type": "float",
+    "name": "NAME_TYPE_SUITE_LAST_FIRST_2"}, {"type": "float", "name": "SELLERPLACE_AREA_MAX_LAST_5"},
+    {"type": "float", "name": "LIVINGAREA_AVG"}, {"type": "float", "name": "BALANCE_LIMIT_RATIO_MEAN_YEAR_0"},
+    {"type": "float", "name": "AMT_APPLICATION_TO_SELLERPLACE_AREA_MAX_ALL"}, {"type":
+    "float", "name": "NAME_SELLER_INDUSTRY_MEAN_ALL"}, {"type": "float", "name": "AMT_ANNUITY_MAX_ALL"},
+    {"type": "float", "name": "NUM_INSTALMENT_VERSION_MEAN_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "AMT_INSTALMENT_SUM_LAST_1_YEAR"}, {"type": "float",
+    "name": "CURRENCY_currency 3_MEAN_OVERALL"}, {"type": "float", "name": "EXP_MIN_PAYMENT_TOTAL_RATIO_LAST_YEAR_1"},
+    {"type": "float", "name": "HOUR_APPR_PROCESS_START_MAX_LAST_5"}, {"type": "float",
+    "name": "AMT_INSTALMENT_MAX_LAST_1_YEAR"}, {"type": "float", "name": "PRODUCT_COMBINATION_LAST_LAST_5"},
+    {"type": "float", "name": "MIN_PAYMENT_RATIO_MIN_YEAR_REST"}, {"type": "float",
+    "name": "ANNUITY_GOODS_SUM_LAST_5"}, {"type": "float", "name": "WEIGHTED_STATUS_MEAN_MEANCREDIT_ACTIVE_REST"},
+    {"type": "float", "name": "APARTMENTS_SUM_AVG"}, {"type": "float", "name": "EXT_SOURCE_MEAN_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "AMT_DECLINED_SUM_FIRST_2"}, {"type": "float", "name":
+    "TOTAL_TERM_MEAN_YEAR_1_MAX"}, {"type": "float", "name": "CNT_INSTALMENT_MIN_MEAN"},
+    {"type": "float", "name": "EXP_AMT_DRAWING_SUM_LAST_YEAR_REST"}, {"type": "float",
+    "name": "EXP_DAYS_PAYMENT_DIFF_LAST_MEAN"}, {"type": "float", "name": "BASEMENTAREA_MEDI"},
+    {"type": "float", "name": "INSTALLMENTS_AMT_PAYMENT_MEAN_FIRST_5_INSTALLMENTS_INCOME_RATIO"},
+    {"type": "float", "name": "AMT_CREDIT_LIMIT_ACTUAL_MEAN"}, {"type": "float", "name":
+    "STATUS_MAX_YEAR_0_MEAN_OVERALL"}, {"type": "float", "name": "AMT_CREDIT_SUM_LAST_5"},
+    {"type": "float", "name": "MONTHS_BALANCE_MAX_MEAN"}, {"type": "float", "name":
+    "DAYS_PAYMENT_DIFF_MIN_LAST_1_YEAR"}, {"type": "float", "name": "SK_DPD_DEF_SUM_YEAR_0_MEAN"},
+    {"type": "float", "name": "CNT_DRAWING_SUM_SUM_COMPLETED"}, {"type": "float",
+    "name": "AMT_INTEREST_MAX_FIRST_2"}, {"type": "float", "name": "FLOORSMAX_MEDI"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MAX_YEAR_0_MEAN"}, {"type": "float",
+    "name": "NAME_PORTFOLIO_MEAN_FIRST_2"}, {"type": "float", "name": "APARTMENTS_SUM_MEDI_MAX_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MIN_ACTIVE_MEAN"}, {"type": "float",
+    "name": "NAME_YIELD_GROUP_MEAN_LAST_5"}, {"type": "float", "name": "CODE_REJECT_REASON_LAST_FIRST_2"},
+    {"type": "float", "name": "CURRENT_CREDIT_DEBT_DIFF_MEAN_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "AMT_CREDIT_MAX_ALL"}, {"type": "integer", "name": "FLAG_WORK_PHONE"},
+    {"type": "float", "name": "CC_AMT_RECEIVABLE_PRINCIPAL_SUM_INCOME_RATIO"}, {"type":
+    "float", "name": "FLAG_LAST_APPL_PER_CONTRACT_MEAN_ALL"}, {"type": "float", "name":
+    "STATUS_MEAN_MAXCREDIT_ACTIVE_REST"}, {"type": "float", "name": "CONTRACT_RETURNED
+    TO THE STORE_MEAN"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_YEAR_1_SUM"},
+    {"type": "float", "name": "STATUS_MEAN_MEAN_OVERALL"}, {"type": "float", "name":
+    "DAYS_FIRST_LAST_DUE_DIFF_MAX_LAST_5"}, {"type": "integer", "name": "FLAG_DOCUMENT_3"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MEAN_FIRST_5_INSTALLMENTS"}, {"type":
+    "float", "name": "NUM_INSTALMENT_VERSION_MEAN_LAST_1_YEAR"}, {"type": "float",
+    "name": "AMT_CREDIT_SUM_SUM_CREDITACTIVE_CLOSED"}, {"type": "float", "name": "AMT_CREDIT_APPLICATION_RATIO_MEAN_FIRST_2"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_YEAR_0_MAX"}, {"type": "float",
+    "name": "CHANNEL_TYPE_MEAN_LAST_5"}, {"type": "float", "name": "AMT_CREDIT_YIELD_GROUP_MIN_ALL"},
+    {"type": "float", "name": "AMT_CREDIT_APPLICATION_RATIO_MEAN_ALL"}, {"type": "float",
+    "name": "INTEREST_RATE_MIN_ALL"}, {"type": "float", "name": "EXT_SOURCE_1_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_PAYMENT_DIFF_MAX_FIRST_5_INSTALLMENTS"}, {"type":
+    "float", "name": "DEF_30_60_SUM"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_YEAR_1_MAX"},
+    {"type": "float", "name": "WEEKDAY_APPR_PROCESS_START_MAX_LAST_5"}, {"type": "float",
+    "name": "SK_DPD_RATIO_MEAN_ACTIVE_SUM"}, {"type": "float", "name": "TOTALAREA_MODE"},
+    {"type": "float", "name": "CODE_REJECT_REASON_MEAN_LAST_5"}, {"type": "float",
+    "name": "NAME_TYPE_SUITE_1"}, {"type": "float", "name": "AMT_INTEREST_MAX_LAST_5"},
+    {"type": "float", "name": "AMT_PAYMENT_DIFF_MIN_MEAN"}, {"type": "float", "name":
+    "DAYS_LAST_DUE_1ST_VERSION_MEAN_FIRST_2"}, {"type": "float", "name": "EXT_SOURCE_2_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "ELEVATORS_AVG"}, {"type": "float", "name": "FLAG_OVERDUE_RECENT_MEAN_OVERALL"},
+    {"type": "float", "name": "CURRENT_CREDIT_DEBT_DIFF_MINCREDIT_ACTIVE_REST"}, {"type":
+    "float", "name": "INSTALLMENTS_AMT_PAYMENT_MEAN_MEAN_INCOME_RATIO"}, {"type":
+    "float", "name": "INTEREST_SHARE_MIN_LAST_5"}, {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_MIN_ALL"},
+    {"type": "float", "name": "NAME_PRODUCT_TYPE_LAST_LAST_5"}, {"type": "float",
+    "name": "AMT_GOODS_PRICE_MAX_LAST_5"}, {"type": "float", "name": "MIN_PAYMENT_TOTAL_RATIO_MEAN"},
+    {"type": "float", "name": "BALANCE_LIMIT_RATIO_MEAN_REST"}, {"type": "float",
+    "name": "EXP_POS_TOTAL_TERM_LAST_COMPLETED_MEAN"}, {"type": "float", "name": "WEIGHTED_STATUS_MEAN_MEAN_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "INTEREST_DOWNPAYMENT_SUM_ALL"}, {"type": "float", "name":
+    "EXP_ENCODED_STATUS_LAST_YEAR_REST_MEAN_OVERALL"}, {"type": "float", "name": "AMT_CREDIT_MAX_OVERDUE_SUMCREDIT_ACTIVE_REST"},
+    {"type": "float", "name": "YEARS_BUILD_MODE"}, {"type": "float", "name": "EXP_CNT_INSTALMENT_FUTURE_LAST_YEAR_REST_MEAN"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MEAN_FIRST_2"}, {"type": "float",
+    "name": "NAME_SELLER_INDUSTRY_MEAN_LAST_5"}, {"type": "float", "name": "AMT_GOODS_PRICE_MEAN_ALL"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MEAN_CREDITACTIVE_CLOSED_EMPLOYED_DIFF"},
+    {"type": "float", "name": "BUREAU_AMT_CREDIT_MAX_OVERDUE_MAX_CREDITACTIVE_ACTIVE_INCOME_RATIO"},
+    {"type": "float", "name": "APARTMENTS_SUM_AVG_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "CURRENT_DEBT_TO_CREDIT_RATIO_MIN_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "NONLIVINGAPARTMENTS_AVG"}, {"type": "float", "name":
+    "REGION_POPULATION_RELATIVE"}, {"type": "float", "name": "CNT_INSTALMENT_MEAN_SUM"},
+    {"type": "float", "name": "NAME_CONTRACT_STATUS_MEAN_LAST_5"}, {"type": "float",
+    "name": "MIN_PAYMENT_RATIO_MEAN_ACTIVE"}, {"type": "float", "name": "EXP_CNT_INSTALMENT_FUTURE_LAST_COMPLETED_MEAN"},
+    {"type": "float", "name": "EXT_SOURCE_1_MIN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "DAYS_DECISION_MIN_FIRST_2"}, {"type": "float", "name":
+    "AMT_ANNUITY_MEAN_LAST_5"}, {"type": "float", "name": "AMT_PAYMENT_SUM_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "EXP_AMT_PAYMENT_DIFF_LAST_MEAN"}, {"type": "float",
+    "name": "STATUS_MAX_MEAN_OVERALL"}, {"type": "float", "name": "PAYMENT_MIN_DIFF_MEAN_YEAR_1"},
+    {"type": "float", "name": "DAYS_LAST_DUE_MEAN_LAST_5"}, {"type": "float", "name":
+    "AMT_BALANCE_MEAN"}, {"type": "float", "name": "INSTALLMENTS_AMT_PAYMENT_MAX_MEAN_INCOME_RATIO"},
+    {"type": "float", "name": "LIVINGAPARTMENTS_MODE"}, {"type": "float", "name":
+    "DAYS_PAYMENT_DIFF_MEAN_MAX"}, {"type": "float", "name": "AMT_CREDIT_SUM_ALL"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_MAX"}, {"type": "float", "name":
+    "AMT_ANNUITY_MAX_CREDITACTIVE_ACTIVE"}, {"type": "float", "name": "MISSING_VALS_TOTAL_CC_SUM"},
+    {"type": "float", "name": "APARTMENTS_SUM_AVG_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "DAYS_PAYMENT_DIFF_MIN_FIRST_5_INSTALLMENTS"}, {"type":
+    "float", "name": "DAYS_FIRST_DUE_MAX_FIRST_2"}, {"type": "float", "name": "INSTALLMENTS_AMT_PAYMENT_SUM_MEAN_INCOME_RATIO"},
+    {"type": "float", "name": "CAR_AGE_RATIO"}, {"type": "float", "name": "AMT_DECLINED_MEAN_ALL"},
+    {"type": "float", "name": "AMT_INCOME_TOTAL_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MAX_MEAN"}, {"type": "float", "name":
+    "EXT_SOURCE_2_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type": "float", "name":
+    "CNT_INSTALMENT_FUTURE_MEAN_YEAR_REST_SUM"}, {"type": "float", "name": "AMT_ANNUITY_MEAN_OVERALL"},
+    {"type": "float", "name": "STATUS_MAX_YEAR_1_MEAN_OVERALL"}, {"type": "float",
+    "name": "AMT_ANNUITY_MEAN_FIRST_2"}, {"type": "float", "name": "YEARS_BEGINEXPLUATATION_MODE"},
+    {"type": "float", "name": "DAYS_PAYMENT_DIFF_MAX_MEAN"}, {"type": "float", "name":
+    "AMT_GOODS_PRICE_MAX_FIRST_2"}, {"type": "float", "name": "DAYS_FIRST_LAST_DUE_DIFF_MEAN_FIRST_2"},
+    {"type": "float", "name": "AMT_ANNUITY_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "GOOD_DOWNPAYMET_RATIO_MAX_LAST_5"}, {"type": "float",
+    "name": "EXP_PAYMENT_MIN_DIFF_LAST_ACTIVE"}, {"type": "float", "name": "NONLIVINGAPARTMENTS_MODE"},
+    {"type": "float", "name": "INTEREST_DOWNPAYMENT_MEAN_LAST_5"}, {"type": "float",
+    "name": "AMT_CREDIT_SUM_MEAN_OVERALL"}, {"type": "float", "name": "ANNUITY_INCOME_RATIO_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_ANNUITY_CREDIT_RATIO_MEAN_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "AMT_CREDIT_MAX_OVERDUE_SUM_CREDITACTIVE_CLOSED"}, {"type":
+    "float", "name": "INCOME_APARTMENT_MODE_MUL"}, {"type": "float", "name": "AMT_DRAWINGS_ATM_CURRENT_MAX"},
+    {"type": "float", "name": "ANNUITY_INCOME_RATIO_MAX_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "SUM_OBS_DEF_ALL"}, {"type": "float", "name": "ANNUITY_INCOME_RATIO_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "CREDIT_TYPE_Mortgage_MEAN_OVERALL"}, {"type": "float",
+    "name": "CC_EXP_AMT_RECEIVABLE_PRINCIPAL_LAST_INCOME_RATIO"}, {"type": "float",
+    "name": "LANDAREA_AVG"}, {"type": "float", "name": "AMT_CREDIT_HOUR_PROCESS_START_SUM_ALL"},
+    {"type": "float", "name": "AMT_CREDIT_SUM_OVERDUE_MEAN_OVERALL"}, {"type": "float",
+    "name": "CURRENT_DEBT_TO_CREDIT_RATIO_MEAN_OVERALL"}, {"type": "float", "name":
+    "AMT_CREDIT_MAX_FIRST_2"}, {"type": "float", "name": "NAME_YIELD_GROUP_MEAN_ALL"},
+    {"type": "float", "name": "DAYS_REGISTRATION"}, {"type": "float", "name": "NONLIVINGAPARTMENTS_MEDI"},
+    {"type": "float", "name": "AMT_ANNUITY_MAX_CREDITACTIVE_CLOSED"}, {"type": "float",
+    "name": "AMT_CREDIT_GOODS_DIFF_MIN_FIRST_2"}, {"type": "float", "name": "MISSING_VALS_TOTAL_INSTAL_SUM_SUM"},
+    {"type": "float", "name": "ANNUITY_SUM_LAST_5"}, {"type": "float", "name": "CNT_DRAWINGS_ATM_CURRENT_SUM"},
+    {"type": "float", "name": "AMT_DOWN_PAYMENT_MEAN_ALL"}, {"type": "float", "name":
+    "MISSING_VALUES_TOTAL_PREV_SUM_FIRST_2"}, {"type": "float", "name": "PAYMENT_MIN_DIFF_MEAN"},
+    {"type": "float", "name": "MIN_PAYMENT_RATIO_MEAN_YEAR_1"}, {"type": "float",
+    "name": "AMT_CREDIT_SUM_LIMIT_SUM_CREDITACTIVE_ACTIVE"}, {"type": "float", "name":
+    "INSTALLMENTS_AMT_PAYMENT_MEAN_SUM_INCOME_RATIO"}, {"type": "float", "name": "SK_DPD_SUM_YEAR_0_MEAN"},
+    {"type": "float", "name": "CC_AMT_TOTAL_RECEIVABLE_MAX_INCOME_RATIO"}, {"type":
+    "float", "name": "INTEREST_RATE_MAX_FIRST_2"}, {"type": "float", "name": "EXT_SOURCE_MEAN_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_ANNUITY"}, {"type": "float", "name": "AMT_PAYMENT_DIFF_MIN_LAST_1_YEAR"},
+    {"type": "float", "name": "WEIGHTED_STATUS_MAX_YEAR_1_MEAN_OVERALL"}, {"type":
+    "float", "name": "AMT_CREDIT_YIELD_GROUP_SUM_FIRST_2"}, {"type": "float", "name":
+    "EXT_SOURCE_3_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type": "float", "name":
+    "MIN_PAYMENT_TOTAL_RATIO_MEAN_YEAR_1"}, {"type": "float", "name": "DAYS_PAYMENT_DIFF_MEAN_MIN"},
+    {"type": "float", "name": "EXT_SOURCE_1_MAX_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "CURRENT_CREDIT_DEBT_DIFF_MEAN_OVERALL"}, {"type": "float",
+    "name": "EXT_SOURCE_2_MAX_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "EXP_ENCODED_STATUS_LAST_YEAR_1_MEAN_OVERALL"}, {"type":
+    "float", "name": "AMT_DECLINED_MEAN_LAST_5"}, {"type": "float", "name": "EXP_MIN_PAYMENT_TOTAL_RATIO_LAST_ACTIVE"},
+    {"type": "float", "name": "CREDIT_DOWNPAYMENT_RATIO_MEAN_FIRST_2"}, {"type": "float",
+    "name": "CNT_DRAWINGS_POS_CURRENT_SUM"}, {"type": "float", "name": "AMT_PAYMENT_MEAN_SUM"},
+    {"type": "float", "name": "AMT_DRAWINGS_POS_CURRENT_MAX"}, {"type": "float", "name":
+    "LIVINGAREA_MEDI"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_MEAN"},
+    {"type": "float", "name": "EXT_SOURCE_2_MAX_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "INTEREST_SHARE_MIN_FIRST_2"}, {"type": "float", "name":
+    "PAYMENT_MIN_DIFF_MEAN_ACTIVE"}, {"type": "float", "name": "CREDIT_ACTIVE_Sold_MEAN_OVERALL"},
+    {"type": "float", "name": "CNT_INSTALMENT_MEAN_MEAN"}, {"type": "float", "name":
+    "SK_DPD_DEF_MAX"}, {"type": "float", "name": "STATUS_MEAN_MAX_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MAX_LAST_1_YEAR"}, {"type": "float",
+    "name": "AMT_DECLINED_SUM_LAST_5"}, {"type": "float", "name": "AMT_PAYMENT_DIFF_MIN_MIN"},
+    {"type": "float", "name": "ANNUITY_INCOME_RATIO_MEAN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "NAME_CONTRACT_TYPE_MEAN_ALL"}, {"type": "float", "name":
+    "CREDIT_GOODS_RATIO"}, {"type": "float", "name": "INTEREST_CREDIT_PRIVILEGED_MEAN_ALL"},
+    {"type": "float", "name": "CAR_EMPLOYED_RATIO"}, {"type": "float", "name": "ANNUITY_GOODS_MEAN_ALL"},
+    {"type": "float", "name": "AMT_CREDIT_HOUR_PROCESS_START_MEAN_FIRST_2"}, {"type":
+    "float", "name": "AMT_PAYMENT_SUM_SUM"}, {"type": "float", "name": "INSTALLMENTS_AMT_PAYMENT_SUM_SUM_INCOME_RATIO"},
+    {"type": "float", "name": "EXT_SOURCE_3_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "EXT_SOURCE_3_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "CONTRACT_Active"}, {"type": "integer", "name": "FLAG_DOCUMENT_18"},
+    {"type": "float", "name": "CNT_DRAWING_SUM_MAX_REST"}, {"type": "float", "name":
+    "AMT_CREDIT_NFLAG_LAST_APPL_DAY_MEAN_FIRST_2"}, {"type": "float", "name": "AMT_APPLICATION_MEAN_LAST_5"},
+    {"type": "float", "name": "ANNUITY_INCOME_RATIO"}, {"type": "float", "name": "AMT_INCOME_TOTAL_MAX_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "AMT_DRAWINGS_CURRENT_MAX"}, {"type": "float", "name":
+    "EXT_SOURCE_2_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"}, {"type":
+    "float", "name": "SK_DPD_SUM_YEAR_REST"}, {"type": "float", "name": "ANNUITY_INCOME_RATIO_MIN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "AMT_INST_MIN_REGULARITY_MEAN"}, {"type": "float", "name":
+    "AMT_ANNUITY_SUM_CREDITACTIVE_ACTIVE"}, {"type": "float", "name": "AMT_CREDIT_MAX_OVERDUE_SUM_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "WEEKDAY_APPR_PROCESS_START_MEAN_FIRST_2"}, {"type":
+    "float", "name": "BALANCE_LIMIT_RATIO_MEAN_ACTIVE"}, {"type": "float", "name":
+    "EXP_DAYS_PAYMENT_RATIO_LAST_FIRST_5_INSTALLMENTS"}, {"type": "float", "name":
+    "APARTMENTS_SUM_MEDI"}, {"type": "float", "name": "AMT_INTEREST_RECEIVABLE_MIN"},
+    {"type": "float", "name": "EXP_AMT_DRAWING_SUM_LAST_COMPLETED"}, {"type": "float",
+    "name": "AMT_CREDIT_MAX_OVERDUE_MAX_CREDITACTIVE_CLOSED"}, {"type": "float", "name":
+    "NAME_HOUSING_TYPE_0"}, {"type": "float", "name": "AMT_CREDIT"}, {"type": "float",
+    "name": "APARTMENTS_SUM_AVG_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "DAYS_TERMINATION_MEAN_ALL"}, {"type": "float", "name":
+    "AMT_PAYMENT_DIFF_MEAN_FIRST_5_INSTALLMENTS"}, {"type": "float", "name": "BUREAU_DAYS_CREDIT_LAST_CREDITACTIVE_ACTIVE_EMPLOYED_DIFF"},
+    {"type": "float", "name": "DAYS_CREDIT_MINCREDIT_ACTIVE_REST"}, {"type": "float",
+    "name": "EXP_CNT_INSTALMENT_LAST_YEAR_REST_MEAN"}, {"type": "float", "name": "DAYS_BIRTH"},
+    {"type": "float", "name": "AMT_CREDIT_SUM_SUM_CREDITACTIVE_ACTIVE"}, {"type":
+    "float", "name": "CNT_DRAWING_SUM_SUM"}, {"type": "float", "name": "PAYMENT_MIN_DIFF_MIN"},
+    {"type": "float", "name": "AGE_EMPLOYED_DIFF_MEAN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "SK_DPD_RATIO_MAX_ACTIVE_MEAN"}, {"type": "float", "name":
+    "EXT_SOURCE_MUL"}, {"type": "float", "name": "CREDIT_DOWNPAYMENT_RATIO_MAX_ALL"},
+    {"type": "float", "name": "MIN_PAYMENT_TOTAL_RATIO_MEAN_ACTIVE"}, {"type": "float",
+    "name": "AMT_PAYMENT_DIFF_MEAN_MAX"}, {"type": "float", "name": "AGE_EMPLOYED_DIFF_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_SUM_LAST_5"}, {"type": "float",
+    "name": "AMT_PAYMENT_MEAN_MAX"}, {"type": "float", "name": "ENTRANCES_MODE"},
+    {"type": "float", "name": "EXP_CNT_INSTALMENT_FUTURE_LAST_ACTIVE_MEAN"}, {"type":
+    "float", "name": "AMT_CREDIT_LIMIT_ACTUAL_SUM"}, {"type": "float", "name": "AMT_GOODS_PRICE"},
+    {"type": "float", "name": "DAYS_CREDIT_LAST_CREDITACTIVE_ACTIVE"}, {"type": "float",
+    "name": "EXP_AMT_DRAWING_SUM_LAST_REST"}, {"type": "float", "name": "DAYS_CREDIT_MEAN_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "NAME_CONTRACT_STATUS_LAST_LAST_5"}, {"type": "float",
+    "name": "EXP_AMT_DRAWING_SUM_LAST_YEAR_1"}, {"type": "float", "name": "BUREAU_AMT_CREDIT_MAX_OVERDUE_MAX_CREDITACTIVE_CLOSED_INCOME_RATIO"},
+    {"type": "float", "name": "APARTMENTS_SUM_MEDI_MAX_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "TOTAL_TERM_MEAN_YEAR_1_SUM"}, {"type": "float", "name":
+    "TOTAL_TERM_MEAN_ACTIVE_SUM"}, {"type": "float", "name": "AGE_EMPLOYED_DIFF_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "EXP_DAYS_PAYMENT_RATIO_LAST_MEAN"}, {"type": "float",
+    "name": "PREV_AMT_GOODS_PRICE_MEAN_FIRST_2_INCOME_RATIO"}, {"type": "float", "name":
+    "SK_DPD_MAX_MEAN"}, {"type": "float", "name": "EXP_POS_TOTAL_TERM_MEAN_MEAN"},
+    {"type": "float", "name": "EXT_SOURCE_2_MEAN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_YEAR_0_SUM"}, {"type": "float",
+    "name": "CREDIT_TYPE_Car loan_MEAN_OVERALL"}, {"type": "float", "name": "BASEMENTAREA_AVG"},
+    {"type": "float", "name": "MIN_PAYMENT_RATIO_MIN"}, {"type": "float", "name":
+    "CNT_INSTALMENT_FUTURE_MIN_REST_MEAN"}, {"type": "float", "name": "INCOME_APARTMENT_AVG_MUL"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MEAN_MIN"}, {"type": "float", "name":
+    "CREDIT_DOWNPAYMENT_RATIO_MAX_LAST_5"}, {"type": "float", "name": "EXT_SOURCE_1_MAX_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_PAYMENT_DIFF_MEAN_LAST_1_YEAR"}, {"type": "float",
+    "name": "GOOD_DOWNPAYMET_RATIO_MAX_ALL"}, {"type": "float", "name": "TOTAL_TERM_MEAN_ACTIVE_MEAN"},
+    {"type": "float", "name": "AGE_EMPLOYED_DIFF_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "EXT_SOURCE_2_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "EXP_AMT_BALANCE_LAST"}, {"type": "float", "name": "EXP_BALANCE_LIMIT_RATIO_LAST_ACTIVE"},
+    {"type": "float", "name": "CURRENT_CREDIT_DEBT_DIFF_MIN_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_MAX_FIRST_2"}, {"type": "float",
+    "name": "CNT_INSTALMENT_MEAN_YEAR_1_SUM"}, {"type": "float", "name": "SELLERPLACE_AREA_MIN_FIRST_2"},
+    {"type": "float", "name": "PREV_AMT_ANNUITY_SUM_ALL_INCOME_RATIO"}, {"type": "float",
+    "name": "INTEREST_DOWNPAYMENT_MAX_FIRST_2"}, {"type": "float", "name": "TOTAL_TERM_MEAN_COMPLETED_SUM"},
+    {"type": "float", "name": "PRODUCT_COMBINATION_MEAN_LAST_5"}, {"type": "float",
+    "name": "AMT_ANNUITY_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type": "float",
+    "name": "CNT_INSTALMENT_MEAN_YEAR_REST_MAX"}, {"type": "float", "name": "STATUS_MEAN_MAX_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "APARTMENTS_SUM_MEDI_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "PREV_AMT_GOODS_PRICE_MAX_FIRST_2_INCOME_RATIO"}, {"type":
+    "float", "name": "NAME_YIELD_GROUP_LAST_LAST_5"}, {"type": "float", "name": "CONTRACT_APPROVED_MEAN"},
+    {"type": "float", "name": "WEIGHTED_STATUS_MAX_YEAR_REST_MEAN_OVERALL"}, {"type":
+    "float", "name": "AMT_ANNUITY_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "NAME_PRODUCT_TYPE_MEAN_ALL"}, {"type": "float", "name":
+    "EXP_MIN_PAYMENT_RATIO_LAST_YEAR_REST"}, {"type": "float", "name": "DAYS_TERMINATION_MEAN_FIRST_2"},
+    {"type": "float", "name": "AMT_ANNUITY_SUM_CREDITACTIVE_CLOSED"}, {"type": "float",
+    "name": "NAME_CLIENT_TYPE_LAST_FIRST_2"}, {"type": "float", "name": "BALANCE_LIMIT_RATIO_MAX_ACTIVE"},
+    {"type": "float", "name": "LANDAREA_MODE"}, {"type": "float", "name": "EXT_SOURCE_MEAN"},
+    {"type": "float", "name": "DAYS_LAST_DUE_1ST_VERSION_MEAN_ALL"}, {"type": "float",
+    "name": "EXPECTED_INTEREST_SHARE"}, {"type": "float", "name": "EXT_SOURCE_MEAN_MIN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "MIN_PAYMENT_RATIO_MEAN_YEAR_0"}, {"type": "float",
+    "name": "AMT_INTEREST_MAX_ALL"}, {"type": "float", "name": "AMT_CREDIT_APPLICATION_RATIO_MIN_ALL"},
+    {"type": "float", "name": "CNT_NON_CHILDREN"}, {"type": "float", "name": "CNT_INSTALMENT_MEAN_YEAR_0_MAX"},
+    {"type": "float", "name": "AMT_DRAWINGS_POS_CURRENT_SUM"}, {"type": "float", "name":
+    "OBS_30_60_SUM"}, {"type": "float", "name": "EXP_AMT_PAYMENT_DIFF_LAST_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "DAYS_FIRST_DRAWING_MAX_ALL"}, {"type": "float", "name":
+    "TOTAL_TERM_MEAN_YEAR_REST_MAX"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_YEAR_0_MEAN"},
+    {"type": "float", "name": "CNT_INSTALMENT_MAX_YEAR_REST_MEAN"}, {"type": "float",
+    "name": "AMT_PAYMENT_CURRENT_MAX"}, {"type": "float", "name": "DAYS_TERMINATION_MAX_LAST_5"},
+    {"type": "float", "name": "NAME_PAYMENT_TYPE_MEAN_ALL"}, {"type": "float", "name":
+    "NAME_SELLER_INDUSTRY_MEAN_FIRST_2"}, {"type": "float", "name": "BUREAU_DAYS_CREDIT_MAX_CREDITACTIVE_ACTIVE_REGISTRATION_DIFF"},
+    {"type": "float", "name": "DAYS_PAYMENT_DIFF_MIN_MIN"}, {"type": "float", "name":
+    "AMT_CREDIT_YIELD_GROUP_MEAN_LAST_5"}, {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MEAN_ALL"},
+    {"type": "float", "name": "NUM_INSTALMENT_VERSION_MEAN_MEAN"}, {"type": "float",
+    "name": "BALANCE_LIMIT_RATIO_MIN_ACTIVE"}, {"type": "float", "name": "DAYS_DETAILS_CHANGE_SUM"},
+    {"type": "float", "name": "AMT_CREDIT_MEAN_FIRST_2"}, {"type": "float", "name":
+    "STATUS_MEAN_YEAR_1_MEAN_OVERALL"}, {"type": "float", "name": "ANNUITY_INCOME_RATIO_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "CREDIT_TYPE_Loan for working capital replenishment_MEAN_OVERALL"},
+    {"type": "float", "name": "APARTMENTS_SUM_MEDI_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "APARTMENTS_SUM_MEDI_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "CNT_PAYMENT_SUM_FIRST_2"}, {"type": "float", "name":
+    "OBS_60_CREDIT_RATIO"}, {"type": "float", "name": "YEARS_BUILD_MEDI"}, {"type":
+    "float", "name": "AMT_APPLICATION_TO_SELLERPLACE_AREA_MEAN_ALL"}, {"type": "float",
+    "name": "PER_CAPITA_INCOME"}, {"type": "float", "name": "DAYS_TERMINATION_MAX_FIRST_2"},
+    {"type": "float", "name": "AMT_REQ_CREDIT_BUREAU_YEAR"}, {"type": "float", "name":
+    "DAYS_CREDIT_LASTCREDIT_ACTIVE_REST"}, {"type": "float", "name": "WEEKDAY_APPR_PROCESS_START_MIN_ALL"},
+    {"type": "float", "name": "INTEREST_CREDIT_MEAN_ALL"}, {"type": "float", "name":
+    "AMT_PAYMENT_DIFF_MAX_MAX"}, {"type": "float", "name": "PREV_AMT_GOODS_PRICE_SUM_LAST_5_INCOME_RATIO"},
+    {"type": "float", "name": "NFLAG_LAST_APPL_IN_DAY_SUM_ALL"}, {"type": "float",
+    "name": "EXP_PAYMENT_MIN_DIFF_LAST"}, {"type": "float", "name": "AMT_ANNUITY_MIN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MEAN_MAX"}, {"type": "float", "name":
+    "SK_DPD_DEF_MAX_ACTIVE_MEAN"}, {"type": "float", "name": "CURRENT_DEBT_TO_CREDIT_RATIO_MEAN_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "AMT_DRAWINGS_ATM_CURRENT_SUM"}, {"type": "float", "name":
+    "NONLIVINGAREA_MODE"}, {"type": "float", "name": "NAME_PAYMENT_TYPE_MEAN_LAST_5"},
+    {"type": "float", "name": "EXP_DAYS_PAYMENT_DIFF_LAST_LAST_1_YEAR"}, {"type":
+    "float", "name": "PAYMENT_MIN_DIFF_MIN_YEAR_0"}, {"type": "float", "name": "APARTMENTS_SUM_AVG_MAX_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "FLOORSMAX_MODE"}, {"type": "float", "name": "BUREAU_DAYS_CREDIT_LAST_CREDITACTIVE_CLOSED_EMPLOYED_DIFF"},
+    {"type": "float", "name": "AMT_ANNUITY_CREDIT_RATIO_MIN_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "EXT_SOURCE_1_MAX_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "APPLICATION_AMT_TO_DECISION_RATIO_MIN_FIRST_2"}, {"type":
+    "float", "name": "WEIGHTED_STATUS_MAX_YEAR_0_MEAN_OVERALL"}, {"type": "float",
+    "name": "AGE_EMPLOYED_DIFF_MIN_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_MEAN_FIRST_2"}, {"type": "float",
+    "name": "PRODUCT_COMBINATION_MEAN_FIRST_2"}, {"type": "float", "name": "WEIGHTED_STATUS_MEAN_YEAR_1_MEAN_OVERALL"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_LAST_CREDITACTIVE_CLOSED_REGISTRATION_DIFF"},
+    {"type": "float", "name": "EXT_SOURCE_3_MIN_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MIN_LAST_5"}, {"type": "float",
+    "name": "ANNUITY_INCOME_RATIO_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"}, {"type":
+    "float", "name": "RATE_DOWN_PAYMENT_MAX_ALL"}, {"type": "float", "name": "AMT_DOWN_PAYMENT_SUM_ALL"},
+    {"type": "float", "name": "NAME_GOODS_CATEGORY_LAST_LAST_5"}, {"type": "float",
+    "name": "CNT_INSTALMENT_MAX_MEAN"}, {"type": "float", "name": "DAYS_DECISION_MAX_FIRST_2"},
+    {"type": "float", "name": "NAME_PORTFOLIO_MEAN_ALL"}, {"type": "float", "name":
+    "HOUR_APPR_PROCESS_START_MEAN_LAST_5"}, {"type": "float", "name": "CHANNEL_TYPE_LAST_FIRST_2"},
+    {"type": "float", "name": "NUM_INSTALMENT_VERSION_SUM_MEAN"}, {"type": "float",
+    "name": "EXT_SOURCE_1_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_APPLICATION_SUM_FIRST_2"}, {"type": "float", "name":
+    "NAME_CASH_LOAN_PURPOSE_MEAN_LAST_5"}, {"type": "float", "name": "AMT_INTEREST_SUM_FIRST_2"},
+    {"type": "float", "name": "RATE_DOWN_PAYMENT_MEAN_ALL"}, {"type": "float", "name":
+    "AMT_APPLICATION_TO_SELLERPLACE_AREA_MEAN_FIRST_2"}, {"type": "float", "name":
+    "DAYS_DECISION_MEAN_LAST_5"}, {"type": "float", "name": "BASEMENTAREA_MODE"},
+    {"type": "float", "name": "AMT_ANNUITY_CREDIT_RATIO_MEANCREDIT_ACTIVE_REST"},
+    {"type": "float", "name": "RATE_DOWN_PAYMENT_MEAN_FIRST_2"}, {"type": "float",
+    "name": "AMT_ANNUITY_MAX_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "EXT_SOURCE_3_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_BALANCE_SUM"}, {"type": "float", "name": "WEIGHTED_STATUS_FIRST_YEAR_1_MEAN_OVERALL"},
+    {"type": "float", "name": "AGE_EMPLOYED_DIFF_MEAN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "NUM_INSTALMENT_VERSION_SUM_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "EXP_AMT_PAYMENT_RATIO_LAST_FIRST_5_INSTALLMENTS"},
+    {"type": "float", "name": "AMT_CREDIT_GOODS_RATIO_MIN_ALL"}, {"type": "float",
+    "name": "AMT_PAYMENT_MEAN_MEAN"}, {"type": "float", "name": "CNT_INSTALMENT_MEAN_REST_MEAN"},
+    {"type": "float", "name": "AMT_PAYMENT_CURRENT_MEAN"}, {"type": "float", "name":
+    "NAME_CLIENT_TYPE_MEAN_LAST_5"}, {"type": "float", "name": "ANNUITY_GOODS_MEAN_FIRST_2"},
+    {"type": "float", "name": "INTEREST_SHARE_MAX_FIRST_2"}, {"type": "float", "name":
+    "INTEREST_RATE_MIN_LAST_5"}, {"type": "float", "name": "MIN_PAYMENT_RATIO_MIN_YEAR_0"},
+    {"type": "float", "name": "DAYS_EMPLOYED"}, {"type": "float", "name": "INTEREST_RATE_MEAN_LAST_5"},
+    {"type": "float", "name": "AGE_EMPLOYED_DIFF_MIN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "PREV_AMT_GOODS_PRICE_MEAN_LAST_5_INCOME_RATIO"}, {"type":
+    "float", "name": "CNT_PAYMENT_MEAN_LAST_5"}, {"type": "float", "name": "AMT_DOWN_PAYMENT_MEAN_FIRST_2"},
+    {"type": "float", "name": "INCOME_APARTMENT_MEDI_MUL"}, {"type": "float", "name":
+    "AMT_BALANCE_MAX"}, {"type": "float", "name": "MONTHS_BALANCE_MEAN_MEAN_OVERALL"},
+    {"type": "integer", "name": "HOUR_APPR_PROCESS_START"}, {"type": "float", "name":
+    "EXT_SOURCE_MAX"}, {"type": "float", "name": "AMT_ANNUITY_MEAN_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "TOTAL_TERM_MEAN_MEAN"}, {"type": "float", "name": "EXP_AMT_PAYMENT_RATIO_LAST_MEAN"},
+    {"type": "float", "name": "AMT_CREDIT_SUM_DEBT_SUM_CREDITACTIVE_CLOSED"}, {"type":
+    "float", "name": "AMT_CREDIT_SUM_MAX_CREDITACTIVE_CLOSED"}, {"type": "float",
+    "name": "AMT_INSTALMENT_MEAN_MAX"}, {"type": "float", "name": "AMT_INTEREST_RECEIVABLE_MEAN_YEAR_0"},
+    {"type": "float", "name": "CURRENT_CREDIT_DEBT_DIFF_MEANCREDIT_ACTIVE_REST"},
+    {"type": "float", "name": "AMT_DRAWING_SUM_MAX"}, {"type": "float", "name": "EXP_MIN_PAYMENT_RATIO_LAST_YEAR_1"},
+    {"type": "float", "name": "AMT_CREDIT_MEAN_LAST_5"}, {"type": "float", "name":
+    "EXT_SOURCE_1"}, {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_MAX_ALL"}, {"type":
+    "float", "name": "INTEREST_DOWNPAYMENT_MAX_ALL"}, {"type": "float", "name": "AMT_DECLINED_MAX_LAST_5"},
+    {"type": "float", "name": "NFLAG_INSURED_ON_APPROVAL_SUM_LAST_5"}, {"type": "float",
+    "name": "AMT_CREDIT_SUM_LIMIT_MAX_CREDITACTIVE_CLOSED"}, {"type": "float", "name":
+    "BALANCE_LIMIT_RATIO_MIN_YEAR_0"}, {"type": "integer", "name": "FLAG_EMAIL"},
+    {"type": "float", "name": "AGE_EMPLOYED_DIFF"}, {"type": "float", "name": "CNT_INSTALMENT_MIN_YEAR_REST_MEAN"},
+    {"type": "float", "name": "EXT_SOURCE_3"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MIN_MEAN"},
+    {"type": "float", "name": "AMT_ANNUITY_MAX_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "STATUS_MEAN_MEAN_CREDITACTIVE_CLOSED"}, {"type": "float",
+    "name": "DAYS_FIRST_DUE_MEAN_FIRST_2"}, {"type": "float", "name": "INTEREST_CREDIT_MEAN_LAST_5"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MAX_YEAR_1_MEAN"}, {"type": "float",
+    "name": "CNT_DRAWINGS_CURRENT_MAX"}, {"type": "float", "name": "CONTRACT_COMPLETED_MEAN"},
+    {"type": "float", "name": "EXP_PAYMENT_MIN_DIFF_LAST_REST"}, {"type": "float",
+    "name": "PAYMENT_MIN_DIFF_MIN_YEAR_1"}, {"type": "float", "name": "EXP_SK_DPD_RATIO_LAST_COMPLETED"},
+    {"type": "float", "name": "NAME_SELLER_INDUSTRY_LAST_FIRST_2"}, {"type": "float",
+    "name": "CHANNEL_TYPE_LAST_LAST_5"}, {"type": "float", "name": "AMT_DOWN_PAYMENT_SUM_FIRST_2"},
+    {"type": "float", "name": "DAYS_FIRST_DUE_MAX_ALL"}, {"type": "float", "name":
+    "OBS_30_CREDIT_RATIO"}, {"type": "float", "name": "AMT_INSTALMENT_MAX_MEAN"},
+    {"type": "float", "name": "AMT_ANNUITY_MEAN_AGG_FLAG_OWN_CAR_FLAG_OWN_REALTY_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "CURRENT_DEBT_TO_CREDIT_RATIO_MIN_CREDITACTIVE_CLOSED"},
+    {"type": "integer", "name": "LIVE_REGION_NOT_WORK_REGION"}, {"type": "float",
+    "name": "BUREAU_AMT_CREDIT_MAX_OVERDUE_SUM_CREDITACTIVE_ACTIVE_INCOME_RATIO"},
+    {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_YEAR_REST_MAX"}, {"type":
+    "float", "name": "EXP_CNT_DRAWING_SUM_LAST"}, {"type": "float", "name": "BUREAU_AMT_CREDIT_SUM_OVERDUE_MEAN_OVERALL_INCOME_RATIO"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MIN_MEAN"}, {"type": "float", "name":
+    "OCCUPATION_TYPE_0"}, {"type": "float", "name": "DAYS_FIRST_DRAWING_MAX_LAST_5"},
+    {"type": "float", "name": "AMT_PAYMENT_DIFF_MEAN_MEAN"}, {"type": "float", "name":
+    "AMT_RECEIVABLE_PRINCIPAL_SUM"}, {"type": "float", "name": "CNT_INSTALMENT_MEAN_YEAR_REST_SUM"},
+    {"type": "float", "name": "EXP_MIN_PAYMENT_TOTAL_RATIO_LAST"}, {"type": "float",
+    "name": "CNT_DRAWINGS_POS_CURRENT_MAX"}, {"type": "float", "name": "TOTAL_TERM_MEAN_YEAR_REST_MEAN"},
+    {"type": "float", "name": "DAYS_CREDIT_MAX_CREDITACTIVE_ACTIVE"}, {"type": "float",
+    "name": "AMT_INSTALMENT_MEAN_MEAN"}, {"type": "float", "name": "LANDAREA_MEDI"},
+    {"type": "float", "name": "SK_DPD_RATIO_MEAN_YEAR_REST_SUM"}, {"type": "float",
+    "name": "REGIONS_RATING_INCOME_MUL_1"}, {"type": "float", "name": "AMT_CREDIT_SUM_LIMIT_MAX_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "MIN_PAYMENT_RATIO_MEAN"}, {"type": "float", "name":
+    "BUREAU_DAYS_CREDIT_MEAN_CREDITACTIVE_ACTIVE_REGISTRATION_DIFF"}, {"type": "float",
+    "name": "AMT_CREDIT_MAX_OVERDUE_MAXCREDIT_ACTIVE_REST"}, {"type": "float", "name":
+    "BUREAU_DAYS_CREDIT_LAST_CREDITACTIVE_ACTIVE_REGISTRATION_DIFF"}, {"type": "float",
+    "name": "FLAG_OVERDUE_RECENT_SUM_CREDITACTIVE_ACTIVE"}, {"type": "float", "name":
+    "AMT_PAYMENT_DIFF_MIN_FIRST_5_INSTALLMENTS"}, {"type": "float", "name": "DAYS_CREDIT_LAST_CREDITACTIVE_CLOSED"},
+    {"type": "float", "name": "COMMONAREA_MODE"}, {"type": "float", "name": "AMT_CREDIT_GOODS_DIFF_MAX_LAST_5"},
+    {"type": "float", "name": "AMT_DOWN_PAYMENT_MAX_FIRST_2"}, {"type": "float", "name":
+    "CNT_PAYMENT_SUM_ALL"}, {"type": "float", "name": "AMT_CREDIT_SUM_LIMIT_MEAN_OVERALL"},
+    {"type": "float", "name": "OBS_DEF_30_MUL"}, {"type": "float", "name": "AGE_EMPLOYED_DIFF_MEAN_AGG_CODE_GENDER_FLAG_OWN_CAR_FLAG_OWN_REALTY"},
+    {"type": "float", "name": "STATUS_LAST_YEAR_REST_MEAN_OVERALL"}, {"type": "double",
+    "name": "CREDIT_DURATION_MEAN_OVERALL"}, {"type": "float", "name": "EXT_SOURCE_1_MIN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "CREDIT_INCOME_RATIO"}, {"type": "float", "name": "INTEREST_SHARE_MEAN_LAST_5"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MAX_CREDITACTIVE_ACTIVE_EMPLOYED_DIFF"},
+    {"type": "float", "name": "EXT_SOURCE_3_MAX_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "DAYS_PAYMENT_RATIO_MEAN_LAST_1_YEAR"}, {"type": "float",
+    "name": "APARTMENTS_MODE"}, {"type": "float", "name": "PREV_AMT_ANNUITY_MAX_ALL_INCOME_RATIO"},
+    {"type": "float", "name": "STATUS_MEAN_YEAR_REST_MEAN_OVERALL"}, {"type": "float",
+    "name": "AMT_INCOME_TOTAL_MEAN_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "WEIGHTED_STATUS_MEAN_MAX_CREDITACTIVE_ACTIVE"}, {"type":
+    "float", "name": "AMT_INTEREST_MEAN_ALL"}, {"type": "float", "name": "NAME_TYPE_SUITE_MEAN_LAST_5"},
+    {"type": "float", "name": "HOUR_APPR_PROCESS_START_MAX_FIRST_2"}, {"type": "float",
+    "name": "EXP_AMT_INTEREST_RECEIVABLE_LAST_YEAR_1"}, {"type": "float", "name":
+    "CREDIT_ACTIVE_Active_MEAN_OVERALL"}, {"type": "float", "name": "BUREAU_DAYS_CREDIT_MEANCREDIT_ACTIVE_REST_EMPLOYED_DIFF"},
+    {"type": "float", "name": "DEF_60_CREDIT_RATIO"}, {"type": "float", "name": "CNT_INSTALMENT_FUTURE_MEAN_MAX"},
+    {"type": "float", "name": "BUREAU_DAYS_CREDIT_MEAN_OVERALL_REGISTRATION_DIFF"},
+    {"type": "float", "name": "PREV_AMT_ANNUITY_SUM_FIRST_2_INCOME_RATIO"}, {"type":
+    "float", "name": "DAYS_PAYMENT_DIFF_MEAN_MEAN"}, {"type": "float", "name": "INSTALLMENTS_AMT_PAYMENT_MAX_FIRST_5_INSTALLMENTS_INCOME_RATIO"},
+    {"type": "float", "name": "WEIGHTED_STATUS_FIRST_YEAR_0_MEAN_OVERALL"}, {"type":
+    "float", "name": "WEEKDAY_APPR_PROCESS_START_1"}, {"type": "float", "name": "CREDIT_DAY_OVERDUE_MAX_CREDITACTIVE_ACTIVE"},
+    {"type": "float", "name": "AMT_INTEREST_RECEIVABLE_MEAN_YEAR_REST"}, {"type":
+    "float", "name": "SK_DPD_RATIO_MEAN_YEAR_1_MAX"}, {"type": "float", "name": "ANNUITY_GOODS_SUM_ALL"},
+    {"type": "float", "name": "DAYS_DECISION_MIN_ALL"}, {"type": "float", "name":
+    "CNT_INSTALMENT_MEAN_YEAR_0_MEAN"}, {"type": "float", "name": "BUREAU_DAYS_CREDIT_MIN_CREDITACTIVE_CLOSED_REGISTRATION_DIFF"},
+    {"type": "float", "name": "HOUR_APPR_PROCESS_START_MIN_ALL"}, {"type": "float",
+    "name": "OWN_CAR_AGE"}, {"type": "float", "name": "GOOD_DOWNPAYMET_RATIO_MEAN_LAST_5"},
+    {"type": "float", "name": "AMT_CREDIT_SUM_SUMCREDIT_ACTIVE_REST"}, {"type": "float",
+    "name": "EXP_AMT_DRAWING_SUM_LAST"}, {"type": "float", "name": "APARTMENTS_SUM_MEDI_MIN_AGG_OCCUPATION_TYPE_ORGANIZATION_TYPE"},
+    {"type": "float", "name": "AMT_INCOME_TOTAL_MAX_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "AMT_DRAWINGS_OTHER_CURRENT_MAX"}, {"type": "float",
+    "name": "EXP_POS_TOTAL_TERM_LAST_YEAR_1_MEAN"}, {"type": "float", "name": "INCOME_EXT_RATIO"},
+    {"type": "float", "name": "NUM_INSTALMENT_NUMBER_MAX_MAX"}, {"type": "float",
+    "name": "AMT_ANNUITY_MEAN_ALL"}, {"type": "float", "name": "ANNUITY_GOODS_MEAN_LAST_5"},
+    {"type": "float", "name": "INSTALLMENTS_ANNUITY_AMT_INSTALMENT_SUM_MAX_RATIO"},
+    {"type": "float", "name": "AMT_INSTALMENT_MEAN_FIRST_5_INSTALLMENTS"}, {"type":
+    "float", "name": "DAYS_TERMINATION_MAX_ALL"}, {"type": "float", "name": "APARTMENTS_SUM_AVG_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "EXP_AMT_CREDIT_LIMIT_ACTUAL_LAST"}, {"type": "float",
+    "name": "DAYS_PAYMENT_DIFF_MAX_LAST_1_YEAR"}, {"type": "float", "name": "AMT_ANNUITY_MIN_AGG_NAME_CONTRACT_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "ANNUITY_GOODS_MAX_LAST_5"}, {"type": "float", "name":
+    "AMT_PAYMENT_RATIO_MEAN_LAST_1_YEAR"}, {"type": "float", "name": "EXP_CNT_INSTALMENT_FUTURE_LAST_YEAR_0_MEAN"},
+    {"type": "float", "name": "APARTMENTS_SUM_AVG_MEAN_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "WEIGHTED_STATUS_MEAN_MAX_CREDITACTIVE_CLOSED"}, {"type":
+    "float", "name": "CURRENT_CREDIT_DEBT_DIFF_MIN_CREDITACTIVE_CLOSED"}, {"type":
+    "float", "name": "DAYS_DECISION_MEAN_ALL"}, {"type": "float", "name": "EXT_SOURCE_MEAN_MAX_AGG_CODE_GENDER_NAME_FAMILY_STATUS_NAME_INCOME_TYPE"},
+    {"type": "float", "name": "RATE_INTEREST_PRIMARY_MEAN_LAST_5"}, {"type": "float",
+    "name": "BUREAU_DAYS_CREDIT_MINCREDIT_ACTIVE_REST_REGISTRATION_DIFF"}, {"type":
+    "float", "name": "APARTMENTS_SUM_AVG_MAX_AGG_NAME_EDUCATION_TYPE_NAME_INCOME_TYPE_OCCUPATION_TYPE"},
+    {"type": "float", "name": "SK_DPD_SUM"}]'
+  params: null
+utc_time_created: '2024-02-16 00:26:07.729959'
