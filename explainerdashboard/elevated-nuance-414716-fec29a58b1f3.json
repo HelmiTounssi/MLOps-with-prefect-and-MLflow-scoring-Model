@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "elevated-nuance-414716",
+  "private_key_id": "fec29a58b1f32158ea14aeef092b777eabde7922",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCsP+cUKQVTFx1u\nWtazYJ0Gz/XUCKwG3Fi1vHebUHfzcCTKCA+UqNzBaG6SiAICkK37SqAdbsC3OjP1\n3Bh42mKSKTu/LszdMt+q8nV1puWguVJUYiPR93rXano75NTVIo/f9sSbVo8g1lca\nIS8KS/2oVc93CxVALHkWcH2Qq1NQOQAtbSX0MDy+5T2dtUab8PqknO3XUGOQGvrE\nwglar6u4TL6pFXfOKHB7IzOhVsRh6fsIRikFxpJrLulojd/eNJRwk/TF3EqcMxWj\niMJIPItGE3fZI1UTYx259SmeWT1Ut+qxFoIuE1Lo2nTVj1gbQMrfuDA/KlDIdrjg\nJSkKZpf9AgMBAAECggEACUAPSVJgolMx9eyz7gMou6ZsZbwnfODVdMEPzUv3fR/P\nIfhn2cxtuodAtObP8NJTPZUG3z3E5LIf+zqcJ9VWiNHlDwHU56YlQ9lsfGp/l2+M\nX9K7aLm5I5towBGsalvGTTlD2rG90v4fxFv22j81epZNI2/5bq5UvGNDIwNIYJzw\nc7jRLQe9q/j2Z0Cd6ekiJorit5ziGmaJU2NUx7TsAW+xMizguNc/WFbzP3Fz/Cs/\n1cNAocDx5w2AAyfgVYZaFQMKeZFCbaMObI7+ke0okspvno848SL5yZ/TBsrZou6D\nIpdFp1keCNl9vUJVoBhCinnkypD4VXDrjlcpDMqq0wKBgQDc3oeQvXkS/U6Vss2W\nhFfoJD7e4dgdfdzpBwLcpI12z1Dt//MogEvWyC51XLqOewbSQN2lW56jfNKqe/sw\nxsqE+Uf3S5yPcPI7wV/rRGL1f5IZ1MbO+8p9RApDMyPbOTiNWMnoACj/pTlqMME5\nYX93V1x2EOngvPsKzyKZmaftNwKBgQDHpac3wcu7sE21ik7apETfwRCcQHR5xF3g\nI7/2aPsO8412ZyfYZgyX+76xXWYr9t9gbB2/awzvsewnBLrfSY2oXs/KqZWGg7QQ\nIygRGg3+FbdFuRbp7044xBDk/e3jKOgjZuPOUs9ZHzjWp5BWe+/CZ2m1tdDK79xZ\nMvZ1HOYeawKBgQCFDaktEHc3cVE97RDcc61hMzSMoBDI82F5H7ghox91Sz69oUqi\nQ2dsY/tYyBu6aXKahmj/jEnswu1FtpqDr72gjWtFFk+iObAzPzLBT9kte0RQO1Xo\nqtY40Bw+jzgygC4JOEupby9Dkg0cY3KDVrCq+/2/QkEiGbZBtLZrQZ1f0QKBgE8B\nqBXxlD1XPLld3Wy62yKtFXSwMSfK5NeBbkMGMmwtR8sWcXc6kztF/aXU70zwql9P\nCcqpg3oLsAeU4JriUbPSqWprB+gukIBeWUnDRMxLLbbi00WKVSszs/fa4Vwm4Q65\ndec9cB61s1mHACCpdS06nWOyaskUeN+3wj6ATDS3AoGAfEID6fpNUHzqLtEbAsdm\nujwlPr7sbt/IazzwUhjHrs3AdjS/+gIPQzp4iQvbrvbWOEN5NqH7dxZmb5ZEkUxO\nElIKIAEh14cVGcHhyNQ1hcPtIj96wZ6k5f3TdeKloXhCZRS45W7hQy6Ue9i5rDd8\nV7hfDnU8lZMkoWuSIic3ick=\n-----END PRIVATE KEY-----\n",
+  "client_email": "github-actions@elevated-nuance-414716.iam.gserviceaccount.com",
+  "client_id": "115900474045128115521",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/github-actions%40elevated-nuance-414716.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
