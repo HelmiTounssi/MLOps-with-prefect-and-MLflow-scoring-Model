@@ -1,0 +1,32 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: explainerdashboardhomecredit
+spec:
+  type: LoadBalancer
+  selector:
+    app: explainerdashboardhomecredit
+  ports:
+  - port: 9050
+    targetPort: 9050
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: explainerdashboardhomecredit
+  labels:
+    app: explainerdashboardhomecredit
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: explainerdashboardhomecredit
+  template:
+    metadata:
+      labels:
+        app: explainerdashboardhomecredit
+    spec:
+      containers:
+      - name: explainerdashboardhomecredit
+        image: us-central1-docker.pkg.dev/GOOGLE_PROJECT/home-credit-repo/explainerdashboardhomecredit:latest
